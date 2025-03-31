@@ -25,6 +25,13 @@ Repozitorij za razvoj AI_Tutora u sklopu kolegija Programsko inženjerstvo
 * Za korištenje treminala prilikom kloniranja, slanja novih dokumenata, merga, pull requesta itd. koristite dokument <u>Git komande.doxc</u> koji se nalazi u GitHub Wiki segmentu, [<u>Merging and branching</u>](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) uputama ili <u>ChatGPT</u> po potrebi
 
 
+## Dokumentacija
+
+* Obavezno dokumentirati alate korištene za pojedine zadatke
+
+**Smjernice za dokumentaciju:**
+* Potrebno postaviti nekakav standard za dokumentaciju (kako ćemo početi dokumentirati stvari tako počnite ispunjavati ove smjernice)
+
 
 
 
