@@ -1,27 +1,31 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from google import genai
+import google.generativeai as genai 
 
-# Inicijalizacija FastAPI aplikacije
+#Postavi API ključ
+API_KEY = ""
+genai.configure(api_key=API_KEY)
+
+#Inicijalizacija FastAPI aplikacije
 app = FastAPI()
 
-# Klijent za komunikaciju s Gemini API-jem
-client = genai.Client(api_key="")
-
-# Klasa za unos podataka u POST zahtjevu
+#Klasa za unos podataka u POST zahtjevu
 class ChatRequest(BaseModel):
-    message: str
+    messages: list  #Lista poruka za pamćenje razgovora
 
 @app.post("/chat/")
 async def chat(request: ChatRequest):
     try:
-        # Slanje zahtjeva prema Gemini API-u
-        response = client.models.generate_content(
-            model="gemini-1.5-flash", contents=request.message
-        )
-        # Vraćanje odgovora korisniku
-        return {"response": response.text}
-    except Exception as e:
-        # Obrada greške
-        raise HTTPException(status_code=400, detail=str(e))
+        if not request.messages:
+            raise HTTPException(status_code=400, detail="Message list cannot be empty")
 
+        #Koristimo model
+        model = genai.GenerativeModel("gemini-1.5-flash")
+
+        #Slanje razgovora modelu
+        response = model.generate_content(request.messages[-1]["content"])
+
+        return {"response": response.text}
+
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
