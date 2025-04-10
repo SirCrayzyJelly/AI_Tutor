@@ -1,61 +1,92 @@
 import streamlit as st
 import requests
 
-#Inicijalizacija Streamlit aplikacije
+# Konfiguracija stranice
 st.set_page_config(page_title="AI Tutor", page_icon="🤖")
 st.title("🎓 AI Tutor - Tvoj virtualni prijatelj za učenje!")
 st.markdown("Nema pitanja na koja AI ne zna odgovor! Postavi pitanje i učimo zajedno.")
 
-#Inicijalizacija chat povijesti ako ne postoji
-#Iteracija kroz sve poruke koje su pohranjene u povijesti razgovora (chat_history)
+# Inicijalizacija chat povijesti
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
+if "user_questions" not in st.session_state:
+    st.session_state.user_questions = []
 
-#Ovisno o ulozi poruke(korisnik ili asistent), prikazujemo u odgovarajućem formatu
-#"role" moze biti "user" ili "assistent" i određuje tko je poslao poruku
-for message in st.session_state.chat_history:
-    with st.chat_message(message["role"]):
+# ======== DUGMIĆI ========
+col1, col2, col3, col4 = st.columns(4)
 
-        #Ispisuj sadrzaj poruke (pitanje ili odgovor)
-        st.write(message["content"])
+with col1:
+    if st.button("🔁 Reset"):
+        st.session_state.chat_history = []
+        st.success("Chat je resetiran!")
 
-#Unos korisničkog pitanja
-#Kada korisnik unese pitanje u chat, to se pitanje odmah obradi
+# Sidebar opcije
+sidebar_option = st.sidebar.radio(
+    "Odaberi opciju:",
+    ["Povijest pitanja", "Odabier kolegija", "Kviz znanja"]
+)
+
+# Dinamički sadržaj na temelju odabrane opcije u sidebaru
+if sidebar_option == "Povijest pitanja":
+    # Odabir prikaza svih pitanja ili nedavnih
+    history_option = st.sidebar.radio(
+        "Prikaz pitanja:",
+        ["Sva pitanja", "Nedavna pitanja"]
+    )
+
+    if history_option == "Sva pitanja":
+        st.sidebar.markdown("### Povijest svih pitanja")
+        if st.session_state.user_questions:
+            for i, question in enumerate(st.session_state.user_questions, 1):
+                st.sidebar.markdown(f"**{i}.** {question}")
+        else:
+            st.sidebar.write("Još nema postavljenih pitanja.")
+    
+    elif history_option == "Nedavna pitanja":
+        st.sidebar.markdown("### Nedavna pitanja")
+        # Prikaz najnovijih 5 pitanja, ili manje ako ima manje pitanja
+        recent_questions = st.session_state.user_questions[-5:]
+        if recent_questions:
+            for i, question in enumerate(reversed(recent_questions), 1):
+                st.sidebar.markdown(f"**{len(recent_questions) - i + 1}.** {question}")
+        else:
+            st.sidebar.write("Još nema postavljenih pitanja.")
+
+elif sidebar_option == "Odabier kolegija":
+    kolegij = st.sidebar.selectbox(
+    "Odaberi kolegij:",
+    ["Programsko inženjerstvo", "Baze podataka", "Računalne mreže", "Umjetna inteligencija"]
+)
+else:
+    st.sidebar.markdown("Kviz znanja")
+    st.sidebar.write("Kviz znanja koji ispituje znanje o odabranom kolegiju.")
+    st.sidebar.button("Pokreni kviz")
+
+
+# Unos korisničkog pitanja
 if user_input := st.chat_input("Postavi svoje pitanje..."):
-    # Dodaj korisničku poruku u povijest(chat_history)
-    #Kreiramo novi objekt koji sadrži ulogu "user" i korisničko pitanje
-    user_msg = {"role": "user", "content": user_input}
+    st.session_state.chat_history.append({"role": "user", "content": user_input})
 
-    #Pohrani korisničko pitanje u chat_history kako bi se pratila povijest razgovora
-    st.session_state.chat_history.append(user_msg)
+     # Spremi pitanje u zasebnu listu
+    st.session_state.user_questions.append(user_input)
 
-    #Korisničko pitanje prikazujemo na ekranu i odgovarajuću ulogu
-    with st.chat_message("user"):
-        st.write(user_input)
-
-    # Pripremi povijest svih poruka (korisnikovih i asistetovih koristeci odgovarajucu ulogu)
+# Ako je dodana nova poruka korisnika
+if st.session_state.chat_history and st.session_state.chat_history[-1]["role"] == "user":
     payload = {"messages": st.session_state.chat_history}
 
     try:
-        #Pošalji POST zahtjev na backend s chat_history kako bi AI generirao odgovor
+        # Pozivanje backend API-ja
         response = requests.post("http://127.0.0.1:8000/chat/", json=payload)
 
-
-        #Ako je odgovor od backenda uspješan, preuzmi odgovor od AI-a
         if response.status_code == 200:
-            ai_response = response.json().get("response", "No response from AI")
-
-            #Dodaj AI odgovor u chat_history kako bi mogao biti prikazan poslije
+            ai_response = response.json().get("response", "Nema odgovora od AI-a.")
             assistant_msg = {"role": "assistant", "content": ai_response}
             st.session_state.chat_history.append(assistant_msg)
 
-            #Prikaži AI odgovor 
             with st.chat_message("assistant"):
                 st.write(ai_response)
         else:
-
-            #Ako dođe do greške u backendu, prikaži korisniku grešku
-            st.error(f"Error: {response.json().get('detail', 'Unknown error')}")
+            st.error(f"Greška na backendu: {response.json().get('detail', 'Nepoznata greška')}")
     except requests.exceptions.RequestException as e:
-        #Ako dođe do greške u vezi sa povezivanjem sa backendom, prikaži je
-        st.error(f"Error connecting to the backend: {str(e)}")
+        st.error(f"Greška u povezivanju s backendom: {str(e)}")
+
