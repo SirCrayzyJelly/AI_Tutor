@@ -6,10 +6,20 @@ __pycache__/
 local_settings.py
 db.sqlite3
 
+# Python
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
 # Environments
 .env
 .venv/
 venv/
+
+# Static & Media
+media/
+staticfiles/
 
 # IDE
 .vscode/
@@ -22,3 +32,12 @@ venv/
 *.pdf
 *.xlsx
 *.csv
+
+# Testing & Coverage
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# MyPy
+.mypy_cache/
