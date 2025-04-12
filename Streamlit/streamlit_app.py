@@ -15,6 +15,7 @@ if "user_questions" not in st.session_state:
 # ======== DUGMIĆI ========
 col1, col2, col3, col4 = st.columns(4)
 
+#izrada reset buttona
 with col1:
     if st.button("🔁 Reset"):
         st.session_state.chat_history = []
@@ -34,6 +35,7 @@ if sidebar_option == "Povijest pitanja":
         ["Sva pitanja", "Nedavna pitanja"]
     )
 
+    #ako je odabrana opcija Povijest pitanja postavlja se opcija za prikaz svih ili nedavnih pitanja
     if history_option == "Sva pitanja":
         st.sidebar.markdown("### Povijest svih pitanja")
         if st.session_state.user_questions:
@@ -52,6 +54,7 @@ if sidebar_option == "Povijest pitanja":
         else:
             st.sidebar.write("Još nema postavljenih pitanja.")
 
+#odabir kolegija koji ima padajući izbornik s kolegijima
 elif sidebar_option == "Odabier kolegija":
     kolegij = st.sidebar.selectbox(
     "Odaberi kolegij:",
