@@ -3,14 +3,20 @@
 *.pot
 *.pyc
 __pycache__/
+*/__pycache__/
+*/migrations/__pycache__/
 local_settings.py
 db.sqlite3
+*.sqlite3-journal
 
 # Python
 *.py[cod]
 *.pyo
 *.pyd
 *.so
+
+# Jupyter
+*.ipynb
 
 # Environments
 .env
@@ -19,6 +25,7 @@ venv/
 
 # Static & Media
 media/
+static/
 staticfiles/
 
 # IDE

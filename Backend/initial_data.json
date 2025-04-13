@@ -1,0 +1,1152 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-04-13T15:44:37.553Z",
+    "user": 1,
+    "content_type": 5,
+    "object_id": "9",
+    "object_repr": "Usporedi agilne metode razvoja: Scrum, Kanban i Scrumban.",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-04-13T15:52:58.807Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "1",
+    "object_repr": "AI Tutor",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-04-13T15:53:50.304Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "Karla",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-04-13T15:54:12.306Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "Karla",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\", \"Staff status\", \"Groups\", \"User permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-04-13T15:54:33.492Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "3",
+    "object_repr": "Petra",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-04-13T15:55:40.617Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "3",
+    "object_repr": "Petra",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Staff status\", \"Groups\", \"User permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-04-13T15:55:59.700Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "4",
+    "object_repr": "Antonio",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-04-13T15:56:32.115Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "4",
+    "object_repr": "Antonio",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\", \"Staff status\", \"Groups\", \"User permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-04-13T15:56:55.348Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "5",
+    "object_repr": "Josip",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-04-13T15:57:17.031Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "5",
+    "object_repr": "Josip",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Staff status\", \"Groups\", \"User permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-04-13T15:57:33.346Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "6",
+    "object_repr": "Marko",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-04-13T15:57:53.485Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "6",
+    "object_repr": "Marko",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\", \"Staff status\", \"Groups\", \"User permissions\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add qa entry",
+    "content_type": 5,
+    "codename": "add_qaentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change qa entry",
+    "content_type": 5,
+    "codename": "change_qaentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete qa entry",
+    "content_type": 5,
+    "codename": "delete_qaentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view qa entry",
+    "content_type": 5,
+    "codename": "view_qaentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 6,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 6,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 6,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 6,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 7,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 7,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 7,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 7,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "AI Tutor",
+    "permissions": [
+      1,
+      2,
+      3,
+      4,
+      9,
+      10,
+      11,
+      12,
+      5,
+      6,
+      7,
+      8,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$U7maLUnmnQQ5OdTxhpIn9X$XBOS9LEjUReXy+W4BS6U0BoTEEVXFcV58bVTX2IsqG4=",
+    "last_login": "2025-04-13T15:03:31.570Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "philippos321@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-04-13T15:00:47.944Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$xR2u2KCmIgXeRFbhEmVNjJ$EcjjxEQ/sLra/ENa3sNSs0Qmd/o9ZDMwMRzUlopmHz8=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Karla",
+    "first_name": "Karla",
+    "last_name": "Vršić",
+    "email": "karla.vrsic@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-04-13T15:53:49Z",
+    "groups": [
+      1
+    ],
+    "user_permissions": [
+      1,
+      2,
+      3,
+      4,
+      9,
+      10,
+      11,
+      12,
+      5,
+      6,
+      7,
+      8,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$NyP9GWO4KOKnwSl0IjqsMs$r8HVa9SbPOKwLXbqsJYevBbZGHAmmlj5asA6kUy+3LQ=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Petra",
+    "first_name": "Petra",
+    "last_name": "Tamarut",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-04-13T15:54:32Z",
+    "groups": [
+      1
+    ],
+    "user_permissions": [
+      1,
+      2,
+      3,
+      4,
+      9,
+      10,
+      11,
+      12,
+      5,
+      6,
+      7,
+      8,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$c4Emy7esBehgWKtfwmVPUP$YOmtEA8Md70FaZlzByxMXCTf+1r2+ccecE/nzEYzYow=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Antonio",
+    "first_name": "Antonio",
+    "last_name": "Stipanović",
+    "email": "antoniostipanovic@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-04-13T15:55:59Z",
+    "groups": [
+      1
+    ],
+    "user_permissions": [
+      1,
+      2,
+      3,
+      4,
+      9,
+      10,
+      11,
+      12,
+      5,
+      6,
+      7,
+      8,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$vlqrPeW1Fdw0hXWVV8yDWR$c30BJFeMnoC2WtXZM0KI8vRayOkp6s0trsdJdbk9ajE=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Josip",
+    "first_name": "Josip",
+    "last_name": "Benjamin-Szabo",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-04-13T15:56:54Z",
+    "groups": [
+      1
+    ],
+    "user_permissions": [
+      1,
+      2,
+      3,
+      4,
+      9,
+      10,
+      11,
+      12,
+      5,
+      6,
+      7,
+      8,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$DHoN2IQNvbnc7r7aXS9Sl3$GOJnCsEiU1qCNP8EoeKySeSYI83FU+IYnIfExEoyAek=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Marko",
+    "first_name": "Marko",
+    "last_name": "Podnar",
+    "email": "podnarmarko891@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-04-13T15:57:32Z",
+    "groups": [
+      1
+    ],
+    "user_permissions": [
+      1,
+      2,
+      3,
+      4,
+      9,
+      10,
+      11,
+      12,
+      5,
+      6,
+      7,
+      8,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ]
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 1,
+  "fields": {
+    "lecture_id": 4,
+    "question": "Koja je razlika između modela procesa i procesa životnog ciklusa?",
+    "answer": "Proces životnog ciklusa obuhvaća sve aktivnosti koje ljudi izvode kako bi razvili, održavali i povukli programski proizvod – uključuje sklapanje ugovora, tehničke i projektne procese. Model životnog ciklusa je formalni okvir koji definira redoslijed i dinamiku tih aktivnosti, kao i njihovu međusobnu povezanost, te pruža strukturu od početka do kraja razvoja softvera. Drugim riječima, proces opisuje \"što se radi\", a model \"kako i kada\".",
+    "link": "https://www.fer.hr/_download/repository/PP10.pdf?utm_source=chatgpt.com"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 2,
+  "fields": {
+    "lecture_id": 4,
+    "question": "Koje su osnovne faze općeg modela životnog ciklusa softvera?",
+    "answer": "Faze su: 1. Inženjering zahtjeva – korisnički zahtjevi se formaliziraju u tehničke specifikacije. 2. Tehnički dizajn – tehnički zahtjevi se prevode u dizajnersku dokumentaciju. 3. Implementacija – koristi dizajn za kodiranje funkcionalnog proizvoda. 4. Testiranje – provjerava radi li implementacija ispravno. Svaka faza ima jasne ulaze i izlaze, a isporuke jedne faze su potrebne za sljedeću.",
+    "link": "https://www.guru99.com/hr/software-development-life-cycle-tutorial.html?utm_source=chatgpt.com"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 3,
+  "fields": {
+    "lecture_id": 4,
+    "question": "Koje su osnovne karakteristike vodopadnog modela razvoja?",
+    "answer": "Vodopadni model je linearan, gdje se svaka faza (od analize do testiranja) završava prije nego što počne sljedeća. Karakteristike: Faze su strogo odvojene i ne preklapaju se. Pogodan za projekte s dobro definiranim zahtjevima. Prednosti: Jednostavnost u planiranju i provedbi. Jasna struktura i dokumentacija. Nedostaci: Nema povratka unatrag ako se pojave problemi. Promjene zahtjeva teško se integriraju. Korisnik dobiva gotov proizvod tek na kraju, što smanjuje povjerenje.",
+    "link": "https://spvp.zesoi.fer.hr/seminari/2007/seminari/Ivo%20Veseli%20-%20Proces%20razvoja%20softvera.pdf?utm_source=chatgpt.com"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 4,
+  "fields": {
+    "lecture_id": 4,
+    "question": "Koje su prednosti i nedostaci prototyping modela razvoja i kada se primjenjuje?",
+    "answer": "Prototyping model uključuje izradu nedovršenog (ali vizualnog) rješenja kako bi se dobila povratna informacija od korisnika. Prednosti: Bolje razumijevanje korisničkih zahtjeva. Rano otkrivanje problema. Manje nepotrebnih funkcionalnosti, jednostavniji sustav. Nedostaci: Može biti vremenski zahtjevno. Često se preskaču standardi i kvaliteta dizajna. Otežano održavanje zbog tehničkog duga. Primjena: Kad nisu jasni zahtjevi na početku, posebno korisničko sučelje.",
+    "link": "https://repository.inf.uniri.hr/islandora/object/infri%3A468/datastream/PDF/download?utm_source=chatgpt.com"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 5,
+  "fields": {
+    "lecture_id": 4,
+    "question": "Koje su osnovne karakteristike inkrementalnog modela razvoja?",
+    "answer": "Softver se razvija u dijelovima (inkrementima), svaki od njih djeluje samostalno. Karakteristike: Iterativan razvoj s djelomičnim isporukama. Korisnik može rano koristiti dijelove sustava. Prednosti: Rani povrat informacija. Fleksibilniji prema promjenama. Veće povjerenje korisnika. Nedostaci: Kompleksno planiranje. Potrebni iskusni stručnjaci. Teškoća u integraciji svih dijelova kasnije.",
+    "link": "https://www.guru99.com/hr/what-is-incremental-model-in-sdlc-advantages-disadvantages.html?utm_source=chatgpt.com"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 6,
+  "fields": {
+    "lecture_id": 4,
+    "question": "Koje su osnovne karakteristike spiralnog modela razvoja?",
+    "answer": "Spiralni model kombinira iteracije i analizu rizika kroz više ciklusa razvoja. Karakteristike: Svaka iteracija uključuje komunikaciju, planiranje, analizu rizika, dizajn, izradu i evaluaciju. Fokus na analizu i minimizaciju rizika. Prednosti: Visoka fleksibilnost. Aktivna uključenost korisnika. Rano uočavanje problema. Nedostaci: Složena struktura. Teškoća u upravljanju. Nije idealan za velike sustave s dugim razvojem.",
+    "link": "https://zir.nsk.hr/islandora/object/unipu%3A6218/datastream/PDF/download?utm_source=chatgpt.com"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 7,
+  "fields": {
+    "lecture_id": 4,
+    "question": "Što je osnovna ideja modela zasnovanog na ponovnoj upotrebi i zašto nije široko zastupljen?",
+    "answer": "Ideja je korištenje gotovih komponenti (\"lego pristup\") – analiza, prilagodba i integracija postojećih modula. Problem: Nedostatak iskustva i nedovoljna baza kvalitetnih komponenti u industriji.",
+    "link": "https://jusufspahic.files.wordpress.com/2015/11/dizajn-aplikativnog-softvera-skripta-za-kolokvijum.pdf?utm_source=chatgpt.com"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 8,
+  "fields": {
+    "lecture_id": 4,
+    "question": "Koje su osnovne karakteristike rapidnog modela razvoja?",
+    "answer": "Faze razvoja se preklapaju (npr. dizajn i implementacija). Inkrementalni razvoj s čestim verzijama (svakih 2–3 tjedna). Minimalna dokumentacija. Fokus na brzu isporuku i fleksibilnost. Aktivna uključenost korisnika. Mali timovi, neformalna komunikacija.",
+    "link": "https://repozitorij.veleri.hr/islandora/object/veleri%3A2512/datastream/PDF/view?utm_source=chatgpt.com"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 9,
+  "fields": {
+    "lecture_id": 4,
+    "question": "Usporedi agilne metode razvoja: Scrum, Kanban i Scrumban.",
+    "answer": "Scrum: Fiksni vremenski sprintovi (obično 2 tjedna). Jasno definirane uloge (scrum master, product owner). Planiranje, dnevni sastanci, retrospektive. Promjene nisu dozvoljene unutar sprinta. Kanban: Vizualna ploča s karticama (To Do, Doing, Done). Bez vremenskih ograničenja. Promjene se mogu unositi u hodu. Fokus na optimizaciju tijeka rada. Scrumban: Kombinira najbolje iz oba svijeta. Sprintovi poput Scruma + fleksibilnost Kanbana. Ograničen broj zadataka u tijeku (WIP limit). Koristi vizualizaciju radnog procesa.",
+    "link": "https://gorankrmpotic.eu/agile-agilno-upravljanje-scrum-kanban?utm_source=chatgpt.com"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 10,
+  "fields": {
+    "lecture_id": 3,
+    "question": "Što je menadžment u programskom inženjerstvu prema IEEE i koji su stvarni problemi?",
+    "answer": "Menadžment u programskom inženjerstvu je primjena aktivnosti poput planiranja, nadzora i kontrole s ciljem sustavnog razvoja softvera. U praksi se susreću problemi poput postavljanja prioriteta, rada s nejasnim ulazima, koordinacije timova, kontrole apstraktnih proizvoda i komunikacije.",
+    "link": "https://sceweb.sce.uhcl.edu/helm/SWEBOK_IEEE/data/swebok_chapter_08.pdf"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 11,
+  "fields": {
+    "lecture_id": 3,
+    "question": "Koje su važne karakteristike koje definiraju projekt?",
+    "answer": "Projekt je vremenski ograničen s definiranim početkom i krajem, ograničenim resursima i nizom aktivnosti koje se izvode logičkim redoslijedom kako bi se stvorio jedinstveni rezultat.",
+    "link": "https://pressbooks.ulib.csuohio.edu/project-management-navigating-the-complexity/chapter/1-2-project-characteristics/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 12,
+  "fields": {
+    "lecture_id": 3,
+    "question": "Koja je razlika između linijske i projektne odgovornosti?",
+    "answer": "Linijska odgovornost se odnosi na strateške zadatke unutar organizacije (npr. upravljanje resursima), dok se projektna odgovornost odnosi na ispunjenje ciljeva određenog projekta (npr. isporuka u roku i budžetu).",
+    "link": "https://www.sprintzeal.com/blog/project-characteristics"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 13,
+  "fields": {
+    "lecture_id": 3,
+    "question": "Koje procese upravljanja uključuje životni ciklus projekta?",
+    "answer": "Uključuje procese: inicijacije (studije izvedivosti), planiranja (razrada faza), izvođenja i kontrole, te završne procese poput revizije i zaključenja projekta.",
+    "link": "https://biz.libretexts.org/Courses/Western_Technical_College/Operations_Management_%28Hammond%29/05%3A_Project_Management/5.03%3A_Project_Characteristics_and_Constraints"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 14,
+  "fields": {
+    "lecture_id": 3,
+    "question": "Koja su ključna znanja za upravljanje softverskim projektima?",
+    "answer": "Potrebna znanja uključuju: modele procesa, upravljanje timovima, kvalitetom, rizicima, komunikacijom, troškovima, vremenom i konfiguracijama, kao i planiranje i nadzor.",
+    "link": "https://en.wikipedia.org/wiki/Software_Engineering_Body_of_Knowledge"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 15,
+  "fields": {
+    "lecture_id": 3,
+    "question": "Što je projektni plan i kada se izrađuje?",
+    "answer": "Projektni plan je temeljni dokument koji opisuje kako ?e se projekt voditi i nadzirati. Prva verzija se izrađuje na početku, već u fazi zahtjeva, i s vremenom se ažurira.",
+    "link": "https://www.sprintzeal.com/blog/project-characteristics"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 16,
+  "fields": {
+    "lecture_id": 3,
+    "question": "Koja su osnovna poglavlja projektnog plana i što sadrže?",
+    "answer": "1. Organizacija projekta: model procesa, projektna struktura, granice, odgovornosti.\r\n2. Proces upravljanja: rizici, kontrolni mehanizmi, izvještavanje, planiranje ljudskih resursa.\r\n3. Tehnički procesi: alati, metode, dokumentacija, osiguranje kvalitete.\r\n4. Vremenski tijek: radni paketi, rokovi, resursi, budžet.",
+    "link": "https://www.sprintzeal.com/blog/project-characteristics"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 17,
+  "fields": {
+    "lecture_id": 1,
+    "question": "Čime se bavi disciplina programskog inženjerstva te koja su specifična svojstva programskog proizvoda koja ovu inženjersku disciplinu čine posebnom?",
+    "answer": "Programsko inženjerstvo (eng. Software Engineering) je disciplina koja se bavi primjenom sustavnog, discipliniranog i kvantificiranog pristupa u razvoju, izvođenju i održavanju programskog proizvoda. Specifična svojstva programskog proizvoda, koja programsko inženjerstvo čine fundamentalno drugačijim od ostalih inženjerskih disciplina, jesu da je on apstraktan, složen, fleksibilan, te teško mjerljivih svojstava. Za razliku od proizvoda svih drugi inženjerskih disciplina, programski proizvod nema fizička svojstva, u bilo kojoj fazi izgradnje može biti izmijenjen i prilagođen, a krajnjem korisniku može biti nedokučiv. Također, ne postoje mjerne jedinice koje su normirane i čija interpretacija može dati odgovore na razne inženjerske probleme koje se susreće prilikom izgradnje i održavanja.",
+    "link": "https://www.youtube.com/watch?v=iIxZrYzJJ7I"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 18,
+  "fields": {
+    "lecture_id": 1,
+    "question": "Koja je razlika između programa, sustava čiji su oni dijelovi i programskog proizvoda?",
+    "answer": "Pojmom program označavamo isključivo programski kod koji obavlja neki specifični zadatak. Kompozicija programa u složeniju, međusobno povezanu i organiziranu strukturu koja ostvaruje namijenjenu joj funkciju predstavlja sustav. Programski proizvod (eng. software) čini skup programa povezanih u računalne sustave, ali i pripadajuće dokumentacije koji se zajedno isporučuju korisniku.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 19,
+  "fields": {
+    "lecture_id": 1,
+    "question": "Koje su osnovne teme programskog inženjerstva?",
+    "answer": "Osnovne teme programskog inženjerstva su: a) Izgradnja velikih i složenih programskih sustava b) Upravljanje složenim strukturama c) Evolucija programskog proizvoda d) Učinkovitost razvoja programskog proizvoda e) Upravljanje komunikacijom u razvoju velikih programskih sustava f) Isporuka kvalitetnog konačnog programskog proizvoda korisniku",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 20,
+  "fields": {
+    "lecture_id": 1,
+    "question": "Što je proces, kako definiramo procese životnog ciklusa programskog proizvoda te od čega se oni sastoje?",
+    "answer": "Proces je skup međusobno povezanih aktivnosti kojima se ostvaruje pretvorba ulaza u izlaz. Procesi životnog ciklusa programskog proizvoda definiraju se kao skup procesa, aktivnosti i poslova koje računalni inženjeri izvode kako bi razvili i održavali programski proizvod, a sastoje se od: procesa sklapanja ugovora, procesa poduzeća, projektnih procesa i tehničkih procesa. Ulazi u procesima programskog inženjerstva mogu biti npr. zahtjevi korisnika, zadaci projektnog managementa, testni slučajevi i sl., a pripadni izlazi mogu biti specifikacija zahtjeva, hodogrami aktivnosti, uloge i podjela zadataka, te testno izvješće.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 21,
+  "fields": {
+    "lecture_id": 1,
+    "question": "Što je projekt, kakvi oni mogu biti s obzirom na doseg, a kakvi mogu biti s obzirom na tehničke procese koje izvode?",
+    "answer": "Projekt je privremena tvorevina s unaprijed definiranim početkom i završetkom, dosegom i resursima. S obzirom na doseg oni mogu biti:  korektivni projekti (otklanjanje pogrešaka u postojećem sustavu),  adaptivni projekti (izmjene uslijed promjene operacijskog sustava, baza podataka, zakonskih odredbi i sl.),  unapređujući, aditivni projekti (dodavanje nove funkcionalnosti),  projekti ponovnog inženjerstva (npr. unutarnje izmjene u arhitekturi sustava kako bi se olakšalo dodavanje novih modula ili održavanje),  sasvim novi, integrativni projekti (oblikovanje novog okruženja iz postojećih programskih komponenata i cjelina). S obzirom na tehničke procese koje izvode, projekti mogu biti: razvojni projekti (eng. development project), projekti integracije i verifikacije (eng. integration & verification project), i projekti održavanja (eng. maintenance project).",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 22,
+  "fields": {
+    "lecture_id": 1,
+    "question": "Koje su osnovne faze u modelima procesa razvoja programskog proizvoda i od čega se sastoje?",
+    "answer": "Osnovne faze u modelima procesa razvoja programskog proizvoda prema ISO normama su: inženjerstvo zahtjeva, dizajn, implementacija i testiranje. a) Inženjerstvo zahtjeva je prvi korak svakog modela razvoja, a osnovni cilj mu je opis problema kojeg se treba riješiti i definicija zahtjeva u skladu s zadanim problemom i okolinom kojoj je sustav namijenjen (hardver, drugi software i/ili korisnici). U ovoj fazi provodi se studija izvedivosti projekta, odrede se moguća rješenja te se diskutiraju njihovi prednosti i nedostaci. Osnovni dokument u kojem se sažimaju rezultati ove faze naziva se specifikacija zahtjeva. b) Dizajn podrazumijeva razvoj modela za cijeli sustav kroz (i) dekompoziciju problema na manje smislene programske cjeline (module ili komponente), (ii) prijenos specifikacije zahtjeva sustava na specifikaciju zahtjeva funkcija definiranih programskih cjelina i (iii) definiciju sučelja među programskim cjelinama. Rezultati ove faze sažimaju se u dokumentu tehnička specifikacija. c) Implementacija je faza u kojoj se radi programiranje. Kod velikih programa samom programiranju obično prethodi i ispisivanje pseudokoda. Osnovni cilj programiranja je da se napravi čitljiv, jednostavan za nadogradnju i održavanje, dobro dokumentiran i točan program. Rezultat ove faze je program kojeg se može izvoditi. d) Faza testiranja u novijim modelima razvoja sve je više isprepletena s fazom implementacije. Planiranje testnih aktivnosti započinje s fazom specifikacije zahtjeva. Testiranjem se provjerava u kojoj su mjeri implementirani zahtjevi te se traže neispravnosti kako u kodu, tako i u projektnoj dokumentaciji. Osnovna motivacija za kontinuirano provođenje testnih aktivnosti je da je svaku ranije otkrivenu neispravnost jeftinije ukloniti, tj. ispraviti.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 23,
+  "fields": {
+    "lecture_id": 1,
+    "question": "Koja je osnovna svrha održavanja programskog proizvoda?",
+    "answer": "Cilj faze održavanja je osigurati neometano izvođenje programskog proizvoda kod korisnika, a osnovna svrha je: otklanjanje svih neispravnosti otkrivenih nakon isporuke, prilagođavanje sustava promijenjenim zahtjevima ili uvođenje poboljšanja. Održavanje programskih sustava ujedno predstavlja najzahtjevniju aktivnost koja slijedi nakon isporuke, odnosno implementacije software-a",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 24,
+  "fields": {
+    "lecture_id": 1,
+    "question": "Koja je konceptualna razlika između procesa i modela koji se koriste u razvoju software-a?",
+    "answer": "Proces je skup međusobno povezanih aktivnosti kojima se ostvaruje pretvorba ulaza u izlaz, dok model predstavlja konkretno definirane korake koje te aktivnosti podrazumijevaju i dinamiku njihova izvođenja. Procesi čije modele treba definirati u okviru životnog ciklusa programskog proizvoda su od razvoja, izvođenja i održavanja projekta, definiranja zahtjeva pa sve do povlačenja programskog proizvoda iz uporabe.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 25,
+  "fields": {
+    "lecture_id": 1,
+    "question": "Kako SEIS doprinosi razvoju društvene odgovornosti u kontekstu razvoja softverskih rješenja?",
+    "answer": "SEIS potiče društvenu odgovornost u razvoju softverskih rješenja istražujući njihov tehnološki i društveni utjecaj. Fokusira se na inkluzivnost, etiku i stvarne potrebe zajednice, razvijajući sustave koji povezuju ljude, olakšavaju suradnju i poboljšavaju digitalnu dostupnost.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 26,
+  "fields": {
+    "lecture_id": 1,
+    "question": "Zašto se Ada Lovelace smatra prvom programerkom u povijesti i jesu li njezine ideje bile realizirane?",
+    "answer": "Ada Lovelace razvila je prvi algoritam namijenjen izvođenju na stroju. Ne, strojevi koji su trebali raditi na principu njezinih algoritama nikada nisu bili u potpunosti realizirani nego su kasnije poslužili kao temelj za razvoj modernih računala i softvera.",
+    "link": "https://en.wikipedia.org/wiki/Ada_Lovelace"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 27,
+  "fields": {
+    "lecture_id": 1,
+    "question": "Kako primjena novih tehnologija poput blockchaina, IoT-a i velikih podataka oblikuje budućnost softverskog inženjeringa i informacijskih sustava (SEIS)?",
+    "answer": "Blockchain: Blockchain omogućava sigurno i transparentno pohranjivanje podataka, smanjuje potrebu za posrednicima, što povećava efikasnost i smanjuje troškove u raznim industrijama (npr. financijama, zdravstvu). IoT (Internet stvari): IoT uređaji omogućuju prikupljanje podataka u stvarnom vremenu i automatsko donošenje odluka u industrijama poput zdravstva, pametnih gradova i poljoprivrede, čime se poboljšava efikasnost i kvalitetu usluga. Veliki podaci (Big Data): Analizom velikih podataka, tvrtke i institucije mogu donositi bolje odluke, personalizirati usluge i optimizirati poslovne procese, što doprinosi povećanju konkurentnosti i inovacija.",
+    "link": "https://en.wikipedia.org/wiki/Blockchain, https://en.wikipedia.org/wiki/Internet_of_things"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 28,
+  "fields": {
+    "lecture_id": 1,
+    "question": "Koje su dvije glavne kategorije radova koje NIER track prihvaća na ICSE konferenciji i što svaka od njih treba sadržavati?",
+    "answer": "• Forward-looking ideas (Vizionarske ideje) – radovi koji predlažu nove smjerove ili tehnike u softverskom inženjerstvu, koji možda nemaju kompletne eksperimentalne dokaze, ali moraju biti jasno argumentirani, potkrijepljeni znanstvenom logikom i sadržavati plan za daljnje istraživanje. • Thought-provoking reflections (Provokativne refleksije) – radovi koji donose neočekivane rezultate ili perspektive koje izazivaju postojeće paradigme u softverskom inženjerstvu, potkrijepljeni preliminarnim podacima ili analizama.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 29,
+  "fields": {
+    "lecture_id": 1,
+    "question": "Što je XDEAD, koje metode koristi za detekciju pogrešno uklonjenog aktivnog koda (zbog grešaka u eliminaciji mrtvog koda - DCE), i koje je dvije specifične greške otkrio?",
+    "answer": "• XDEAD je alat za otkrivanje pogrešaka u eliminaciji mrtvog koda (DCE). • Koristi diferencijalno testiranje, statičku binarnu analizu i dinamičko simboličko izvođenje za otkrivanje grešaka. • Konkretno, otkrio je dvije ozbiljne greške u LLVM kompilatoru koje su rezultirale uklanjanjem aktivnog, potrebnog koda tijekom optimizacije.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 30,
+  "fields": {
+    "lecture_id": 1,
+    "question": "Koji su glavni izazovi korištenja blockchain tehnologije za koordinaciju robotskih misija u svemiru, i koja četiri rješenja istraživači predlažu za prevladavanje tih izazova?",
+    "answer": "• Glavni izazovi uključuju veliku potrošnju energije, sporost obrade transakcija i preveliku transparentnost podataka. • Predložena rješenja uključuju: 1. Prilagođene verzije blockchaina (privatne ili hibridne mreže koje štede energiju i povećavaju brzinu). 2. Pametne ugovore (automatizacija pregovora između robota). 3. Korištenje tokena (fungibilnih ili NFT-ova) za razmjenu informacija ili resursa. 4. Dodatna tehnička optimizacija i razvoj učinkovitijih sustava obrade podataka specifično prilagođenih za uvjete u svemiru.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 31,
+  "fields": {
+    "lecture_id": 2,
+    "question": "Što uključuje planiranje projekata te koji su važni zahtjevi koje pri tome treba zadovoljiti?",
+    "answer": "Planiranje projekata uključuje:  Određivanje zadataka i njihovih međusobnih ovisnosti o Svaki zadatak bi trebao imati jasno definiranu i provjerljivu isporuku i vremenski rok  Određivanje poretka obavljanja zadataka i potrebnih resursa o Zadaci bi se trebali poredati tako da se izvedu u što kraće vrijeme, bez praznog hoda  Predviđanje trajanja projekta o Dobrim planiranjem zadataka i količine vremena koja je za njih potrebna  Predviđanje troškova o Ovisi o uspješnosti procjene veličine i/ili složenosti projekta  Mehanizmi praćenja i kontrole kvalitete Trokut zahtjeva, često proturječnih u razvoju programskog proizvod, koje treba pokriti planiranjem su: trajanje, troškovi i kvaliteta. Nemoguće je postići brz, jeftin i kvalitetan projekt, ali na uštrb jednog zahtjeva, moguće je postići dobre rezultate u druga dva (npr. brz i jeftin projekt vrlo vjerojatno neće biti naročito kvalitetno izveden).",
+    "link": "https://blog.pragmaticengineer.com/how-to-lead-a-project-in-software-development/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 32,
+  "fields": {
+    "lecture_id": 2,
+    "question": "Čemu služi, što sadrži i koja su pravila za strukturu podjele posla (eng. Work breakdown structure)?",
+    "answer": "Struktura podjele posla (eng. Work breakdown structure, WBS) je tehnika za podjelu posla u manje zadatke što je neophodno prilikom planiranje složenijeg projekta. WBS uključuje definiciju isporuka (eng. deliverables) i ključnih datuma (eng. milestones) u formi WBS stabla koje sadrži:  Poslove složene po razinama  Najviše razine su obično veliki poslovi zajednički svim projektima (npr. specifikacija zahtjeva, dizajn, verifikacija)  Poslove više razine se granaju na više poslova niže razine  Poslove najniže razine zovu se zadaci (listovi stabla) Pravila za konstrukciju WBS stabla su:  WBS mora imati strukturu stabla, dakle, bez petlji i ciklusa (iterativni poslovi se definiraju procesom, a ne u WBS-u)  Opisi zadataka moraju biti razumljivi i nedvosmisleni  Svaki zadatak mora imati nedvosmislen kriterij za provjeru da je izvršen (najčešće je to isporuka - deliverable)  Sve isporuke moraju biti identificirane s WBS-om, tj. svaka isporuka potrebna u projektu mora biti proizvod nekog od zadataka  Uspješno izvršenje svih poslova neke razine mora rezultirati uspješnim izvršenjem posla na razini iznad",
+    "link": "https://www.youtube.com/watch?v=BVcd9uy9kuQ"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 33,
+  "fields": {
+    "lecture_id": 2,
+    "question": "Što je, od čega se sastoji i čemu služi program evaluation and review technique?",
+    "answer": "Program Evaluation and Review Technique (PERT) je tehnika za izradu grafa koji prikazuje međusobne ovisnosti i trajanja svih zadataka u nekom poslu. Vrhovi (čvorovi) grafa predstavljaju zadatke, oznake vrhova prikazuju trajanja zadataka, a bridovi (veze) grafa povezuju zadatak sa svim zadacima koji o njemu ovise (strelica pokazuje u tom smjeru). Pomoću grafa se određuju vrijeme izvršavanja čitavog posla, kritični put, te dozvoljena kašnjenja zadataka",
+    "link": "https://www.youtube.com/watch?v=i160aaBX7mE"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 34,
+  "fields": {
+    "lecture_id": 2,
+    "question": "Što je kritični put kod program evaluation and review technique-a?",
+    "answer": "- Kritični put je niz ovisnih zadataka čije izvršenje traje koliko i minimalno moguće trajanje čitavog posla - Kritični put (ovisnosti u njemu) je razlog zbog kojeg čak ni korištenjem više resursa nije moguće ubrzati završetak posla - Kritični put ne mora biti jedinstven, ali svi mogući kritični putovi jednako traju",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 35,
+  "fields": {
+    "lecture_id": 2,
+    "question": "Objasni metodologiju CAPIR metode za poboljšanje preporuka API-ja u procesu generiranja koda.",
+    "answer": "Prvi korak -> raščlaniti zadatak gdje se LLM treba koristiti na manji niz podzadataka. Drugi korak -> pretraživanje API-ja gdje CAPIR pretražuje dokumentaciju kako bi pronašao relevantne API-je za svaki podzadatak. Treći korak -> rangiranje API-ja, CAPIR ocjenjuje i filtrira pronađene API-je kako bi preporučio samo one najrelevantnije za zadani podzadatak.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 36,
+  "fields": {
+    "lecture_id": 2,
+    "question": "Kvalitetna dokumentacija ASAT pravila trebala bi sadržavati koja tri ključna elementa i na što bi oni trebali odgovarati?",
+    "answer": "Što? - Objašnjenje što aktivira određeno pravilo, odnosno koji problem u kodu se detektira. Zašto? - Razlog zašto je određeno pravilo važno te kakve posljedice može imati ako se ne poštuje. Kako ispraviti? - Konkretne smjernice ili primjeri kako riješiti problem koji je alat detektirao.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 37,
+  "fields": {
+    "lecture_id": 2,
+    "question": "Što je Mask-Catcher i kako glasi njegova metodologija?",
+    "answer": "Mask-Catcher je automatizirani sustav koji koristi mehanizam filtriranja za detekciju maskiranih aplikacija. Prvi korak -> razvrstavanje aplikacija prema nesuglasju između opisa aplikacije i recenzija korisnika. Drugi korak -> stvaranje mreže preporuka među aplikacijama pomoću međusobnih preporuka. Treći korak -> analiza sličnosti za otkrivanje aplikacija koje koriste skrivene funkcionalnosti.",
+    "link": "https://www.ittc.ku.edu/~bluo/pubs/zhao24icpc.pdf"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "chatbot",
+    "model": "qaentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "j4nrt0okxgacv9yaleulk9atm9j4cme2",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hAggODSvWcgM8wgVQNJaVeNd9cmXej2v_f-JhKsS03r4DlNJC5Ci9PvhpCf3HZAD2j3LnNvyzyh3BV50CFvnfh1Pdy_gwqjfmvjFWCGAo4KsopeA6C22UYK4F2wnotXOrgSYqACiODQOO3ZmnNxJN4fDOo4wA:1u3yq1:DUuAkBS5zUIpagDv5yziLZjanuagTPox9OoTF2gAN-g",
+    "expire_date": "2025-04-27T15:01:37.487Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "np7jcfj04zfu4gt7d7dsc09gi03v7bb5",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hAggODSvWcgM8wgVQNJaVeNd9cmXej2v_f-JhKsS03r4DlNJC5Ci9PvhpCf3HZAD2j3LnNvyzyh3BV50CFvnfh1Pdy_gwqjfmvjFWCGAo4KsopeA6C22UYK4F2wnotXOrgSYqACiODQOO3ZmnNxJN4fDOo4wA:1u3yrr:DSVXOttNN7re01W3V5ghN3BlOydLNfajPxbypavs0oc",
+    "expire_date": "2025-04-27T15:03:31.575Z"
+  }
+}
+]
