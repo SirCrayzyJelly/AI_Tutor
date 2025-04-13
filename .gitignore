@@ -32,6 +32,8 @@ staticfiles/
 *.pdf
 *.xlsx
 *.csv
+*.pdf
+*.docx
 
 # Testing & Coverage
 .coverage
