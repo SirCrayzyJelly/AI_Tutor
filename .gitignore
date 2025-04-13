@@ -32,7 +32,7 @@ staticfiles/
 *.pdf
 *.xlsx
 *.csv
-*.pdf
+*.txt
 *.docx
 
 # Testing & Coverage
