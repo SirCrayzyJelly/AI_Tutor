@@ -1,0 +1,52 @@
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+*/__pycache__/
+*/migrations/__pycache__/
+local_settings.py
+db.sqlite3
+*.sqlite3-journal
+
+# Python
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Jupyter
+*.ipynb
+
+# Environments
+.env
+.venv/
+venv/
+
+# Static & Media
+media/
+static/
+staticfiles/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Misc
+*.pdf
+*.xlsx
+*.csv
+*.txt
+*.docx
+
+# Testing & Coverage
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# MyPy
+.mypy_cache/
