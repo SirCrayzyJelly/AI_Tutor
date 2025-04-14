@@ -10,7 +10,7 @@ from Backend.vektorizacija import qa_base
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "Backend")))
 
 # Postavi API ključ
-API_KEY = "AIzaSyDPmp1M1bSuzAQfOuMMken6ZzzFYJ49CYM"  # <-- OBAVEZNO unesi svoj API ključ ovdje
+API_KEY = ""  # <-- OBAVEZNO unesi svoj API ključ ovdje
 genai.configure(api_key=API_KEY)
 
 # Inicijalizacija FastAPI aplikacije
