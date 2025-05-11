@@ -336,7 +336,7 @@
   "pk": 2,
   "fields": {
     "password": "pbkdf2_sha256$1000000$tDv1zIwIlB7AiPN3gvPHMf$FOgrIxmQGxpNCigzv2/dtsGC5+uba0DGXWTH0NsRQnw=",
-    "last_login": null,
+    "last_login": "2025-05-11T21:05:22.386Z",
     "is_superuser": false,
     "username": "user",
     "first_name": "",
@@ -394,6 +394,13 @@
   "pk": 2,
   "fields": {
     "name": "Ugradbeni računalni sustavi"
+  }
+},
+{
+  "model": "chatbot.subject",
+  "pk": 3,
+  "fields": {
+    "name": "Operacijski sustavi"
   }
 },
 {
@@ -2685,6 +2692,831 @@
   }
 },
 {
+  "model": "chatbot.qaentry",
+  "pk": 209,
+  "fields": {
+    "lecture_id": 1,
+    "subject": 3,
+    "question": "Što je operacijski sustav",
+    "answer": "Program koji se stalno izvršava u računalu, jezgra operacijskog sustava. Ostalo su sistemski programi, aplikacije i dr.",
+    "link": "https://www.youtube.com/watch?v=pVzRTmdd9j0"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 210,
+  "fields": {
+    "lecture_id": 2,
+    "subject": 3,
+    "question": "Što je sklopovlje računala i kako je povezano s operacijskim sustavom?",
+    "answer": "Sklopovlje računala obuhvaća komponente kao što su procesor (CPU), memorija, I/O moduli (kontroleri za ulazno-izlazne uređaje) i sabirnice. Operacijski sustav koristi ove komponente za izvršavanje zadataka – upravlja memorijom, procesima i uređajima putem drajvera i kontrolera. OS je most između korisničkih aplikacija i sklopovlja.",
+    "link": "https://blog.payrollschedule.net/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 211,
+  "fields": {
+    "lecture_id": 2,
+    "subject": 3,
+    "question": "Koji su osnovni koraci u izvršavanju naredbe od strane CPU-a?",
+    "answer": " CPU izvršava naredbe kroz ciklus koji uključuje: dobavljanje naredbe (fetch), dekodiranje naredbe (decode), dobavljanje operanda, izvršavanje (execute) i spremanje rezultata (store). Taj proces omogućuje sekvencijalno izvođenje instrukcija.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 212,
+  "fields": {
+    "lecture_id": 2,
+    "subject": 3,
+    "question": "Koji su glavni registri u CPU-u i čemu služe?",
+    "answer": "Glavni registri uključuju: Program Counter(PC) koji sadrži adresu sljedeće instrukcije, Instrukcijski register (IR) koji drži trenutno izvršavanu naredbu, Program Status Word (PSW) što su statusni bitovi za prekide, privilegije itd. i Dana i Address registri koji se koriste za operaciju s podacima i adresama",
+    "link": "https://www.geeksforgeeks.org/what-is-register-digital-electronics/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 213,
+  "fields": {
+    "lecture_id": 2,
+    "subject": 3,
+    "question": "Kako funkcioniraju I/O operacije u računalu?",
+    "answer": "I/O operacije se odvijaju pomoću drajvera (softverska komponenta) i I/O kontrolera (hardverska komponenta). Podaci putuju između CPU-a i vanjskih uređaja, pri čemu se koriste registarske memorije (buffere) i različite linije (kontrolne, adresne, podatkovne).",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 214,
+  "fields": {
+    "lecture_id": 2,
+    "subject": 3,
+    "question": "Što su prekidi (interrupts) i čemu služe?",
+    "answer": "Prekidi omogućuju I/O uređajima da prekinu trenutni CPU zadatak kada završe operaciju, signalizirajući potrebu za obradom. CPU tada poziva odgovarajući prekidni program (ISR) i nakon obrade nastavlja s izvornim zadatkom. Time se CPU-ova učinkovitost značajno povećava.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 215,
+  "fields": {
+    "lecture_id": 2,
+    "subject": 3,
+    "question": "Što je Interrupt Vector Table (IVT) i koja je njena uloga?",
+    "answer": "IVT je tablica u memoriji koja sadrži adrese svih prekidnih rutina (ISR). Svaki tip prekida je povezan s odgovarajućom adresom funkcije. Prije uključivanja prekida, OS mora inicijalizirati ovu tablicu.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 216,
+  "fields": {
+    "lecture_id": 2,
+    "subject": 3,
+    "question": "Koje su vrste prekida u računalu?",
+    "answer": "Postoje različite vrste prekida: I/O prekidi (npr. završetak ispisa), Programski izuzeci (npr. ilegalne instrukcije), timer prekidi, hardverske greške, softverski prekidi, ...",
+    "link": "https://www.geeksforgeeks.org/interrupts/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 217,
+  "fields": {
+    "lecture_id": 2,
+    "subject": 3,
+    "question": "Što je Direct Memory Access (DMA)?",
+    "answer": "DMA omogućuje I/O uređajima da izravno prenose podatke u memoriju bez uključivanja CPU-a u svaki prijenosni ciklus. CPU samo inicijalizira i završava proces, a time se CPU rasterećuje i povećava se ukupna brzina sustava.",
+    "link": "https://www.youtube.com/watch?v=M16l_ymlfcs"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 218,
+  "fields": {
+    "lecture_id": 2,
+    "subject": 3,
+    "question": "Koji su tipovi memorije u računalima?",
+    "answer": "Tipovi memorije uključuju:Elektronske (RAM, ROM, EEPROM, Flash),Optičke (CD, DVD),Magnetske (diskovi, trake),Memorija u oblaku (npr. Dropbox),Cache memorija (brza međumemorija između CPU i RAM-a).",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 219,
+  "fields": {
+    "lecture_id": 2,
+    "subject": 3,
+    "question": "Što je cache i kako funkcionira?",
+    "answer": "Cache je brza memorija koja koristi princip lokalnosti – čuvanje često korištenih podataka blizu procesora. Ako se podaci nalaze u cacheu (cache hit), pristup je brz, dok u suprotnom (cache miss) podatak mora biti dohvaćen iz sporije memorije.",
+    "link": "https://www.bing.com/search?qs=UT&pq=what+is+cache+memo&sk=CSYN1&sc=15-18&pglt=425&q=what+is+cache+memory&cvid=1856a3afbfc545ccab5871c6170aa704&gs_lcrp=EgRlZGdlKgcIABAAGPkHMgcIABAAGPkHMgYIARBFGDkyBggCEAAYQDIGCAMQABhAMgYIBBAAGEAyBggFEAAYQDIGCAYQABhAMgYIBxAAGEAyBggIEAAYQNIBCTEwMDEzajBqMagCCLACAQ&FORM=ANNTA1&PC=U531"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 220,
+  "fields": {
+    "lecture_id": 2,
+    "subject": 3,
+    "question": "Koja je razlika između SSD-a i tvrdog diska (HDD)?",
+    "answer": "SSD-ovi su brži, lakši, tiši, otporniji i troše manje energije. Međutim, imaju višu cijenu, manji kapacitet i ograničen broj ciklusa pisanja. HDD-ovi su jeftiniji s većim kapacitetom, ali sporiji.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 221,
+  "fields": {
+    "lecture_id": 2,
+    "subject": 3,
+    "question": "Kako su se operacijski sustavi razvijali kroz povijest?",
+    "answer": "Evolucija OS-a uključuje:Serijsko izvršavanje bez OS-a, Jednostavni batch sustavi – s monitorom koji izvršava niz poslova,Multiprogramirani batch sustavi – podrška za više programa u memoriji,Time-sharing sustavi – više korisnika koristi sustav interaktivno.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 222,
+  "fields": {
+    "lecture_id": 2,
+    "subject": 3,
+    "question": "Što je multiprogramiranje i koje su njegove prednosti?",
+    "answer": " Multiprogramiranje omogućuje više programa da istovremeno budu u memoriji. Kada jedan čeka na I/O, drugi se može izvršavati. To povećava iskoristivost CPU-a i smanjuje prosječno vrijeme odziva.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 223,
+  "fields": {
+    "lecture_id": 2,
+    "subject": 3,
+    "question": "Što su Time – sharing sustavi?",
+    "answer": "Sustavi gdje više korisnika (svaki na svom terminalu) mogu istovremeno koristiti sustav. Naglašava se interaktivnost gdje se više privilegira vrijeme odziva nego iskoristivost procesora",
+    "link": "https://www.geeksforgeeks.org/time-sharing-operating-system/#:~:text=Time-sharing%20is%20a%20logical%20extension%20of%20multiprogramming.%20The,system%20allows%20multiple%20users%20to%20share%20computers%20simultaneously."
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 224,
+  "fields": {
+    "lecture_id": 3,
+    "subject": 3,
+    "question": "Koje osnovne usluge pruža operacijski sustav?",
+    "answer": "Operacijski sustav pruža sljedeće osnovne usluge: upravljanje procesima, memorijom, sekundarnom memorijom, I/O sustavom, datotekama, zaštitom, umrežavanjem te dodatne usluge poput detekcije pogrešaka i dodjele resursa.",
+    "link": "https://www.geeksforgeeks.org/functions-of-operating-system/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 225,
+  "fields": {
+    "lecture_id": 3,
+    "subject": 3,
+    "question": "Što je proces i kako OS upravlja procesima?",
+    "answer": "Proces je program u izvođenju. OS upravlja stvaranjem, izvršavanjem, zaustavljanjem i uništavanjem procesa, sinkronizacijom među njima, komunikacijom i izbjegavanjem zastoja (deadlocka).",
+    "link": "https://www.geeksforgeeks.org/process-management-in-operating-system/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 226,
+  "fields": {
+    "lecture_id": 3,
+    "subject": 3,
+    "question": "Kako OS upravlja memorijom?",
+    "answer": "OS prati koji dio memorije koristi koji proces, odlučuje koje procese smjestiti gdje i kada, te alocira i dealocira memoriju prema potrebi.",
+    "link": "https://www.tutorialspoint.com/operating_system/os_memory_management.htm"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 227,
+  "fields": {
+    "lecture_id": 3,
+    "subject": 3,
+    "question": "Zašto je potrebna sekundarna memorija i kako OS upravlja njome?",
+    "answer": "Sekundarna memorija (npr. diskovi) koristi se jer glavna memorija nije postojana i ima ograničen kapacitet. OS upravlja logičkim formatiranjem, particioniranjem, alokacijom prostora i rasporedom operacija nad diskom.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 228,
+  "fields": {
+    "lecture_id": 3,
+    "subject": 3,
+    "question": "Što je I/O sustav i koja je njegova uloga?",
+    "answer": "I/O sustav omogućuje korisniku i programima rad s vanjskim uređajima. Upravljanjem bufferima, cacheom i spoolingom, I/O sustav prikriva složenost hardvera i koristi device drivere za komunikaciju s uređajima.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 229,
+  "fields": {
+    "lecture_id": 3,
+    "subject": 3,
+    "question": "Kako operacijski sustav upravlja datotekama?",
+    "answer": "OS omogućuje kreiranje, brisanje, čitanje, pisanje i organizaciju datoteka i direktorija. Također osigurava pristupne kontrole i hijerarhijsku organizaciju.",
+    "link": "https://www.tutorialspoint.com/operating_system/os_file_management.htm"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 230,
+  "fields": {
+    "lecture_id": 3,
+    "subject": 3,
+    "question": " Koja je razlika između zaštite i sigurnosti u OS-u?",
+    "answer": "Zaštita se odnosi na kontrolu pristupa procesima i korisnicima, dok se sigurnost odnosi na obranu od neautoriziranih unutarnjih i vanjskih napada.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 231,
+  "fields": {
+    "lecture_id": 3,
+    "subject": 3,
+    "question": "Kako OS podržava umreženje?",
+    "answer": "OS omogućuje razmjenu informacija među korisnicima i programima na lokalnim i udaljenim računalima, te pristup mrežnim resursima i internetu.",
+    "link": "https://www.tutorialspoint.com/operating_system/os_networking.htm"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 232,
+  "fields": {
+    "lecture_id": 3,
+    "subject": 3,
+    "question": "Što su korisnička sučelja u OS-u?",
+    "answer": "Korisnička sučelja omogućuju interakciju korisnika s OS-om. CLI (Command Line Interface) koristi se za tekstualni unos naredbi, dok GUI (Graphical User Interface) koristi vizualne elemente poput ikona i prozora.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 233,
+  "fields": {
+    "lecture_id": 3,
+    "subject": 3,
+    "question": "Što su sistemski programi?",
+    "answer": "Sistemski programi omogućuju korisnicima manipulaciju datotekama, dobivanje informacija o sustavu, razvoj i izvođenje programa, komunikaciju, te pristup sustavskim funkcijama.",
+    "link": "https://www.javatpoint.com/system-programs"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 234,
+  "fields": {
+    "lecture_id": 3,
+    "subject": 3,
+    "question": "Što su sistemski pozivi i koja je njihova uloga?",
+    "answer": "Sistemski pozivi su posrednici između korisničkog programa i OS-a. Omogućuju programima pristup funkcijama OS-a poput otvaranja datoteka, stvaranja procesa itd. Obično se pozivaju preko API-ja.",
+    "link": "https://www.geeksforgeeks.org/system-calls-in-operating-system/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 235,
+  "fields": {
+    "lecture_id": 3,
+    "subject": 3,
+    "question": "Koji su primjeri sistemskih poziva u radu s datotekama?",
+    "answer": "Tipični sistemski pozivi u radu s datotekama uključuju: open, read, write, close. Oni omogućuju otvaranje, čitanje i pisanje u datoteke te njihovo zatvaranje.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 236,
+  "fields": {
+    "lecture_id": 3,
+    "subject": 3,
+    "question": "Koji su osnovni modeli strukture OS-a?",
+    "answer": "Postoje tri osnovna modela: monolitni (sve u jednom), slojeviti (funkcije podijeljene po slojevima) i mikrojezgreni (samo osnovne funkcije u kernelu, ostalo u user space-u).",
+    "link": "https://www.studytonight.com/operating-system/structure-of-operating-system"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 237,
+  "fields": {
+    "lecture_id": 4,
+    "subject": 3,
+    "question": "Što je proces i kako se razlikuje od programa?",
+    "answer": "Proces je aktivna instanca programa koji se izvršava, dok je program pasivan skup instrukcija. Proces uključuje kontekst, memorijske resurse, stanje i druge atribute.",
+    "link": "https://www.youtube.com/watch?v=vLwMl9qK4T8"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 238,
+  "fields": {
+    "lecture_id": 4,
+    "subject": 3,
+    "question": "Koji su dijelovi memorijskog prostora procesa?",
+    "answer": "Memorija procesa sastoji se od: tekstualnog dijela (kod), podatkovnog dijela (globalne varijable), stoga (lokalne varijable, parametri funkcija) i hrpe (dinamički alocirana memorija).",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 239,
+  "fields": {
+    "lecture_id": 4,
+    "subject": 3,
+    "question": "Kako se procesi pokreću u Unixu i Windowsima?",
+    "answer": "U Unixu se koristi funkcija fork() za stvaranje novog procesa, a zatim exec() za zamjenu koda procesa. U Windowsima se koristi CreateProcess() za stvaranje novog procesa s definiranim parametrima.",
+    "link": "https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 240,
+  "fields": {
+    "lecture_id": 4,
+    "subject": 3,
+    "question": "Što je zamjena konteksta (context switch)?",
+    "answer": "Zamjena konteksta je proces u kojem OS sprema stanje jednog procesa i učitava stanje drugog procesa iz PCB-a (Process Control Block), omogućujući multitasking.",
+    "link": "https://www.geeksforgeeks.org/context-switching-in-operating-system/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 241,
+  "fields": {
+    "lecture_id": 4,
+    "subject": 3,
+    "question": "Koja su stanja procesa?",
+    "answer": "Proces može biti u stanju: new, ready, running, waiting (blocked), terminated. Proces prelazi između ovih stanja ovisno o događajima u sustavu.",
+    "link": "https://www.youtube.com/watch?v=jZ_6PXoaoxo"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 242,
+  "fields": {
+    "lecture_id": 4,
+    "subject": 3,
+    "question": "Što se događa pri završetku procesa?",
+    "answer": "Proces može završiti sam (pozivom exit()) ili biti prisilno završavan (npr. kill() pozivom). Završeni proces može postati \"zombie\" ako roditelj ne pokupi njegov status (kroz wait() ili signal handler).",
+    "link": "https://www.geeksforgeeks.org/zombie-process-in-operating-system/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 243,
+  "fields": {
+    "lecture_id": 4,
+    "subject": 3,
+    "question": "Što je raspoređivanje procesa i koji su njegovi tipovi?",
+    "answer": "Raspoređivanje procesa određuje koji će proces koristiti CPU. Postoje long-term, medium-term, short-term i I/O raspoređivači, koji zajedno upravljaju procesima u sustavu.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 244,
+  "fields": {
+    "lecture_id": 4,
+    "subject": 3,
+    "question": "Koja je razlika između preemptivnog i ne-preemptivnog raspoređivanja?",
+    "answer": "Preemptivno raspoređivanje omogućuje OS-u da prekine proces i preda CPU drugom procesu. Ne-preemptivno dopušta da proces koristi CPU dok ne završi ili se blokira.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 245,
+  "fields": {
+    "lecture_id": 4,
+    "subject": 3,
+    "question": "Koje su popularne strategije raspoređivanja?",
+    "answer": "FIFO (first in first out), Round Robin gdje svi procesi dobivaju isti vremenski kvantum, Priority Scheduling u kojem procesi s većim prioritetom imaju prednost, uz mogućnost \"aging\" da se izbjegne izgladnjivanje",
+    "link": "https://www.studytonight.com/operating-system/cpu-scheduling"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 246,
+  "fields": {
+    "lecture_id": 4,
+    "subject": 3,
+    "question": "Što su dretve i zašto ih koristimo?",
+    "answer": "Dretva je lagana jedinica izvršavanja unutar procesa. Omogućuju paralelizam, dijeljenje resursa i bolju iskorištenost CPU-a jer se unutar istog procesa mogu paralelno izvršavati.",
+    "link": "https://www.youtube.com/watch?v=hN2Yrf4tqTY"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 247,
+  "fields": {
+    "lecture_id": 4,
+    "subject": 3,
+    "question": "Koje su prednosti dretvi nad procesima?",
+    "answer": "Dretve su lakše i brže za kreiranje, brže mijenjaju kontekst, lakše dijele memoriju, omogućuju paralelno izvršavanje te bolje performanse u višedretvenim (multithreaded) i višejedrnim (multicore) sustavima.",
+    "link": "https://www.youtube.com/watch?v=hwTYDQ0zZOw"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 248,
+  "fields": {
+    "lecture_id": 4,
+    "subject": 3,
+    "question": "Što su POSIX dretve i kako se koriste?",
+    "answer": "POSIX Threads (Pthreads) su standardno sučelje za rad s dretvama u C-u. Koriste se pomoću pthread_create, pthread_exit, pthread_join i drugih funkcija, uz uključivanje <pthread.h>.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 249,
+  "fields": {
+    "lecture_id": 5,
+    "subject": 3,
+    "question": "Što znači usklađivanje poslovnih procesa?",
+    "answer": "Usklađivanje poslovnih procesa označava proces prilagođavanja i optimizacije postojećih aktivnosti u skladu s poslovnim ciljevima i strategijama poduzeća. To uključuje standardizaciju, integraciju, kao i uvođenje promjena koje omogućuju efikasniji rad i bolju isporuku vrijednosti korisnicima.",
+    "link": "https://www.procesnaanaliza.hr/uskladivanje-procesa/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 250,
+  "fields": {
+    "lecture_id": 5,
+    "subject": 3,
+    "question": "Koji su ciljevi usklađivanja procesa?",
+    "answer": "Ciljevi usklađivanja procesa uključuju povećanje efikasnosti, smanjenje troškova, osiguranje kvalitete, poboljšanje korisničkog iskustva te usklađenost s regulatornim zahtjevima i strategijom poduzeća.",
+    "link": "https://boc-group.com/blog/sto-je-uskladivanje-procesa-i-zasto-je-vazno/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 251,
+  "fields": {
+    "lecture_id": 5,
+    "subject": 3,
+    "question": "Koje su metode za usklađivanje poslovnih procesa?",
+    "answer": "Postoje različite metode za usklađivanje poslovnih procesa, uključujući Business Process Reengineering (BPR), Lean, Six Sigma, TQM (Total Quality Management) i ISO standarde. Svaka metoda naglašava različite aspekte kao što su eliminacija gubitaka, kvaliteta, učinkovitost ili dokumentacija.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 252,
+  "fields": {
+    "lecture_id": 5,
+    "subject": 3,
+    "question": "Koji su izazovi kod usklađivanja procesa?",
+    "answer": "Neki od glavnih izazova uključuju otpor zaposlenika prema promjenama, nedostatak jasne strategije, lošu komunikaciju, nedovoljno resursa te tehničke prepreke poput zastarjele IT infrastrukture.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 253,
+  "fields": {
+    "lecture_id": 5,
+    "subject": 3,
+    "question": "Kako izgleda primjer usklađivanja procesa u organizaciji?",
+    "answer": "Primjer može uključivati redizajn procesa zaprimanja narudžbi kako bi se smanjilo vrijeme obrade, uvođenje ERP sustava za bolju integraciju odjela te standardizaciju procedura kroz ISO norme kako bi se osigurala konzistentna kvaliteta.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 254,
+  "fields": {
+    "lecture_id": 5,
+    "subject": 3,
+    "question": "Koja je uloga IT-a u usklađivanju procesa?",
+    "answer": "Informacijska tehnologija omogućuje digitalizaciju, automatizaciju i integraciju poslovnih procesa, čime se smanjuju greške, ubrzava obrada i poboljšava praćenje performansi. IT sustavi također omogućuju bolje donošenje odluka kroz dostupnost podataka u stvarnom vremenu.",
+    "link": "https://www.cio.com/article/243716/role-of-it-in-business-process-management.html"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 255,
+  "fields": {
+    "lecture_id": 5,
+    "subject": 3,
+    "question": "Koji alati se koriste za modeliranje i analizu procesa?",
+    "answer": "Najčešće korišteni alati uključuju BPMN (Business Process Model and Notation), ARIS, Bizagi, Lucidchart, Visio te razne ERP sustave poput SAP-a. Ovi alati omogućuju vizualizaciju, analizu i optimizaciju procesa.",
+    "link": "https://kissflow.com/bpm/business-process-modeling-tools/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 256,
+  "fields": {
+    "lecture_id": 5,
+    "subject": 3,
+    "question": "Što je procesna mapa (procesni dijagram)?",
+    "answer": "Procesna mapa je grafički prikaz toka aktivnosti unutar procesa. Omogućuje bolji uvid u tijek rada, identifikaciju uskih grla i potencijalnih poboljšanja, te služi kao dokumentacija za standardizaciju procesa.",
+    "link": "https://www.lucidchart.com/pages/process-map"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 257,
+  "fields": {
+    "lecture_id": 5,
+    "subject": 3,
+    "question": "Koji su problemi s semaforima?",
+    "answer": "wait(S) i signal(S) mogu biti \"porazbacani\" na raznim mjestima u više procesa. Postaje jako teško pratiti njihovu funkciju i efekte koje imaju na izvršavanje, moraju se ispravno koristiti u svim procesima jer ako je jedan krivi proces možeuzrokovati probleme cijelom skupu procesa",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 258,
+  "fields": {
+    "lecture_id": 2,
+    "subject": 3,
+    "question": "Što je Ljuska/Shell?",
+    "answer": "program koji pruža CLI za interakciju s operacijskim sustavom. Bash je jedna od najčešće korištenih Unix/Linux ljuski.",
+    "link": "https://www.youtube.com/watch?v=I4EWvMFj37g"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 259,
+  "fields": {
+    "lecture_id": 2,
+    "subject": 3,
+    "question": "Kako se izrađuje i pokreće Bash skripta?",
+    "answer": "Bash skripta je tekstualna datoteka koja sadrži niz naredbi za izvršavanje. Poželjno je da ima ekstenziju .sh, počinje s #!/bin/bash, a može se pokrenuti s : ./skripta.sh (ako je izvršna), bash skripta.sh ili . skripta.sh (sourcing)",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 260,
+  "fields": {
+    "lecture_id": 2,
+    "subject": 3,
+    "question": "Kako funkcioniraju dopuštenja (permissions) u Linuxu?",
+    "answer": "Dopuštenja definiraju tko može čitati, pisati i izvršavati datoteke ili direktorije. Raspoređena su u tri seta: vlasnik, grupa, ostali. Prikazuju se pomoću ls -al, a podešavaju pomoću chmod.",
+    "link": "https://www.tutorialspoint.com/unix/unix-file-permission.htm"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 261,
+  "fields": {
+    "lecture_id": 2,
+    "subject": 3,
+    "question": "Kako se mijenjaju dopuštenja u Bashu?",
+    "answer": "Dopuštenja se mjenjaju naredbom chmod i može poprimit 2 formata numerički (npr. Chmod 775 datoteka) ili simbolički (npr. Chmod u+x skripta.sh)",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 262,
+  "fields": {
+    "lecture_id": 2,
+    "subject": 3,
+    "question": "Što su wildcards?",
+    "answer": "Wildcards su zamjenski znakovi koji omogućuju selekciju više datoteka kao npr \"*\" zamjenjuje bilo koji broj znakova, \"?\" Zamjenjuje jedan znak,  \" [ ABC ] \"  odabere niz znakova te \"[!ABC]\" sve osim tih znakova",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 263,
+  "fields": {
+    "lecture_id": 2,
+    "subject": 3,
+    "question": "Kako se koriste argumenti u Bash skriptama?",
+    "answer": "Argumenti se pozivaju s $1, $2, ..., $@ (svi argumenti), $# (broj argumenata), a $0 daje ime skripte.",
+    "link": "https://www.tutorialspoint.com/unix/unix-special-variables.htm"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 264,
+  "fields": {
+    "lecture_id": 3,
+    "subject": 3,
+    "question": "Kako funkcionira grananje u Bashu?",
+    "answer": "Bash koristi if, elif, else strukture. Uvjeti se mogu testirati sa [ ], [[ ]], (( )) ili pomoću naredbe test.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 265,
+  "fields": {
+    "lecture_id": 3,
+    "subject": 3,
+    "question": "Zašto koristiti Bash skripte?",
+    "answer": "Bash skripte služe za automatizaciju ponavljajućih zadataka, sistemsku administraciju, obradu datoteka, prilagodbu okruženja te integraciju sa softverskim alatima.",
+    "link": "https://linuxhandbook.com/bash-script-reasons/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 266,
+  "fields": {
+    "lecture_id": 3,
+    "subject": 3,
+    "question": "Što radi naredba greb?",
+    "answer": "grep je moćan alat za pretraživanje teksta unutar datoteka. Evo primjer primjene grab naredbe: grep \"traženi_tekst\" naziv_datoteke.txt",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 267,
+  "fields": {
+    "lecture_id": 4,
+    "subject": 3,
+    "question": "Koji su sigurnosni rizici povezani s Bash skriptama?",
+    "answer": "Bash skripte omogućuju automatizaciju zadataka i upravljanje sustavom, ali ako nisu pažljivo napisane, mogu omogućiti neovlašteni pristup, izvršavanje zlonamjernih naredbi i ugrožavanje integriteta sustava.",
+    "link": "https://www.linuxjournal.com/content/securing-bash-scripts"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 268,
+  "fields": {
+    "lecture_id": 4,
+    "subject": 3,
+    "question": "Zašto je hardcodanje lozinki u skriptama nesigurno?",
+    "answer": "Uključivanje lozinki direktno u skriptu (hardcoded credentials) je nesigurno jer može dovesti do kompromitacije ako netko dobije pristup skripti. Lozinke trebaju biti pohranjene sigurno ili dohvaćene iz vanjskih izvora s pristupnim kontrolama.",
+    "link": "https://cheatsheetseries.owasp.org/cheatsheets/Credential_Storage_Cheat_Sheet.html"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 269,
+  "fields": {
+    "lecture_id": 4,
+    "subject": 3,
+    "question": "Kako neispravno korištenje navodnika može dovesti do grešaka u Bash skriptama?",
+    "answer": "Ako se argumenti ne stavljaju u dvostruke navodnike, Bash može pogrešno protumačiti razmake, što može rezultirati neželjenim ponašanjem poput pogrešnog tumačenja imena datoteka ili izvršavanja dodatnih komandi.",
+    "link": "https://mywiki.wooledge.org/Quotes"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 270,
+  "fields": {
+    "lecture_id": 4,
+    "subject": 3,
+    "question": "Pitanje: Što je Bash command injection i kako ga izbjeći?",
+    "answer": "Command injection omogućuje korisniku da ubaci i izvrši proizvoljne naredbe unutar skripte. To se može spriječiti pravilnim korištenjem navodnika i validacijom korisničkog unosa.",
+    "link": "https://owasp.org/www-community/attacks/Command_Injection"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 271,
+  "fields": {
+    "lecture_id": 4,
+    "subject": 3,
+    "question": "Koji je poznat primjer katastrofalne Bash skripte u praksi?",
+    "answer": "Jedna verzija Steama za Linux imala je skriptu koja je mogla izbrisati cijeli korisnički direktorij (rm -rf \"$STEAMROOT/\"*) zbog pogrešno postavljene varijable STEAMROOT, što je dovelo do gubitka svih korisničkih podataka.",
+    "link": "https://www.youtube.com/watch?v=qzZLvw2AdvM"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 272,
+  "fields": {
+    "lecture_id": 4,
+    "subject": 3,
+    "question": "Kako pravilno postaviti putanju do direktorija skripte?",
+    "answer": "Za određivanje direktorija gdje se nalazi skripta sigurno je koristiti readlink ili dirname \"$0\" umjesto samo ${0%/*}, što može uzrokovati greške ako se skripta pokreće iz različitih okruženja.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 273,
+  "fields": {
+    "lecture_id": 4,
+    "subject": 3,
+    "question": "Što je eskalacija privilegija?",
+    "answer": "Eskalacija privilegija je iskorištavanje propusta u sustavu kako bi se dobio viši pristup, poput administratorskih ovlasti. To uključuje loše konfigurirane dozvole, stare softverske greške i slabosti u lozinkama.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 274,
+  "fields": {
+    "lecture_id": 4,
+    "subject": 3,
+    "question": "Koja je razlika između stvarnog i efektivnog UID-a?",
+    "answer": "Stvarni UID (rUID) označava stvarnog korisnika koji je pokrenuo proces, dok efektivni UID (eUID) određuje koje privilegije proces koristi tijekom izvršavanja, posebno važno za SUID datoteke.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 275,
+  "fields": {
+    "lecture_id": 4,
+    "subject": 3,
+    "question": "Što su SUID datoteke i zašto su rizične?",
+    "answer": "SUID (Set User ID) omogućuje izvršavanje datoteke s privilegijama njenog vlasnika, često root-a. Ako takva datoteka sadrži ranjivost, napadač može preuzeti administratorske ovlasti.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 276,
+  "fields": {
+    "lecture_id": 4,
+    "subject": 3,
+    "question": "Kako provjeriti je li lozinka kompromitirana?",
+    "answer": "Možeš koristiti javne baze kompromitiranih lozinki, kao što je [SecLists], za usporedbu ili pogledati edukativne materijale o stvaranju jakih lozinki",
+    "link": "https://www.youtube.com/watch?v=yzGzB-yYKcc"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 277,
+  "fields": {
+    "lecture_id": 5,
+    "subject": 3,
+    "question": "Koja je razlika između jezgrenog načina rada i korisničkog načina rada?",
+    "answer": "Kod koji se izvršavau jezgrenom načinu rada može pristupiti bilo kojoj memorijskoj adresi i hardverskom resursu.  Također imaju visoka je razina privilegije, neograničen je pristup sklopovlju, potpuni pristup memoriji sustava te se konkretno odnosi na sam operacijski sustav.  Korisnički način rada imaju aplikacije na korisničkoj razini i imaju niske razine privilegija, ograničen pristup skopovlju, ograničen pristup memoriji sustava i izolirani su im problemi s aplikacijom.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 278,
+  "fields": {
+    "lecture_id": 5,
+    "subject": 3,
+    "question": "Koje operacije uključuju sistemske pozive?",
+    "answer": "Upravljanje procesima, upravljanje datotekama, upravljanje uređajima, održavanje i infomacije, komunikacija, sigurnost",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 279,
+  "fields": {
+    "lecture_id": 5,
+    "subject": 3,
+    "question": "Koje operacije ne uključuju sistemske pozive?",
+    "answer": "Aritmetičke i logičke operacije, pristup i manipuliranje varijablama, pozivanje funkcija unutar istog programa ili biblioteke.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 280,
+  "fields": {
+    "lecture_id": 5,
+    "subject": 3,
+    "question": "Što je proces? ",
+    "answer": "Instanca računalnog programa u izvođenju. Procesi su međusobno nezavisni, čak i ako izvode isti program koriste zasebne resurse.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 281,
+  "fields": {
+    "lecture_id": 5,
+    "subject": 3,
+    "question": "Za što je OS odgovoran ako govorimo o procesima?",
+    "answer": "Os je odgovoran za kreiranje i brisanje korisničkih i sistemskih procesa, raspoređivanje procesa, osiguravanje mehanizma za usklađivanje, komunikaciju i upravljanje zastojima, …",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 282,
+  "fields": {
+    "lecture_id": 5,
+    "subject": 3,
+    "question": "Objasni hijerarhiju procesa",
+    "answer": "Linux je više-procesni OS, ali direktno poziva samo init proces s PID=1 koji je stalno u stanju izvršavanja (running). Ostali procesi se mogu smatrati djecom (children) tog procesa.  Svaki proces ima roditelja (parent). Proces može imati puno braće i sestara (siblings). Siblings procesi su stvoreni od istog roditelja. Djeca mogu stvarati djecu. ",
+    "link": "https://www.youtube.com/watch?v=pSW9d3Oaie8"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 283,
+  "fields": {
+    "lecture_id": 5,
+    "subject": 3,
+    "question": "Što je signal?",
+    "answer": "Signal je oblik komunikacije. Što to znači? Proces prima objaijesti o događajima koji utječu na njega. Te objavjesti su signali koje može biti poslan od strane jezgre ili nekog drugog procesa. Prede nirani skup signala, svaki ima identi kacijski broj i simbolično ime. Kada proces primi signal, on može ga ignorirat, izvršiti zadanuu radnji ili izvršiti prilagođenu radnju",
+    "link": null
+  }
+},
+{
   "model": "contenttypes.contenttype",
   "pk": 1,
   "fields": {
@@ -2746,6 +3578,14 @@
   "fields": {
     "app_label": "sessions",
     "model": "session"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "5jdk4xi3ppl60j440dnv566g2q34icuu",
+  "fields": {
+    "session_data": ".eJxVjEEOgkAMRe8yazMpnSrg0j1nmLTTIqhhEgZWxrsLCQvd_vf-e7vI6zLEtdgcR3VXh-70uwmnp0070AdP9-xTnpZ5FL8r_qDFd1ntdTvcv8DAZdjevTTYtgaCvZHAOaFSUEpAgHW7dTAQNZrgAszJrOpBqzoQa7AgGNznC_D4ODo:1uEDrO:6jXzCtpVK7HNNNhRYmrDF6qce1LN18OWfBHAuwp5Sec",
+    "expire_date": "2025-05-25T21:05:22.388Z"
   }
 },
 {
