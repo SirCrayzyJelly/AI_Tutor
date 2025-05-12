@@ -33,5 +33,5 @@ Repozitorij za razvoj AI_Tutora u sklopu kolegija Programsko inženjerstvo
 * Potrebno postaviti nekakav standard za dokumentaciju (kako ćemo početi dokumentirati stvari tako počnite ispunjavati ove smjernice)
 
 
-
+![Ovdje se nalazi slika izrađenog PERT grafa s označenim kritičnim putem](https://github.com/SirCrayzyJelly/AI_Tutor/blob/main/Wiki%20slike/Logo.png)
 
