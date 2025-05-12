@@ -1,0 +1,84 @@
+11;Karakteristike polling-a?;Softver povremeno provjerava, gubljenje puno CPU ciklusa, pokre?e ga softver, javlja se periodi?no.
+11;Karakteristike prekida (Interrupt)?;CPU poduzima radnje samo ako dogodi se doga?aj, ne troši puno CPU ciklusa, pokre?e ga hardware ili software, javlja se u bilo koje vrijeme.
+11;Što je i ?emu služi NVIC?;Nested Vectored Interrupt Controller, koordinira više izvora prekida, omogu?uje ili onemogu?uje odre?eni prekid.
+11;Kako se omogu?uje prekid (interrupt)?;"1. Isprogramirajte periferni kontrolni registar da mu dopustimo generiranje prekida
+ 2. Isprogramirajte NVIC da mu dopustimo prihva?anje prekida"
+11;Korištenje LR registra prilikom obrade prekida; LR sprema kod koji opisuje ho?e li unstacking biti MSP ili PSP ovisno o tome je li se odvijala aritmeti?ka operacija prije prekida (ako nije onda MSP 09/0D). Tako?er ako je potrebno unutar ISR-a i?i u drugu subrutinu potrebno je spremiti LR.
+11;Auto-(un)stacking prilikom obrade prekida.;Unstaccking se doga?a automatski prilikom izlaska iz ISR-a te se brišu podatci u registrima koji su bili poslani na stack, a ostaju podatci u drugim registrima.
+11;Tablice prekidnih vektora i negativni brojevi prekida.;255 ukupno, System Exceptions (-16 do -1) – ARM defined, Peripheral Interrupts (0 do 239) – chip vendor
+11;Maskiranje prekida.;"BASEPRI: Onemogu?uje sve prekide specifi?nog levela prioriteta ili višeg levela prioriteta
+PRIMASK: Koristi se za onemogu?ivanje svih iznimaka
+FAULTMASK: Kao PRIMASK ali mjenja trenutni level prioriteta na -1"
+11;Omogu?avanje i prioriteti prekida.;"ISER registers for enabling, ICER registers for disabling ISER0, ISER1...
+Manji broj zna?i ve?i prioritet prekida.
+Prioritet prekida je konfiguriran od strane Interrupt Priority Register (IP). Svaki prioritet se sastoji od dva polja, uklju?uju?i preempt prioritetni broj i podprioritetni broj."
+11;SysTick - na?in rada i primjena.;"Koristimo ga za postavljanje time delaya ili za polling, u interval uklju?eno je izvršavanje ISR-a i maina.
+SysTick Interrupt Time Period = (SysTick_LOAD + 1) × Clock Period = 7 × Clock Period"
+11;Kako se konfigurira SysTick?;"1. Postavite TRENUTNU vrijednost na nulu (ako je potrebno)
+ 2. Postavite READ vrijednost 
+3. Postavite izvor takta, omogu?ite prekid i mjera? vremena 
+4. Postavite prioritet prekida 
+5. Napravi prekidom handler (ms_counter++) 
+6. Napravi delay funkciju koja ?eka potrebno vrijeme"
+11;Vanjski prekidi na GPIO pinovima. Konceptualna konfiguracija - što je sve potrebno napraviti.;"1. Postaviti GPIO pinove (uklju?iti AHB2 periferni clock za željeni port, postaviti parametre pinova – mode -> input/output, pull-down, pull-up): Ledica – GPIO output, pulldown, Gumbi? GPIO input, pulldown
+2. Funkcija za blinkanje
+3. Uklju?iti syscfg – APB2EN (omogu?uje EXTI konfiguraciju)
+4. Postaviti pin kao izvor vanjskog prekida (postaviti EXTI-IM, postaviti Falling trigger za interrupt)
+5. Postaviti NVIC ISERx za EXTI, postaviti prioritet prekida)
+6. Postaviti Interrupt handelere"
+12;Razlika izme?u floating i fixed point aritmetike.;"Floating point: široki i dinami?an raspon, kra?e vrijeme razvoja 
+Fixed point: stati?an raspon, niža cijena proizvoda, više bitova za preciznost, bolje preformanse, dulje vrijeme razvoja"
+12;Koja su 4 na?ina zaokruživanja decimala u IEEE 754?;"Zaokruživanje na najbližu vrijednost,
+zaokruživanje prema nuli (skra?ivanje),
+zaokruživanje prema plus beskona?no (zaokruživanje na gore),
+zaokruživanje prema minus beskona?no (zaokruživanje prema dolje)"
+12;Jesu li floating point brojevi decimalni brojevi?;Ne, oni su samo približna vrijednost decimalnih brojeva.
+15;Koja tri stanja može imati digitalni ulaz?;High, Low i stanje visoke impedancije.
+15;GPIO na?ini rada (BSRR, BRR, MODE registri).;"GPIO MODER (Mode Register) – input mode, output mode, alternate function mode, analog mode
+BSRR (Bit Set/Reset Register) - BSRR omogu?uje atomsku operaciju postavljanja ili resetiranja GPIO pina, što je brže i sigurnije od manipulacije s ODR registrom.
+BRR (Bit Reset Register) - Neki mikrokontroleri koriste BRR za resetiranje GPIO pinova. Djeluje sli?no kao donjih 16 bita BSRR-a, ali se koristi samo za resetiranje."
+15;Kako funkcionira i koja je svrha pull-up otpornika?;Održava pin na visokom naponu kada nema aktivnog signala. Nužno radi izbijegavanja slu?ajnog detektiranja visoke ili niske vrijednosti zbog šuma. Kada se pritisne tipka stanje se mijenja na 0 (spoji se sa ground)
+15;Kako funkcionira i koja je svrha pull-down otpornika?;Održava pin na niskom naponu kada nema aktivnog signala. Nužno radi izbijegavanja slu?ajnog detektiranja visoke ili niske vrijednosti zbog šuma. Kada se pritisne tipka stanje se mijenja na 1 (spoji se sa vcc)
+15;Kako radi i koja je primjena open-drain izlaza?;Namijenjen za output. Kada je output 0 onda se radi drain odnosno spaja se na ground, a kada je 1 onda output lebdi, pomo?u pullupa se spaja na vcc. Primjena - I2C komunikacija. Omogu?uje da više ure?aja dijeli isti signal bez konflikta. Svaki ure?aj može spustiti liniju na 0 ali nitijedan ne forsira 1.
+15;Kako radi i koja je primjena Schmittovog okidnog sklopa?;Vanjski signali su analogni, pomo?u obi?nog komparatora dobivam nepravilno iš?itavanje signila zbog šuma koji konstantno ska?e iznad/ispod tresholda. Schmitov trigger postavlja immunity band u kojem ne?e biti promijene signala sve dok se ne pre?e taj imunity band. Daje ?iš?i signal na inputu.
+15;Kako funkcionira o?itavanje jednostavne numeri?ke 4x3 tipkovnice?;Ako je pritisnuta tipka, u kojem stupcu, u kojem redu. Stupac input port(111), red output port(0000). Na pritisak stupac postaje 0. Sve redove pretvorim u 1 osim jednog koji je 0 i provjeravam stupce. Ako je jedan stupac 0 kada je red 0 onda znam koja je tipka pritisnuta.
+15;Objasni debounce problem na primjeru prekida.;Prilikom pritiska ili otpuštanja prekida?a dolazi do zatvaranja ili otpuštanja kontakta. To zatvaranje i otpuštanje se ne doga?a savršeno te zbog toga dolazi do šuma odnosno debouncinga.
+16;Što je RTC i koje su njegove primjene?;Real time clock je digitalni clock koji pruža kalendar, vrijeme i datum. Nužno je da troši malo baterije, da je to?an i da se izvršava neovisno od jezgre. Koristi se za alarme, Track time, wake up evente...
+16;Kako se koristi timer u input capture na?inu rada?;Odre?uje se na što input capture reagira (rising/falling/booth edges). Kada do?e do pojave jednog zapiše se ccr pozove se ISR za handlanje tog CCR-a te se nastavi izvo?enje programa do druge pojave edga gdje se uzima opet CCR, obra?uje se ISR te se ra?una timespan izme?u 2 CCR-a. Postoji mogu?nost postavljanja filtera da se izbijegne šum.
+16;Kako se koristi timer u output compare na?inu rada s toggle promjenom na vanjskom pinu?;Prescaler za clokcsource, postavljen ARR, counter broji do ARR, kada do?e do njega resetira se. Postavljen je Captcure & compare (CCR) koji se konstantno uspore?uje s counterom. Kada counter bude jednak CCR-u generira se interrupt te se izvršava zadana akcija (toggle).
+16;Kako se ra?una period izlaznog signala timera?;Output Signal Period = ((ARR+1)(PSC+1))/f source
+17;Zašto se koristi DMA?;Bez DMA, CPU bi morao izvršiti puno load i store instrukcija što bi usporilo performanse. DMA automatski napravi prijenos podataka kada primi DMA zahtjev, bez da koristi CPU.
+17;Koji su klju?ni DMA kontrolni registeri?;"DMA memory address register (CMAR)
+DMA peripheral address register (CPAR)
+DMA number of data register (CNDTR)
+DMA configuration register (CCR)"
+18;Što radi analogno-digitalni pretvara? (ADC)?;Analogni signal koji ima kontinuirano vrijeme i amplitudu pomo?u rezolucije, pogreške kvantizacije i stope uzorkovanja pretvara u digitalne vrijednosti koje imaju diskretno vrijeme i amplitudu.
+18;Što je rezolucija u ADC-u?;Broj binarnih bitova u ADC izlazu. (koliko precizno ADC može pretvoriti analogni signal u digitalni) – ve?a rezolucija ve?a preciznost
+18;Što je kvantizacijska greška u ADC-u?;Greška koja nastaje prilikom pretvorbe analognog u digitalni signal. Greška je ekvivalentna +-1/2 LSB gdje je LSB Vref/(2^n – 1).
+18;Što je stopa uzorkovanja u ADC-u?;Broj uzoraka ADC izlaza koji su dostupni po mjernoj jedinici vremena.
+18;Kako se ra?una vrijeme ADC pretvorbe?;T(ADC)=T(uzorkovanje)+T(pretvorba)
+18;Što radi digitalno analogni pretvornik (DAC)?;Pretvara digitalne podatke u signal napona.
+18;Kako se ra?una DAC?;DAC(izlaz)=V(ref)*(Digitalna vrijednost)/((2^N)-1)
+18;Gdje se koristi DAC?;Koristi se za digitalni audio i generiranje valnih oblika.
+19;Kako radi I2C sabirnica?;I2C je serijska komunikacijska sabirnica koja omogu?uje povezivanje više ure?aja koriste?i samo dvije žice: SDA (Serial Data Line) za prijenos podataka i SCL (Serial Clock Line) za sinkronizaciju. SDA i SCL su open drain tipa sto zna?i da ouput uvijek može biti 0 ili u stanju visoke impendancije (nemože se forsirati na 1) ili 1 s pullup otpornicima. Po?etak rada – kada je SCL (1) i SDA pre?e iz 1 u 0. Svaki put kad SCL postane 1 dobiva se bit od SDA. Kada je SDA 0 onda se može promijeniti podatak. STOP kada je SCL 1 i SDA pre?e iz 0 u 1.
+19;Koje su karakteristike inter-integrated circuit-a (I2C)?;Serijski, orijentiran prema bajtovima, multi-master, multi-slave, ima dvije dvosmjerne open-drain linije, plus uzemljenje.
+19;Navedi i objasni modove rada I2C-a.;"Master-sender: Master izdaje START i ADRESU, a zatim prenosi podatke na 
+adresirani podre?eni ure?aj
+Master-receiver: Master izdaje START i ADRESU, te prima podatke od adresiranog
+podre?enog ure?aja
+Slave-sender: Master izdaje START i ADRESU podre?enoga, a zatim podre?eni šalje 
+podatke masteru
+Slave-receiver: Master izdaje START i ADRESU podre?enog, a zatim podre?eni 
+prima podatke od mastera"
+19;Što je arbitraža na I2C?;Koristi se kada se koristi više mastera za slanje podataka. Kada 2 mastera zapo?nu slanje podataka u isto vrijeme prvi master koji detektira SDA low kada je pokušao slati podatke gubi arbitražu i prepušta drugome masteru da završi slanje podataka. Arbitraža na I2C sabirnici omogu?ava višestrukim masterima da koriste istu sabirnicu bez sudara podataka.
+19;Kako radi SPI sabirnica?;"Komunikaciju uvijek pokre?e master generira SCLK i odabire SS ure?aj. Dok master šalje podatke na MOSI, istovremeno prima podatke s MISO linije (master mora slati podatke da bi primao, ?ak i ako su to ""dummy"" podaci). CPOL odre?uje starnu poziciju CPOH odre?uje sample edge (0 – lijevo)."
+19;Koje su karakteristike serial peripheral interface-a (SPI)?;"Sinkrona full-duplex  komunikacija
+Jedan master, više podre?enih
+Nema hardverske kontrole toka ili potvrde podre?enog
+Podre?eni ne može izravno komunicirati sa podre?enim
+Ve?a propusnost od I2C
+"
+19;Razlike i sli?nosti SPI i I2C?;"SPI: Ve?a brzina. 10Mbps ili više. Full duplex. Potrebno više linija, nema više mastera. 
+I2C: Jednostavnost. ?eš?e korišten kao 2-ži?na sabirnica. Dodavanje novog podre?enog je lagano. Potreba za pullup otpornicima, koristi se za jednostrane komunikacije."
+19;Što je baud frekvencija?;Broj bitova koji su fizi?ki premješteni po sekundi.
+19;Kako se ra?una baud frekvencija?;baud rate=((1+OVER8)*f(CK))/USARTDIV
