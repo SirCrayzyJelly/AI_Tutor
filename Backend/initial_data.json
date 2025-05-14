@@ -336,7 +336,7 @@
   "pk": 2,
   "fields": {
     "password": "pbkdf2_sha256$1000000$tDv1zIwIlB7AiPN3gvPHMf$FOgrIxmQGxpNCigzv2/dtsGC5+uba0DGXWTH0NsRQnw=",
-    "last_login": "2025-05-11T21:05:22.386Z",
+    "last_login": "2025-05-14T17:52:42.627Z",
     "is_superuser": false,
     "username": "user",
     "first_name": "",
@@ -3517,6 +3517,369 @@
   }
 },
 {
+  "model": "chatbot.qaentry",
+  "pk": 284,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 1,
+    "question": "Što je objekt i te koji su mu sastavni elementi?",
+    "answer": "Objekt je skup svojstava (atributa) i metoda koja možemo objediniti u logičku cjelinu, a koristimo ih za apstrakciju svijeta oko nas. Atributi su opći podaci unutar objekta koji sadrže opise i stanja nekog objekta te služe za razlikovanje objekata. Metode definiraju ponašanje objekta kojima se opisuje što objekt može činiti, a može se koristiti i opis ponašanja koji je definiran objektom iz neke druge klase.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 285,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 1,
+    "question": "Što je klasa te koja je veza objekta i klase?",
+    "answer": "Klasa opisuje skup pravila koja propisuju od čega je objekt sagrađen, njegova svojstva i ponašanja. Svi objekti neke klase trebaju odgovarati opisu te klase. Na osnovu definicije klase mogu se izgraditi i održavati objekti, pri čemu vrijedi da je objekt konkretna realizacija klase.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 286,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 1,
+    "question": "Što prikazuje dijagram klasa (eng. class diagram) te koje karakteristike opisuje?",
+    "answer": "Dijagramom klas prikazuju se klase, od čega se sastoje i način na koji su klase objekta međusobno povezane koristeći se pritom: \\n-Atributima – varijablama primitivnog tipa ili objektima složenijih klasa koji definiraju izgled i znanja klase objekta\\n-Operacijama – metodama koje definiraju interno ponašanje unutar objekta i eksterno ponašanje kojim se ostvaruje međudjelovanje s drugim objektima\\n-Stereotipovima – zajedničkim karakteristikama grupi objekata zbog kojeg ih odlučimo objediniti u apstraktnu kategoriju, odnosno klasu\\n-Svojstvima – kojom definiramo svrhu i status objekta u modelu\\n-Asocijacijom – interakcije među klasama određenog tipa kojom definiramo smjer, višestrukost, ulogu, ograničenja, klasu i refleksivnost veze koje objekt podržava\\n-Generalizacijom – objedinjavanje više klasa sukladno zajedničkim svojstvima, odnosno razlučivanje klasa sukladno njihovoj specijalizaciji čime se pojednostavljuje i olakšava implementaciju.",
+    "link": "https://www.lucidchart.com/pages/uml-class-diagram"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 287,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 1,
+    "question": "Kako definiramo veze (eng. associations) između objekata u dijagramu klasa?",
+    "answer": "Vezama se definira međudjelovanje između objekata različitih klasa, označavaju se linijama između klasa, a svakoj se pridodijeli: Ime (eng. association name) koje opisuje način međudjelovanja, Smjer strelicom u smjeru čitanja, Višestrukost (eng. association multiplicity) koja definira broj objekata koji mogu učestvovati u vezi, Uloge veza (eng. association roles) koje se koriste kada je teško definirati ulogu samo pomoću njezina imena, Ograničenja koja se definiraju unutar vitičastih zagrada, Klasa veze (eng. association class) koja definira podatke koji se prenose tom vezom. Jačina veze može biti određene kao asocijacija (slaba veza među klasama), agregacija (kada su objekti međusobno zavisni u međudjelovanju, odnosno kada se povezuju u kompleksniju cjelinu) ili kompozicija (koja podrazumijeva agregaciju i uvodi pravilo da svaki dio može biti član skupine samo dok ta skupina postoji jer samostalan nema smisla)",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 288,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 1,
+    "question": "Za što se koristi te koji su osnovni elementi dijagrama sekvenci (eng. sequence diagram)?",
+    "answer": "Dijagram sekvenci se koristi za modeliranje dinamičke perspektive problema, odnosno o ponašanje objekata pri izvođenju operacija. Sastavni elementi su mu: životna linija objekta (eng. obeject lifeline) označena vertikalnom linijom koja predstavlja postojanje nekog objekta u određenom vremenu, poruka (eng. message) označena strelicom koja predstavlja komunikaciju između objekata i prenosi informaciju koja akcija slijedi te izvršenje slučaja (eng. activation box) označen visokim, tankim pravokutnikom koji prikazuje period vremena tokom kojeg objekt izvršava radnju. Same poruke pri tome mogu biti stimulativne, povratne, iterativne, a sadržavati broj sekvence, uvjete i komentare.",
+    "link": "https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 289,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 1,
+    "question": "Razlike u rezultatima benchmarkinga prema vrsti zadatka",
+    "answer": "Performanse jezika ovise o zadatku. Algoritamski zahtjevni zadaci bolje prolaze u jezicima poput C/C++ i Rusta zbog blizine hardveru. IO zadaci ovise o knjižnicama i asinkronom izvođenju, pa prednjače Go, Java i JavaScript. Kod konkurentnosti se ističu Go i Rust. Zaključno, nijedan jezik nije najbolji za sve – svaki ima specifične prednosti.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 290,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 1,
+    "question": "Utjecaj tipa jezika, memorije i optimizacija na performanse",
+    "answer": "Kompajlirani jezici (npr. C) su brži jer se prevode u strojni kod, dok su interpretirani (npr. Python) sporiji. JIT (npr. Java) kombinira oba pristupa. Upravljanje memorijom utječe na performanse – garbage collector može usporiti, dok ručno upravljanje nudi veću kontrolu. Optimizacije kompajlera dodatno poboljšavaju brzinu.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 291,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 1,
+    "question": "Uloga benchmarkinga i važni faktori za relevantnost",
+    "answer": "Benchmarking uspoređuje jezike mjerenjem brzine, memorije i CPU-a u različitim zadacima. Da bi bio relevantan, testovi moraju biti standardizirani, ponovljivi, uzimati u obzir hardver, optimizacije, knjižnice i runtime okruženja.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 292,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 1,
+    "question": "Što je to enkapsulacija?",
+    "answer": "Enkapsulacija ili učahurivanje je jedan od temeljnih koncepata objektno orijentirane paradigme programiranja, a služi prikrivanju podataka s ciljem njihove zaštite i pojednostavljenja korištenja programiranih funkcionalnosti. Korisnici nekog objekta ne moraju znati sadržaj, tj. program unutar klase, već dobivaju usluge te klase preko definiranih sučelja, odnosno javnih metoda, a direktne izmjene vrijednosti između objekata se izbjegavaju. Implementacija klasa se skriva od korisnika pomoću pristupnih razina private i protected, a pristup odabranim skrivenim podacima omogućen je preko članskih metoda definiranih na public pristupnoj razini (get i set metode)",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 293,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 1,
+    "question": "Koja je osnovna razlika između proceduralno orijentiranog programiranja i objektno orijentiranog programiranja?",
+    "answer": "Proceduralno orijentirani program izveden je kao skup funkcija, zbog čega je algoritamski pristup dominantan, a njegovo izvršavanje ostvaruje se funkcijom main iz koje se pozivaju sve ostale na izvršavanje. S druge strane, u objektno orijentiranim programskim jezicima, program se sastoji od skupa klasa iz kojih se instanciraju objekti prilikom izvođenja programa. Objekti se sastoje od podataka koji čine njegovo stanje i metoda kojima se ostvaruje njegovo djelovanje, a izvođenjem programa ostvaruje se komunikacija među objekatima",
+    "link": "https://www.geeksforgeeks.org/difference-between-oop-and-pop/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 294,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 1,
+    "question": "Nabroji i objasni osnovne principe objektno orijentiranog programiranja.",
+    "answer": "Apstrakcija – program je skup objekta koji se instanciraju iz klasa. Kod pisan u objektno orijentiranom programskom jeziku sastoji se od jedne ili više klasa. Enkapsulacija – Upotrebom odgovarajućih modifikatora pristupa, objekti ne moraju znati detalje implementacije jedni o drugima, već samo funkcionalnosti koje oni pružaju. Nasljeđivanje – Povećava ponovnu iskoristivost koda tako da postojeći superklase kod naslijedimo u podklasi, po potrebi preradimo, dodatno specijaliziramo te prilagodimo novoj primjeni. Polimorfizam – u objektno orijentiranom programiranju je omogućeno da referiranjem na objekte iz superklase omogućeno pozivati metode i iz podklasa.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 295,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 1,
+    "question": "Kakva je to slojevita arhitektura programskog proizvoda. Navedi osnovne karakteristike, prednosti i nedostatke",
+    "answer": "Slojevita arhitektura (eng. layered architecture) programskog proizvoda je organizacija sustava u kojoj se srodne funkcionalnosti grupiraju po slojevima. Svaki sloj daje usluge sloju iznad svojeg i traži usluge od sloja niže, a najniži sloj sadrži jezgrene / osnovne funkcionalnosti. Primjenjuje se kod sustava kod kojeg se očekuje nadogradnja funkcionalnosti na postojeće stanje, distribuiranog razvoja i strogih sigurnosnih zahtjeva na više razina. Prednosti slojevite arhitekture su omogućena zamjena sloja uz korištenje standardnih sučelja te redundantnost za svaki sloj.\\n Nedostaci slojevite arhitekture su vezani uz problem: \\n(1) razlaganja sustava na slojeve\\n (2) zahtjeva da svaki sloj može komunicirati samo s određenim slojevima\\n (3) performansi zbog povećane komunikacije uzrokovane ograničenom komunikacijom.",
+    "link": "https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch01.html"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 296,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 1,
+    "question": "Kakva je to arhitektura repozitorija podataka. Navedi osnovne karakteristike, prednosti i nedostatke.",
+    "answer": "Kod arhitekture repozitorija podataka (eng. data repository architecture) upravljanje svim podacima u sustavu je unutar centralnog repozitorija koji je dostupan svim komponentama sustava. Na taj način komponente sustava nemaju direktnu vezu već isključivo preko podataka pohranjenih u repozitoriju. Primjena takve arhitekture je kod većine sustava koji koriste velike količine podataka koju se trebaju pohraniti na neko vrijeme. Prednosti arhitekture repozitorija podataka su: nezavisnost komponenata koje ne moraju znati za postojanje ostalih komponenti u sustavu te konzistentno upravljanje podatcima. Nedostaci arhitekture repozitorija podataka su što jedna pogreška ima utjecaj na cijeli sustav, a komunikacija koja se odvija preko repozitorija je neučinkovita.",
+    "link": "https://www.geeksforgeeks.org/repository-design-pattern/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 297,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 1,
+    "question": "Što je uparenost (eng. coupling)? Navedi barem jednu karakteristiku kvalitete na koju utječe uparenost te obrazloži odgovor.",
+    "answer": "Uparenost (eng.coupling) je mjera međusobne povezanosti modula. Visoka razina uparenosti predstavlja veliku zavisnost između modula, što znači da promjene u jednom uzrokuju promjene u drugom modulu. Takvo stanje nije poželjno jer negativno utječe na jednostavnost održavanja budući da je komponente manje zavisnosti jednostavnije mijenjati, a samim time i održavati. Drugim riječima, poželjno je imati slabu uparenost između modula (loose coupling).",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 298,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 1,
+    "question": "Što je to kohezija (eng. cohesion)? Kakva uparenost i kohezija čine dobar dizajn programskog proizvoda? Obrazloži odgovor.",
+    "answer": "Kohezija (eng. cohesion) je mjera kojom se definira koliko su dijelovi komponenata povezani (npr. programi su kohezivni ako su sve naredbe povezane sa svakim izlazom, a klase su kohezivne ako su svi atributi korišteni od strane svih metoda), a poželjno je imati čim veću koheziju. Dobar dizajn okarakteriziran je niskom uparenošću i visokom kohezijom. Uparenost opisuje odnos između dvije komponente sustava, kada promjene u jednoj komponenti uzrokuju promjene u drugoj. Poželjno je stoga imati čim manju uparenost da bi komponente bile čim nezavisnije. Kohezija opisuje povezanost podataka i izlaza programa, odnosno atributa i metoda. Visoka kohezija nam govori da je klasa fokusirana na izvršavanje funkcionalnosti kojoj je namijenjena, a ne da izvršava „svašta pomalo“, a takve klase lakše je održavati",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 299,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 1,
+    "question": "Nabroji i obrazloži osnovne koncepte koji se koriste za ugradnju kvalitete u programski proizvod",
+    "answer": "Apstrakcija – omogućava usredotočivanje na nužne detalje i skrivanje nevažnih, čime se uvelike pojednostavljuje analiza složenih problema. \\nPrikrivanje podataka (eng. data hiding) – omogućava da su podaci jednog modula nevidljivi drugim modulima sustava kako se ne bi mogli mijenjati i time uzrokovati pogrešku. Tako smanjujemo uparenost modula s njihovom okolinom i olakšavamo njegovo održavanje. \\nSloženost – treba biti što manja kako ne bi uzrokovala probleme otežanog razumijevanja, čitljivosti održavanja, ponovne primjene te pouzdanosti. Mjera složenosti su razne, a mogu biti izražene vremenom rješavanja problema ili razvoja modula, brojem linija koda (LOC), kombinacijom internih atributa programa (duljina, broj LOC, broj if naredbi i sl.), brojem slijednih instrukcija i dr. \\nStruktura sustava – pomoću usmjerenog grafa prikazuje se hijerarhija zavisnosti (eng. dependencies) između modula koje mogu biti: modul A sadrži / slijedi / isporučuje podatke / koristi modul B.\\n Modularnost (eng. modularity) – omogućava podjelu programa na nezavisne module koji imaju dobro definirane veze.\\nOsnovne karakteristike usporedbe dizajna jesu: \\nKohezija (eng. cohesion) – mjera kojom se definira koliko su dijelovi komponenti povezani\\nUparenost (eng.coupling) – mjera međusobne povezanosti modula.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 300,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 1,
+    "question": "Opiši princip objektno orijentiranog dizajna u strategiji izgradnje programskih sustava",
+    "answer": "Objektno orijentirani dizajn (eng. Object oriented – OO design) koristi dijagrame za opis statičke (class i object) i dinamičke (state, sequence, colaboration) slike sustava. Tehnika dizajna svodi se u tri koraka: identifikacija objekata, identifikacija atributa i metoda svakog objekta, identifikacija veza i odnosa između objekata. Nedostatci su: metode pretpostavljaju stabilne ulazne zahtjeve, nisu pogodne za definiranje zahtjeva, smjernice za identifikaciju objekata i atributa nisu egzaktne, nema definiranog načina odabira najboljeg modela, teško se identificiraju implicitni objekti sustava. Prednosti su: model opisa sustava je prirodniji i razumljiviji, veza problema koji se modelira i modela je očita, dizajn se fokusira na strukturiranje problema a ne solucije problema, sustavi izgrađeni na osnovu oo dizajna su fleksibilniji na promjene, ponovno korištenje.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 301,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 1,
+    "question": "Kako indeksirani tipovi u Wasm-prechecku poboljšavaju sigurnost i performanse WebAssembly programa?",
+    "answer": "Indeksirani tipovi omogućuju statičku provjeru uvjeta poput provjere granica memorije i kompatibilnosti funkcijskih potpisa prije izvođenja, čime uklanjaju potrebu za skupim dinamičkim provjerama u runtime-u. Time se smanjuje broj sigurnosnih provjera i postiže značajno ubrzanje izvršavanja koda.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 302,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 1,
+    "question": "Koji je doprinos tehnike \"lifted interpretation\" u procesu sinteze programa s lokalnim varijablama?",
+    "answer": "Lifted interpretation omogućuje simultano razmatranje svih mogućih konteksta lokalno vezanih varijabli tijekom sinteze, što drastično smanjuje prostor pretrage bez potrebe za ručnom enumeracijom svih kombinacija vezivanja. Time se ubrzava sinteza i omogućuje rad s kompleksnijim programskim strukturama, poput lambda izraza.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 303,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 1,
+    "question": "Zašto je kontrolno-tokovna linearnost (C-linearity) važna za sigurno upravljanje resursima u programima s efektima?",
+    "answer": "Kontrolno-tokovna linearnost osigurava da se linearni resursi (npr. file-deskriptori) koriste točno jednom čak i u prisutnosti effect-handlera koji omogućuju višestruke pozive ili odbacivanje nastavaka (continuations). Time se sprječava curenje resursa ili njihovo neželjeno dupliciranje, što je ključno za sigurnost i stabilnost programa.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 304,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 1,
+    "question": "U kontekstu pogrešaka i neispravnosti programskog proizvoda, kakva može biti njihova veza te što se traži testiranjem?",
+    "answer": "Pogreška je unesena ljudskom nepažnjom u program i odnosi se na krivo napisanu naredbu dok je neispravnost manifestacija pogreške pri izvođenju programa. Jedna pogreška, uzrokovana ljudskom nepažnjom, može se manifestirati u više različitih neispravnost prilikom izvođenja programa. Također, više pogrešaka se može manifestirati kao jedna neispravnost.\\nTestiranje je proces izvođenja programa ili komponenti programa pod određenim, unaprijed planiranim uvjetima u kojem se promatraju rezultati izvođenja programa i uspoređuje sa zahtijevanim uvjetima. U kontekstu pogrešaka i neispravnosti, testiranjem se pronalaze neispravnosti, a cilj je otkriti i ispraviti pogreške u kodu, koja je izazvana ljudskom nepažnjom.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 305,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 1,
+    "question": "Koja je razlika između verifikacije i validacije, koje aktivnosti uključuju te koji su im ciljevi?",
+    "answer": "Proces verifikacije podrazumijeva procjenu programskog proizvoda i pripadajuće dokumentacije u ispunjenju zadanih zahtjeva i/ili uvjeta. Verifikacijom odgovaramo na pitanje „gradimo li proizvod na ispravan način?“ (npr. je li programski kod sintaktički ili logički ispravan?).\\nProcesom validacije provjerava se u kojoj mjeri programski proizvod i pripadajuća dokumentacija ispunjavaju korisnikove specificirane zahtjeve. Validacijom odgovarmo na pitanje „gradimo li pravi proizvod?“ (npr. radi li programski kod ono što korisnik od njega očekuje?).\\nVerifikacijske aktivnosti uključuju inspekcije - statičku verifikaciju programskog proizvoda povezanu s procjenom postojanja pogrešaka u statičkoj slici programskog proizvoda te testiranje - dinamičku verifikaciju programskog proizvoda povezanu s promatranjem ponašanja programskog proizvoda za vrijeme izvođenja programa. Cilj verifikacije i validacije su pronalazak pogrešaka, povećanje pouzdanosti, minimizacija rizika (pomoć u donošenju odluke o puštanju u rad ili prodaju, minimizirati troškove tehničke podrške, procijeniti sukladnost s specifikacijom, normama i sl.) te procjena kvalitete",
+    "link": "https://www.geeksforgeeks.org/differences-between-verification-and-validation/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 306,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 1,
+    "question": "Kako klasificiramo tehnike testiranja?",
+    "answer": "Tehnike testa se mogu klasificirati s obzirom na kriterij odabira testnih slučajeva: \\n-Testiranje zasnovano na pokrivenosti testom (engl. Coverage-based testing) kod kojeg su zahtjevi testiranja specificirani obzirom na pokrivenost testiranog programa\\n-Testiranje zasnovano na neispravnostima (engl. Fault-based testing) kod kojeg se testni slučajevi fokusiraju na otkrivanje neispravnosti u radu sustava\\n- Testiranje zasnovano na pogreškama (engl. Error-based testing) kod kojeg su testni slučajevi zasnovani na poznavanju tipičnih mjesta u programskom kodu koji su podložni pogreškama (posebice u krivoj uporabi)\\nTakođer, mogu se klasificirati prema izvoru informacije za provođenje testnih slučajeva na:\\n-Funkcionalno testiranje ili testiranje principom crne kutije (eng. black box testing) kod kojeg su testni slučajevi izvedeni iz specifikacije zahtjeva, a implementacijski detalji su nevažni\\n-Strukturno testiranje ili testiranje principom bijele kutije (eng. white / glass box testing) kod kojeg se analizira interna logika i struktura",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 307,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 1,
+    "question": "Koje aktivnosti obavljamo testiranjem u pojedinim fazama životnog ciklusa programskog proizvoda?",
+    "answer": "U inženjerstvu zahtjeva se određuje testna strategija, specifikacija testnih zahtjeva te generiranje funkcionalnih testnih podataka. U fazi dizajna se vrši provjera usklađenost dizajna i specifikacije zahtjeva, procjena arhitekture, testiranje dizajna, te generiranje funkcionalnih i strukturalnih testnih podataka. U fazi implementacije se vrši provjera usklađenosti dizajna i implementacije, testiranje implementacija, generiranje funkcionalnih i strukturalnih testnih podataka te se izvode testovi. U fazi održavanja se ponavlja prethodna testiranja u skladu sa stupnjem razvoja.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 308,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 1,
+    "question": "Koje razine testiranja razlikujemo u životnom ciklusu programskog proizvoda?",
+    "answer": "Testiranje se obično provodi prateći strukturu sustava. Razine testiranja u životnom ciklusu su:\\n-Testiranje programske jedinice (eng. unit test) u kojem se testiraju najmanje jedinice u sustavu\\n-Test integracije (funkcijsko testiranje) u kojem se testiraju integracije programskih jedinica u sustav, pri čemu je integracija sustava inkrementalni proces, a razlikujemo testiranje odozdo prema gore, odozgo prema dolje i funkcijsku integraciju\\n-Testiranje sustava koje se vrši prema korisničkoj dokumentaciji i specifikaciji zahtjeva\\n-Testiranje prihvatljivosti (eng. acceptance testing) koje je slično kao testiranje sustava samo što se test provodi pod nadzorom korisničke organizacije (naglasak na mogućnosti korištenja sustava), te se koristi kriterij za prihvat sustava zadan od strane korisnika\\n-Instalacijski test (eng. instalation testing) koji se vrši kada je sustav prihvaćen, a potrebno ga je testirati u okolini kojoj je namijenjen raditi",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 309,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 1,
+    "question": "Koje karakteristike programskog proizvoda ulaze u definiciju modela kvalitete prema ISO 9126 standardu?",
+    "answer": "Standard ISO 9126 definira model kvalitete kao niz karakteristika koje programski proizvod promatraju iz različitih perspektiva korisnika, ali i osoba uključenih u njegov razvoj:\\nFunkcionalnost – postojanje skupa funkcija koje su zadane ili podrazumijevane -> Koliko je proizvod pogodan za obavljanje tražene funkcije, koliko točno ispunjava zadane zahtjeve, koliko je interoperabilan, siguran u radu i sl.\\n-Pouzdanost – sposobnost ostvarenja zadane razine performansi kroz zadano vrijeme -> Koliko je proizvod zreo, otporan na neispravnosti, koliko se brzo može oporaviti od kvarova i sl.\\n-Uporabljivost – procjena individualnog truda potrebnog za uporabu -> Koliko je proizvod razumljiv korisniku, intuitivan za korištenje, operabilan, atraktivan i sl.\\n-Efikasnost – odnos razine performansi i količine utrošenih resursa -> Koliko proizvod troši i koliko zahtijeva računske moći te je li dovoljno optimiziran\\n-Lakoća održavanja - procjena truda potrebnog za promjenu funkcionalnosti i održavanje -> Koliko je proizvod jednostavno analizirati, prilagođavati i testirati te koliko je pri takvim izmjenama stabilan\\n-Prenosivost – sposobnost prenošenja iz jednog okruženja u drugo -> Koliko je proizvod adaptabilan i zamjenjiv, pokazuje li pri tome znakove nestabilnosti te koliko dobro djeluje uz druge proizvode u okruženju",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 310,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 1,
+    "question": "Koja je svrha i koji su osnovni ciljevi osiguranja kvalitete programskog proizvoda?",
+    "answer": "Osnovna svrha osiguravanja kvalitete programskog proizvoda (eng. Software quality assurance, SQA) je osigurati da se posao izgradnje obavi na ispravan način sa što manje grešaka, prekoračenja rokova i neispunjenih zahtjeva. Ciljevi SQA su sljedeći:\\n-Unaprijediti kvalitetu programskog proizvoda kroz sustavan nadzor programskog proizvoda u razvoju i nadzor samog tijeka procesa razvoja.\\n-Osigurati potpunu primjenu standardiziranih procesa razvoja i procedura.\\n-Osigurati da se za sve neusklađenosti produkta, procesa ili standarda privuče pozornost menadžmenta kako bi se neusklađenosti ispravile na vrijeme.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 311,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 1,
+    "question": "Koja je razlika između pogreške (eng. error) i neispravnosti (eng. fault) u odnosu na definiciju s predavanja?",
+    "answer": "Pogreška je unesena ljudskom nepažnjom u program i odnosi se na krivo napisanu naredbu dok je neispravnost manifestacija pogreške pri izvođenju programa",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 312,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 1,
+    "question": "Kako dijelimo tehnike osiguravanja kvalitete. Opiši formalnu inspekciju i kako ju primjenjujemo?",
+    "answer": "Tehnike osiguranja kvalitete dijelimo na:\\nFormalni pristup - inspekcije (inspections)\\nNeformalni pristup - pregledi (review ili walkthrough). \\nPokazalo se da su formalni pristupi bolji od neformalnih. Formalna inspekcija je planirana formalna aktivnost gdje dizajner predstavlja dokument koji se pregledava i odabrana grupa inspektora procjenjuje tehničke aspekte dizajna. Načini izvedbe inspekcije mogu se razlikovati s time da su osnovne značajke formalnih inspekcija sljedeće: inspekciju provode barem 3 osobe – stručnjaka za odabrano područje, od kojih jedan je autor, inspekcija se vrši rutinski u razvoju, prema definiranim ulogama (moderator, voditelj, zapisničar, autor) i procesu (priprema, inspekcija, unos ispravaka i follow up) koristeći strukturirani model (kontrolna lista) kojim se pregledava potpun dokument s ciljem otkrivanja pogrešaka i nedostataka.\\nMetrika koja se koristi obično je Broj pogrešaka / KLOC ili Broj pogrešaka / uloženi broj sati.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 313,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 1,
+    "question": "Koji su osnovni podaci koje bi trebao sadržavati dokument osiguravanja kvalitete programskog proizvoda?",
+    "answer": "Osnovnih podaci o osiguranje kvalitete trebali bi pojasniti PLAN provedbe aktivnosti verifikacije i validacije te pri tome odgovoriti na pitanja poput:\\n1. Tko, kada i koliko često provodi aktivnosti? Važno je znati koje osobe i u kojem trenutku unutar faza razvoja projekta trebaju vršiti izvjesne inspekcije ili preglede.\\n2. Što i kako se pregledava? Potrebno je navesti koje sve isporuke (eng. deliverables) ili procese njihova stvaranja treba kontrolirati te na koji način – kojom tehnikom i alatom, kakvim predefiniranim formularima, u skladu s kojim standardom i sl.\\n3. Kako se vrše mjerenja? Potrebno je definirati kojim metrikama će se provjeriti odvijaju li se stvari prema planu, kako ih izračunati, s kojim referentnim vrijednostima ih usporediti i sl. 4.\\nKako se izvještavaju problemi i koje korektivne aktivnosti su na raspolaganju? Ukoliko se aktivnostima verifikacije i validacije (naročito programskog koda) ustanove neispravnosti, važno je znati kome i kako ih treba prijaviti te što možemo ili moramo učiniti kako bi ih uklonili ili njihov utjecaj ublažili.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 314,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 1,
+    "question": "Po čemu se PRODEC metoda razlikuje od klasičnih metoda za analize zadataka u dizajnu sustava?",
+    "answer": "Za razliku od klasičnih metoda koje polaze od unaprijed definiranih procedura o pretpostavki o ponašanju korisnika. PRODEC se temelji na stvarnih iskustvima i simulacijama s uključenim korisnicima. Kroz te simulacije, sustav se iterativno prilagođava",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 315,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 1,
+    "question": "Kako RISE varira s obzirom na vodopadni/kaskadni model razvoja i mijenja li ga u potpunosti?",
+    "answer": "RISE model nije direktna RISE model nije direktna zamjena za vodopadni model razvoja, koristi se u specifičnim scenarijima gdje se treba prilagoditi novim režimima sustava koji su karakterizirani",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 316,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 1,
+    "question": "Zašto su simulacije sintetičkih putanja korisne za procjenu sigurnosti?",
+    "answer": "Simulacije sintetičkih putanja korisne su jer omogućuju testiranje različitih scenarija i procjenu sigurnosnih prijetnji u situacijama koje se rijetko javljaju u stvarnim podacima, poput ekstremnih vremenskih uvjeta, manjih odstupanja ili ljudskih grešaka.",
+    "link": null
+  }
+},
+{
   "model": "contenttypes.contenttype",
   "pk": 1,
   "fields": {
@@ -3586,6 +3949,14 @@
   "fields": {
     "session_data": ".eJxVjEEOgkAMRe8yazMpnSrg0j1nmLTTIqhhEgZWxrsLCQvd_vf-e7vI6zLEtdgcR3VXh-70uwmnp0070AdP9-xTnpZ5FL8r_qDFd1ntdTvcv8DAZdjevTTYtgaCvZHAOaFSUEpAgHW7dTAQNZrgAszJrOpBqzoQa7AgGNznC_D4ODo:1uEDrO:6jXzCtpVK7HNNNhRYmrDF6qce1LN18OWfBHAuwp5Sec",
     "expire_date": "2025-05-25T21:05:22.388Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "k7jaumckqlvsboyblxnc153tdy18kgta",
+  "fields": {
+    "session_data": ".eJxVjEEOgkAMRe8yazMpnSrg0j1nmLTTIqhhEgZWxrsLCQvd_vf-e7vI6zLEtdgcR3VXh-70uwmnp0070AdP9-xTnpZ5FL8r_qDFd1ntdTvcv8DAZdjevTTYtgaCvZHAOaFSUEpAgHW7dTAQNZrgAszJrOpBqzoQa7AgGNznC_D4ODo:1uFGHa:BcKtr9uqhdansMM0Nksug4-t79UPDUlxudfN2vJqmYA",
+    "expire_date": "2025-05-28T17:52:42.632Z"
   }
 },
 {
