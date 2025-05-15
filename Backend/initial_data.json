@@ -336,7 +336,7 @@
   "pk": 2,
   "fields": {
     "password": "pbkdf2_sha256$1000000$tDv1zIwIlB7AiPN3gvPHMf$FOgrIxmQGxpNCigzv2/dtsGC5+uba0DGXWTH0NsRQnw=",
-    "last_login": "2025-05-15T16:57:29.324Z",
+    "last_login": "2025-05-15T19:42:15.228Z",
     "is_superuser": false,
     "username": "user",
     "first_name": "",
@@ -6795,6 +6795,512 @@
   }
 },
 {
+  "model": "chatbot.qaentry",
+  "pk": 582,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 2,
+    "question": "Karakteristike polling-a",
+    "answer": "Softver povremeno provjerava; gubljenje puno CPU ciklusa; pokreće ga softver; javlja se periodično.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 583,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 2,
+    "question": "Karakteristike prekida (Interrupt)",
+    "answer": "CPU poduzima radnje samo ako se dogodi događaj; ne troši puno CPU ciklusa; pokreće ga hardver ili softver; javlja se u bilo koje vrijeme.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 584,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 2,
+    "question": "Što je i čemu služi NVIC?",
+    "answer": "Nested Vectored Interrupt Controller; koordinira više izvora prekida; omogućuje ili onemogućuje određeni prekid.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 585,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 2,
+    "question": "Kako se omogućuje prekid (interrupt)?",
+    "answer": "1. Isprogramirajte periferni kontrolni registar da dopustite generiranje prekida; 2. Isprogramirajte NVIC da prihvati prekid.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 586,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 2,
+    "question": "Korištenje LR registra prilikom obrade prekida",
+    "answer": "LR sprema kod koji opisuje hoće li unstacking biti MSP ili PSP; ovisno o prethodnoj aritmetičkoj operaciji (MSP ako nije bilo); potrebno spremiti LR ako se ulazi u drugu subrutinu unutar ISR-a.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 587,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 2,
+    "question": "Auto-(un)stacking prilikom obrade prekida",
+    "answer": "Unstacking se događa automatski pri izlasku iz ISR-a; brišu se registri koji su bili na stacku.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 588,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 2,
+    "question": "Tablice prekidnih vektora i negativni brojevi prekida",
+    "answer": "255 ukupno; System Exceptions (-16 do -1) - ARM defined; Peripheral Interrupts (0 do 239) - chip vendor specific.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 589,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 2,
+    "question": "Maskiranje prekida",
+    "answer": "BASEPRI: onemogućuje prekide određenog ili višeg prioriteta; PRIMASK: onemogućuje sve iznimke; FAULTMASK: kao PRIMASK ali mijenja trenutni prioritet na -1.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 590,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 2,
+    "question": "Omogućavanje i prioriteti prekida",
+    "answer": "ISER registri za uključivanje; ICER za isključivanje (npr. ISER0, ISER1...); manji broj = veći prioritet; IP registar postavlja prioritete (preempt + subprioritet).",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 591,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 2,
+    "question": "SysTick - način rada i primjena",
+    "answer": "Koristi se za time delay ili polling; ISR i main se izmjenjuju; Period = (SysTick_LOAD + 1) * Clock Period = 7 * Clock Period.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 592,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 2,
+    "question": "Kako se konfigurira SysTick?",
+    "answer": "1. Postavi trenutačnu vrijednost na nulu; 2. Postavi READ vrijednost; 3. Postavi takt, omogući prekid i timer; 4. Postavi prioritet prekida; 5. Napravi ISR (npr. ms_counter++); 6. Delay funkcija koja čeka određeno vrijeme.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 593,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 2,
+    "question": "Vanjski prekidi na GPIO pinovima - konfiguracija",
+    "answer": "1. Inicijalizacija GPIO (clock, mode, pull); 2. Blink funkcija; 3. Uključi syscfg (APB2EN); 4. EXTI IM maska i trigger; 5. ISERx i prioritet; 6. Handler funkcije.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 594,
+  "fields": {
+    "lecture_id": 12,
+    "subject": 2,
+    "question": "Razlika između floating i fixed point aritmetike",
+    "answer": "Floating: veći raspon, kraće vrijeme razvoja; Fixed: manja cijena, više bitova za preciznost, bolje performanse, dulje vrijeme razvoja.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 595,
+  "fields": {
+    "lecture_id": 12,
+    "subject": 2,
+    "question": "4 načina zaokruživanja decimala u IEEE 754",
+    "answer": "Na najbližu vrijednost; prema nuli (truncate); prema +∞; prema -∞.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 596,
+  "fields": {
+    "lecture_id": 12,
+    "subject": 2,
+    "question": "Jesu li floating point brojevi decimalni brojevi?",
+    "answer": "Ne",
+    "link": "oni su samo približne vrijednosti decimalnih brojeva."
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 597,
+  "fields": {
+    "lecture_id": 15,
+    "subject": 2,
+    "question": "Tri stanja digitalnog ulaza",
+    "answer": "High; Low; Visoka impedancija.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 598,
+  "fields": {
+    "lecture_id": 15,
+    "subject": 2,
+    "question": "GPIO načini rada (BSRR, BRR, MODE registri)",
+    "answer": "MODER: input/output/alternate/analog; BSRR: set/reset pinova; BRR: reset pinova.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 599,
+  "fields": {
+    "lecture_id": 15,
+    "subject": 2,
+    "question": "Pull-up otpornik - svrha i rad",
+    "answer": "Drži pin na Vcc kad nema signala; izbjegava smetnje; pritiskom tipke ide u 0.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 600,
+  "fields": {
+    "lecture_id": 15,
+    "subject": 2,
+    "question": "Pull-down otpornik - svrha i rad",
+    "answer": "Drži pin na 0 kad nema signala; izbjegava smetnje; pritiskom tipke ide u 1.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 601,
+  "fields": {
+    "lecture_id": 15,
+    "subject": 2,
+    "question": "Open-drain izlaz - rad i primjena",
+    "answer": "Kad je 0 -> spoj na GND; kad je 1 -> lebdi (pullup daje 1); koristi se u I2C za dijeljenje linija.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 602,
+  "fields": {
+    "lecture_id": 15,
+    "subject": 2,
+    "question": "Schmittov okidački sklop - rad",
+    "answer": "Pruža histerezu za analogne ulaze; ignorira šum između dvije granice; daje čist signal.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 603,
+  "fields": {
+    "lecture_id": 15,
+    "subject": 2,
+    "question": "Čitanje 4x3 tipkovnice",
+    "answer": "Redovi su output, stupci input; detekcija po linijama; kombinacija 0/1 u redovima i stupcima određuje tipku.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 604,
+  "fields": {
+    "lecture_id": 15,
+    "subject": 2,
+    "question": "Debounce problem na primjeru prekida",
+    "answer": "Tipka kod pritiska uzrokuje višestruke brze promjene stanja (šum); potrebno softversko filtriranje ili hardverski debounce.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 605,
+  "fields": {
+    "lecture_id": 16,
+    "subject": 2,
+    "question": "RTC i primjena",
+    "answer": "Real Time Clock; prikazuje datum, vrijeme; troši malo energije; koristi se za alarme, tracking, wake-up.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 606,
+  "fields": {
+    "lecture_id": 16,
+    "subject": 2,
+    "question": "Timer u input capture načinu",
+    "answer": "Reagiranje na edge (rising/falling); CCR bilježi vrijeme; ISR računa vrijeme između dva događaja.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 607,
+  "fields": {
+    "lecture_id": 16,
+    "subject": 2,
+    "question": "Timer u output compare načinu s toggle",
+    "answer": "Prescaler, ARR i CCR konfigurirani; kada counter dosegne CCR -> toggle pin.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 608,
+  "fields": {
+    "lecture_id": 16,
+    "subject": 2,
+    "question": "Izračun perioda izlaznog signala timera",
+    "answer": "Period = ((ARR+1)*(PSC+1))/f_source",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 609,
+  "fields": {
+    "lecture_id": 17,
+    "subject": 2,
+    "question": "Za što se koristi DMA?",
+    "answer": "Za prijenos podataka bez korištenja CPU-a; poboljšava performanse.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 610,
+  "fields": {
+    "lecture_id": 17,
+    "subject": 2,
+    "question": "Ključni DMA registri",
+    "answer": "CMAR (mem. adresa); CPAR (perif. adresa); CNDTR (broj podataka); CCR (konfiguracija).",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 611,
+  "fields": {
+    "lecture_id": 18,
+    "subject": 2,
+    "question": "ADC - funkcija",
+    "answer": "Pretvara analogni signal u digitalni (diskretan) oblik uz pomoć rezolucije i uzorkovanja.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 612,
+  "fields": {
+    "lecture_id": 18,
+    "subject": 2,
+    "question": "Što je rezolucija ADC-a?",
+    "answer": "Broj bitova u digitalnom izlazu; veća rezolucija = veća preciznost.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 613,
+  "fields": {
+    "lecture_id": 18,
+    "subject": 2,
+    "question": "Što je kvantizacijska greška?",
+    "answer": "Greška +-1/2 LSB; LSB = Vref/(2^n - 1).",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 614,
+  "fields": {
+    "lecture_id": 18,
+    "subject": 2,
+    "question": "Stopa uzorkovanja ADC-a?",
+    "answer": "Broj uzoraka po jedinici vremena.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 615,
+  "fields": {
+    "lecture_id": 18,
+    "subject": 2,
+    "question": "ADC vrijeme pretvorbe",
+    "answer": "T(ADC) = T(uzorkovanja) + T(pretvorbe).",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 616,
+  "fields": {
+    "lecture_id": 18,
+    "subject": 2,
+    "question": "Funkcija DAC-a",
+    "answer": "Pretvara digitalne vrijednosti u analogni napon.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 617,
+  "fields": {
+    "lecture_id": 18,
+    "subject": 2,
+    "question": "Kako se računa DAC izlaz?",
+    "answer": "DAC = Vref * DigitalnaVrijednost / ((2^N)-1)",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 618,
+  "fields": {
+    "lecture_id": 18,
+    "subject": 2,
+    "question": "Gdje se koristi DAC?",
+    "answer": "Za digitalni audio, generiranje valnih oblika.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 619,
+  "fields": {
+    "lecture_id": 19,
+    "subject": 2,
+    "question": "Kako radi I2C?",
+    "answer": "Dvosmjerni serijski protokol; koristi SDA i SCL; open-drain linije s pull-up otpornicima; START i STOP definirani po promjeni SDA dok je SCL HIGH.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 620,
+  "fields": {
+    "lecture_id": 19,
+    "subject": 2,
+    "question": "Karakteristike I2C",
+    "answer": "Serijski; bajtni; više mastera/slavova; koristi dvije linije; zahtijeva GND.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 621,
+  "fields": {
+    "lecture_id": 19,
+    "subject": 2,
+    "question": "Modovi rada I2C",
+    "answer": "Master-sender; Master-receiver; Slave-sender; Slave-receiver.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 622,
+  "fields": {
+    "lecture_id": 19,
+    "subject": 2,
+    "question": "Što je arbitraža na I2C?",
+    "answer": "Kad više mastera šalje; prvi koji detektira razliku na SDA gubi pravo slanja; sprječava sudar.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 623,
+  "fields": {
+    "lecture_id": 19,
+    "subject": 2,
+    "question": "Kako radi SPI?",
+    "answer": "Master upravlja komunikacijom; koristi SCLK, MOSI, MISO, SS; full-duplex; CPOL i CPHA definiraju takt.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 624,
+  "fields": {
+    "lecture_id": 19,
+    "subject": 2,
+    "question": "Karakteristike SPI",
+    "answer": "Veća brzina (10+ Mbps); full-duplex; jedan master; više slave uređaja; nema potvrde; više žica.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 625,
+  "fields": {
+    "lecture_id": 19,
+    "subject": 2,
+    "question": "SPI vs I2C",
+    "answer": "SPI: brži, više žica, bez višestrukih mastera; I2C: jednostavniji, 2 žice, podrška za više mastera.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 626,
+  "fields": {
+    "lecture_id": 19,
+    "subject": 2,
+    "question": "Što je baud frekvencija?",
+    "answer": "Broj bitova prenesenih u sekundi.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 627,
+  "fields": {
+    "lecture_id": 19,
+    "subject": 2,
+    "question": "Kako se računa baud frekvencija?",
+    "answer": "baud rate = ((1+OVER8) * f(CK)) / USARTDIV",
+    "link": null
+  }
+},
+{
   "model": "contenttypes.contenttype",
   "pk": 1,
   "fields": {
@@ -6888,6 +7394,14 @@
   "fields": {
     "session_data": ".eJxVjDsOwjAUBO_iGlmJfzGU9DmDtX7PxgHkSHFSIe4OkVJAuzOzLxGwrSVsLS1hYnERvTj9bhH0SHUHfEe9zZLmui5TlLsiD9rkOHN6Xg_376CglW_tyWafYjJsPGfFVsV-UJp1ZsBZS8ZDRSARAWcN5o46TQ4DO7KWxfsDHPE5ng:1uEDEf:R-1CNhw3oCNo7dsjaixO87Xw0ImS3HCIOCHubWOZ1Oo",
     "expire_date": "2025-05-25T20:25:21.786Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "uxedzbj1c8r2z6h8y8deqbgvzmkc8l18",
+  "fields": {
+    "session_data": ".eJxVjEEOgkAMRe8yazMpnSrg0j1nmLTTIqhhEgZWxrsLCQvd_vf-e7vI6zLEtdgcR3VXh-70uwmnp0070AdP9-xTnpZ5FL8r_qDFd1ntdTvcv8DAZdjevTTYtgaCvZHAOaFSUEpAgHW7dTAQNZrgAszJrOpBqzoQa7AgGNznC_D4ODo:1uFeT9:01nV7URB60wSP4RxD_5aOdcuI8_2jfqPHuArKrL-_fY",
+    "expire_date": "2025-05-29T19:42:15.233Z"
   }
 }
 ]
