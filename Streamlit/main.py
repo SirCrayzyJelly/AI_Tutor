@@ -3,7 +3,7 @@ from pydantic import BaseModel
 import google.generativeai as genai
 
 # Postavi API ključ
-API_KEY = "AIzaSyBC8XlF0rto7pKLFt-fQq_lO0RXiitXUfs"  # <-- OBAVEZNO unesi svoj API ključ ovdje
+API_KEY = ""  # <-- OBAVEZNO unesi svoj API ključ ovdje
 genai.configure(api_key=API_KEY)
 
 # Inicijalizacija FastAPI aplikacije
