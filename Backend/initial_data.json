@@ -336,7 +336,7 @@
   "pk": 2,
   "fields": {
     "password": "pbkdf2_sha256$1000000$tDv1zIwIlB7AiPN3gvPHMf$FOgrIxmQGxpNCigzv2/dtsGC5+uba0DGXWTH0NsRQnw=",
-    "last_login": "2025-05-14T17:52:42.627Z",
+    "last_login": "2025-05-15T16:57:29.324Z",
     "is_superuser": false,
     "username": "user",
     "first_name": "",
@@ -3880,6 +3880,2921 @@
   }
 },
 {
+  "model": "chatbot.qaentry",
+  "pk": 317,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Što je zastoj?",
+    "answer": "Procesi međusobno čekaju resurse koje drže drugi procesi, stvarajući kružno čekanje bez izlaza.",
+    "link": "https://www.geeksforgeeks.org/introduction-of-deadlock-in-operating-system/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 318,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Koji su primjeri iz stvarnog svijeta za zastoj?",
+    "answer": "Uski tunel: dva automobila koja dolaze s različitih strana ne mogu proći istovremeno.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 319,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Koja su četiri nužna uvjeta za nastanak zastoja?",
+    "answer": "Međusobno isključivanje, zadrži i čekaj, nema iznuđivanja, kružno čekanje",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 320,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Je li dovoljno da 4 glavna uvijeta zadovoljena da se zastoj dogodi?",
+    "answer": "procesi međusobno čekaju resurse koje drže drugi procesi, stvarajući kružno čekanje bez izlaza.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 321,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako nastaje zastoj kod semafora?",
+    "answer": " Kada procesi koriste semafore u različitom redoslijedu: P1- wait(S); wait(Q) i P2- wait(Q); wait(S);",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 322,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako dolazi do zastoja kod memorije?",
+    "answer": "Kad procesi traže više memorije u fazama koje se međusobno blokiraju.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 323,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako komunikacija može uzrokovati zastoj?",
+    "answer": "Ako proces A čeka poruku od procesa B, a B čeka poruku od A.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 324,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Što je dijagram dodjeljivanja resursa?",
+    "answer": "Graf s čvorovima za procese i resurse, gdje strelice označavaju zahtjeve i dodjele.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 325,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako prepoznati zastoj u grafu?",
+    "answer": "Ako postoji kružni put, postoji potencijalni zastoj.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 326,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako se može spriječiti zastoj?",
+    "answer": "Onemogućavanjem barem jednog od uvjeta: 1. Zabraniti „zadrži i čekaj“, 2. Dozvoliti iznuđivanje, 3. Izbjegavati kružno čekanje poretkom resursa",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 327,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Zašto je sprječavanje zastoja nepraktično?",
+    "answer": "Često je neefikasno i može dovesti do lošeg iskorištavanja resursa",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 328,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Što je Bankarov algoritam?",
+    "answer": "Algoritam koji simulira dodjelu resursa i provjerava da li sustav ostaje u sigurnom stanju.",
+    "link": "https://www.geeksforgeeks.org/bankers-algorithm-in-operating-system-2/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 329,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kada se zahtjev za resursom odbija prema Bankarovu algoritmu?",
+    "answer": "Ako proces traži više od prijavljenog maksimuma ili ako sustav ulazi u nesigurno stanje",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 330,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako operacijski sustav otkriva zastoj?",
+    "answer": "Periodičkom provjerom grafa dodjele resursa pomoću algoritma za otkrivanje zastoja.",
+    "link": "https://www.geeksforgeeks.org/deadlock-detection-algorithm-in-operating-system/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 331,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako znati koji su procesi u zastoju?",
+    "answer": "Procesi koji na kraju algoritma ostanu neoznačeni.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 332,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako se može riješiti zastoj?",
+    "answer": "Zastoj se može riješiti: prekidom procesa, rollbackom procesa ili iznuđivanjem resursa",
+    "link": "https://www.geeksforgeeks.org/deadlock-handling-in-operating-system/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 333,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Koji je kriterij za odabir procesa za prekid?",
+    "answer": "Prioritet, vrsta procesa, količina resursa koje koristi i broj prethodnih rollbackova",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 334,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Što je kombinirani pristup upravljanju zastojima?",
+    "answer": "Kombinacija prevencije, izbjegavanja i otkrivanja, ovisno o vrsti resursa i efikasnosti.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 335,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je uloga upravljanja memorijom u operacijskom sustavu?",
+    "answer": "Upravljanje memorijom omogućuje učitavanje više procesa u memoriju, njihovu zaštitu, dijeljenje memorije i učinkovito korištenje resursa. Također omogućuje logičku i fizičku separaciju memorijskih adresa.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 336,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Koje su glavne faze povezivanja adresa u memoriji?",
+    "answer": "Povezivanje adresa može se vršiti: 1. Tijekom prevođenja(compile time), 2.prilikom učitavanja(load time), 3. za vrijeme izvršavanja(execution time), gdje je potrebna hardverska podrška (base i limit registri)",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 337,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je dinamičko punjenje?",
+    "answer": "Potprogrami i funkcije se učitavaju u memoriju samo kad se pozovu, čime se smanjuje iskorištenost memorije jer se učitavaju samo stvarno korištene funkcije.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 338,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Koja je razlika između statičkog i dinamičkog povezivanja?",
+    "answer": "Statičko povezivanje uključuje sistemske knjižnice pri kompilaciji, dok se dinamičko povezivanje obavlja tijekom izvođenja i omogućuje dijeljenje koda među procesima.",
+    "link": "https://www.geeksforgeeks.org/static-and-dynamic-linking-in-operating-systems/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 339,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Koji su osnovni zahtjevi upravljanja memorijom?",
+    "answer": "Premještanje (relocation), zaštita (protection), dijeljenje (sharing), logička i fizička organizacija memorije",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 340,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je Memory Management Unit?",
+    "answer": "MMU je sklop koji pretvara logičke (virtualne) adrese u fizičke, često pomoću base i limit registara. Time se omogućuje izolacija između procesa i fleksibilnije upravljanje memorijom.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 341,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je prebacivanje u kontekstu memorije?",
+    "answer": "Proces se može privremeno ukloniti iz glavne memorije i smjestiti u sekundarnu memoriju da bi se oslobodilo mjesto za druge procese. Kasnije se može vratiti za nastavak izvršavanja.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 342,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Koji su problemi fiksnog particioniranja memorije?",
+    "answer": "Glavni problem je unutarnja fragmentacija, jer svaki proces zauzima cijelu particiju, bez obzira na stvarnu veličinu.",
+    "link": "https://www.geeksforgeeks.org/difference-between-internal-and-external-fragmentation/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 343,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je vanjska fragmentacija i kako se rješava?",
+    "answer": "Vanjska fragmentacija nastaje kad postoji dovoljno ukupne slobodne memorije, ali ne u jednom komadu. Rješava se zbijanjem memorije (compaction).",
+    "link": "https://www.geeksforgeeks.org/difference-between-internal-and-external-fragmentation/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 344,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je buddy system?",
+    "answer": "To je sustav za dinamičku dodjelu memorije u blokovima veličine 2^k. Kad se memorija oslobodi, blokovi se mogu spajati ako su „parovi” (buddies).",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 345,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Kako funkcionira straničenje?",
+    "answer": "Straničenje dijeli memoriju na jednake blokove (stranice i okvire - frames). Proces koristi tablicu stranica za preslikavanje virtualnih adresa u fizičke.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 346,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Čemu služi Translation Lookaside Buffer?",
+    "answer": "TLB je cache koji pohranjuje nedavno korištene preslikavanja stranica, čime ubrzava pristup memoriji izbjegavajući stalne pristupe glavnoj memoriji.",
+    "link": "https://www.geeksforgeeks.org/translation-lookaside-buffer-tlb-in-paging/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 347,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je segmentacija u upravljanju memorijom?",
+    "answer": "Segmentacija omogućuje logičku podjelu programa na segmente (npr. kod, podaci), različitih veličina, s posebnim pravima pristupa i vidljivim programeru.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 348,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Koja je razlika između straničenja i segmentacije?",
+    "answer": "Straničenje koristi fiksne veličine stranica i nevidljivo je programeru. Segmentacija koristi varijabilne veličine segmenata i vidljiva je programeru. Obje se mogu kombinirati.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 349,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je virtualna memorija i kako funkcionira?",
+    "answer": "Virtualna memorija omogućuje da proces koristi više memorije nego što fizički postoji, učitavanjem samo potrebnih dijelova u glavnu memoriju prema potrebi.",
+    "link": "https://www.geeksforgeeks.org/virtual-memory-in-operating-system/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 350,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Što je računalna sigurnost i zašto je važna?",
+    "answer": "Računalna sigurnost odnosi se na zaštitu računalnih sustava i podataka od neovlaštenog pristupa, oštećenja ili krađe. U informatičkom dobu, gdje su informacije temelj modernog načina života, sigurnost je ključna za očuvanje povjerljivosti, integriteta i dostupnosti podataka.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 351,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Koji su osnovni sigurnosni zahtjevi računalnih sustava?",
+    "answer": "Osnovni sigurnosni zahtjevi uključuju: Povjerljivost: samo autorizirani korisnici imaju pristup informacijama, Integritet: samo auzorizirani korisnici mogu mijenjati informacije, Dostupnost: informacije moraju biti dostupne autoriziranim korisnicima, Autentičnost: sustav provjerava valjanost indentiteta subjeka",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 352,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Što je Denial of Service napad?",
+    "answer": "DoS napad je pokušaj onemogućavanja pristupa servisu ili sustavu zakonitim korisnicima, često preopterećenjem resursa. Distribuirani DoS (DDoS) napadi koriste više kompromitiranih uređaja za izvođenje napada.",
+    "link": "https://stytch.com/blog/10-common-cyber-attacks"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 353,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Koji su najčešći oblici zlonamjernog softvera?",
+    "answer": "Najčešći oblici uključuju: Spyware: Prikuplja informacije bez znanja korisnika, Keylogger: Bilježi pritiske tipki kako bi ukrao lozinke i druge osjetljive podatke, Dialer: Automatski bira brojeve, često skupe, bez znanja korisnika, Rootkit: Omogućuje neautorizirani pristup sustavu skrivajući se od detekcije",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 354,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Kako se možemo obraniti od sigurnosnih prijetnji?",
+    "answer": "Edukacija korisnika, redovite sigurnosne kopije(backup), implementacija sigurnosnih politika, korištenje jakih lozinki i njihovo redovito mijenjanje, ažuriranje sustava i softvera, korištenje kriptografije, primjena vatrozida (firewall) i VPN-a, korištenje antivirusnih programa i sustava za otkrivanje upada (IDS)",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 355,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Što je kriptografija i koje su osnovne metode šifriranja?",
+    "answer": "Kriptografija je znanost o zaštiti informacija pretvaranjem čitljivih podataka u neprepoznatljiv oblik. Simetično šifriranje: isti ključ se koristi za šifriranje i dešifriranje podataka, Asimetrično šifriranje: koriste se dva različita ključa - javni za šifriranje i privatni za dešifriranje",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 356,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Zašto su lozinke važan aspekt sigurnosti i kako ih pravilno koristiti?",
+    "answer": " Lozinke su prva linija obrane u zaštiti računalnih sustava. Dobra lozinka treba biti kompleksna, jedinstvena i redovito mijenjana. Također, važno je ne dijeliti lozinke i koristiti upravitelje lozinki za njihovo sigurno pohranjivanje.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 357,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Što je dvofaktorska autentifikacija i kako poboljšava sigurnost?",
+    "answer": "2FA dodaje dodatni sloj sigurnosti zahtijevajući dva oblika identifikacije prije pristupa sustavu: Nnešto što korisnik zna npr. lozinka ili PIN ili nešto što korisnik ima kao npr. mobilni uređaj, token ili biometrijski podatak",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 358,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Kako socijalni inženjering predstavlja prijetnju sigurnosti?",
+    "answer": "Socijalni inženjering manipulira ljudima kako bi otkrili povjerljive informacije. Primjeri uključuju phishing napade, lažne pozive ili poruke koje se predstavljaju kao legitimne kako bi prevarili korisnike.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 359,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Koje su preporuke za zaštitu od phishing napada?",
+    "answer": "Preporuke su: pažljivo provjeravanje e-mail adresa i linkova, ne otvaranje sumnjivih privitaka, korištenje sigurnosnih alata koji detektiraju phising pokušaje, edukacija korisnika o prepoznavanju lažnih poruka",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 360,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Što je sigurnosna politika i zašto je važna?",
+    "answer": "Sigurnosna politika je skup pravila i procedura koje organizacija uspostavlja kako bi zaštitila svoje informacijske resurse. Ona definira odgovornosti, dopuštenja i postupke u slučaju sigurnosnih incidenata.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 361,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Što su sistemski pozivi?",
+    "answer": "Sistemski pozivi su sučelje (API) između korisničkih programa i jezgre operacijskog sustava. Omogućuju korisničkim programima da traže usluge od jezgre, poput čitanja datoteka, upravljanja memorijom i procesa.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 362,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Koja je razlika između jezgrenog i korisničkog načina rada?",
+    "answer": "Korisnički način rada (privilegijska razina 3) ograničava pristup hardveru i resursima sustava, dok jezgreni način rada (privilegijska razina 0) ima puni pristup sustavu. Sistemski pozivi omogućuju sigurnu komunikaciju između ta dva načina.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 363,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako funkcionira izvršavanje sistemskog poziva?",
+    "answer": "Izvršava se ASM instrukcija syscall, koja prebacuje program iz korisničkog u jezgreni način rada. Identifikacijski broj željenog sistemskog poziva postavlja se u eax registar, a zatim se koristi tablica sistemskih poziva kako bi se pronašao odgovarajući handler na fiksnoj adresi.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 364,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Što je system call handler?",
+    "answer": "To je dio jezgre operacijskog sustava koji prima i obrađuje sistemski poziv kada dođe iz korisničkog načina rada.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 365,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako su sistemski pozivi implementirani u Linuxu?",
+    "answer": "Linux koristi syscall instrukciju za pozivanje funkcija iz jezgre. Svakom pozivu dodijeljen je jedinstveni broj koji se koristi za pronalaženje funkcije u tablici sistemskih poziva.",
+    "link": "https://filippo.io/linux-syscall-table/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 366,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Zašto je pristup sistemskim pozivima drugačiji na Windowsima?",
+    "answer": "Kod Windowsa izvorni kod jezgre nije javno dostupan pa se sistemski pozivi ne mogu direktno inspektirati. Umjesto toga, dostupna je dokumentacija za Win32 API koji omogućuje razvoj softvera za Windows bez direktnog uvida u sistemske pozive.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 367,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je proces?",
+    "answer": "Proces je instanca računalnog programa u izvođenju. Svaki proces koristi vlastite resurse poput CPU-a, memorije, datoteka i I/O uređaja. Čak i ako dva procesa izvršavaju isti program, oni su međusobno nezavisni.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 368,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Koje su osnovne odgovornosti operacijskog sustava vezane uz procese?",
+    "answer": "Operacijski sustav je odgovoran za kreiranje i brisanje korisničkih i sistemskih procesa, za njihovo raspoređivanje odnosno scheduling, te za osiguravanje mehanizama kojima se upravlja međusobnom sinkronizacijom, komunikacijom među procesima i zastojima koji mogu nastati.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 369,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Kako izgleda struktura procesa u memoriji?",
+    "answer": "Struktura procesa u memoriji podijeljena je u nekoliko dijelova. Stog se koristi za privremene podatke poput parametara funkcija, povratnih adresa i lokalnih varijabli. Hrpa je dio memorije koji se dinamički alocira tijekom izvršavanja procesa. Podatkovni dio sadrži globalne i statičke varijable, dok tekstualni dio sadrži izvršni kod programa.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 370,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je Process Control Block?",
+    "answer": "Process Control Block, skraćeno PCB, je podatkovna struktura koja čuva sve važne informacije o procesu. Te informacije uključuju jedinstveni identifikacijski broj procesa (Process ID), adresu sljedeće instrukcije koja će se izvršiti (Program Counter), informacije o korištenju ulazno-izlaznih uređaja, podatke za raspoređivanje procesa poput prioriteta i pokazivača na redove čekanja te statističke podatke o korištenju CPU-a i vremenskim ograničenjima.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 371,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Koja su osnovna stanja procesa?",
+    "answer": "Osnovna stanja procesa uključuju stanja u kojima se proces može nalaziti tijekom svog životnog ciklusa, a to su: novo (new), spremno (ready), u izvođenju (running), u čekanju (waiting) i završeno (terminated). Svaki proces prelazi iz jednog stanja u drugo ovisno o događajima tijekom svog izvođenja.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 372,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što se događa kada proces primi signal?",
+    "answer": "Kada proces primi signal, on može reagirati na nekoliko načina. Može ignorirati signal, iako neki signali ne mogu biti ignorirani. Također može izvršiti zadanu, unaprijed definiranu radnju, ili može izvršiti vlastitu, prilagođenu funkciju koja obrađuje taj signal. Ta se funkcija naziva signal handler. Jezgra tada obavlja zamjenu konteksta kako bi pozvala handler, a nakon njegovog izvršavanja, kontrola se vraća izvornom procesu.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 373,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Kako izgleda hijerarhija procesa u Linuxu?",
+    "answer": "U Linux operacijskom sustavu, prvi proces koji se pokreće je proces pod nazivom init i ima identifikacijski broj PID=1. Taj proces je uvijek u stanju izvršavanja i svi ostali procesi se smatraju njegovom djecom ili potomcima. Svaki proces u sustavu ima svog roditelja, a može imati i više \"braće i sestara\", odnosno druge procese koje je stvorio isti roditeljski proces. Djeca također mogu stvarati vlastitu djecu, čime nastaje hijerarhijska struktura procesa. Uz init postoje i alternativni sustavi za pokretanje procesa, poput systemd-a, Upstarta, OpenRC-a, Epocha i Mudara.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 374,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Zašto se koristi višedretvenost?",
+    "answer": "Višedretvenost se koristi kako bi se omogućilo izvođenje više neovisnih tokova instrukcija istovremeno, pri čemu te dretve dijele zajednički adresni prostor. Time se postiže paralelizam dijeljenjem jednog procesa na više dretvi, što povećava učinkovitost i iskorištenost procesora.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 375,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Koja je razlika između procesa i dretvi?",
+    "answer": "Procesi su izolirani jedni od drugih i koriste zaseban memorijski prostor, dok dretve dijele zajednički memorijski prostor i ovise jedna o drugoj. Stvaranje i komunikacija među procesima imaju veći vremenski trošak (overhead), dok su dretve lakše (lightweight) i brže u komunikaciji. Također, pogreške u jednom procesu ne utječu na druge procese, dok greška u jednoj dretvi može utjecati na sve ostale dretve unutar istog procesa. Kod dretvi je zbog dijeljenja resursa potrebna sinkronizacija, dok kod procesa to često nije slučaj.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 376,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Koja je razlika između programa s jednom dretvom i programa s više dretvi?",
+    "answer": "Program s jednom dretvom izvršava sve zadatke sekvencijalno, što može uzrokovati blokiranje cijelog programa ako dođe do zahtjevne operacije. S druge strane, program s više dretvi omogućava da se pojedini dijelovi aplikacije izvode paralelno, čime se poboljšava responzivnost i ukupna učinkovitost.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 377,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Koje su prednosti korištenja dretvi?",
+    "answer": "Korištenje dretvi omogućava bolju responzivnost programa jer se kompleksni zahtjevi mogu izvršavati bez blokiranja drugih dijelova aplikacije. Također se smanjuje vrijeme potrebno za prebacivanje konteksta, jer je manji overhead nego kod procesa. Komunikacija između dretvi je jednostavnija i učinkovitija jer dijele memorijski prostor. Osim toga, dretve poboljšavaju skalabilnost jer omogućuju iskorištavanje paralelizma u višeprocesorskim sustavima.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 378,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Koje vrste dretvi postoje?",
+    "answer": "Postoje dvije glavne vrste dretvi: korisničke (user threads) i jezgrene (kernel threads). Korisničke dretve implementirane su u korisničkom prostoru bez izravne podrške jezgre i obično su jednostavne za implementaciju. Jezgrene dretve podržava sama jezgra operacijskog sustava i omogućuju izvođenje više zadataka paralelno na razini jezgre, ali njihova implementacija je složenija.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 379,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Kako se korisničke dretve mapiraju na jezgrene dretve?",
+    "answer": "Korisničke dretve mogu se mapirati na jezgrene dretve koristeći jednu od tri strategije: „many to one“, gdje više korisničkih dretvi koristi jednu jezgrenu dretvu; „one to one“, gdje svaka korisnička dretva ima svoju jezgrenu dretvu; te „many to many“, gdje više korisničkih dretvi može koristiti više jezgrenih dretvi, ali ne nužno u omjeru jedan na jedan.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 380,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Što je utrkivanje  i kada nastaje?",
+    "answer": "Utrkivanje nastaje kada više dretvi istovremeno pokušava pristupiti i mijenjati zajedničke resurse, a redoslijed izvršavanja tih operacija nije definiran. To dovodi do neočekivanih ponašanja programa ili pogrešnih rezultata. Utrkivanje se obično događa u kritičnim sekcijama koda gdje se provode operacije tipa \"read-modify-write\" ili \"check-then-act\".",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 381,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Što je sinkronizacija i kako pomaže kod upravljanja dretvama?",
+    "answer": "Sinkronizacija je mehanizam koji rješava probleme poput utrkivanja među dretvama. Uključuje korištenje atomskih operacija, semafora i međusobnog isključivanja (mutex). ",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 382,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Kako radi mutex?",
+    "answer": "Mutex radi slično binarnom semaforu, ali se temelji na zaključavanju resursa kako bi se osiguralo da samo jedna dretva u određenom trenutku ima pristup kritičnoj sekciji.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 383,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Što je međuprocesna komunikacija?",
+    "answer": "Međuprocesna komunikacija (IPC) je mehanizam koji operacijski sustav pruža kako bi procesi mogli međusobno komunicirati i upravljati dijeljenim resursima. Omogućuje sinkronizaciju i razmjenu podataka među procesima koji se izvršavaju istovremeno.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 384,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Kako funkcionira komunikacija putem dijeljene memorije?",
+    "answer": "Komunikacija putem dijeljene memorije podrazumijeva pisanje i čitanje podataka u zajednički memorijski prostor. Procesi koji koriste dijeljenu memoriju odmah vide promjene, što čini ovu metodu najbržom. Međutim, zahtijeva pažljivo upravljanje pristupom pomoću semafora kako bi se izbjegli problemi istovremenog pristupa, slično kao u višedretvenim programima.",
+    "link": "https://www.geeksforgeeks.org/inter-process-communication-ipc-shared-memory/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 385,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Što je memorijsko mapiranje i kako se koristi u IPC-u?",
+    "answer": "Memorijsko mapiranje omogućuje procesima da komuniciraju putem datoteka koje su mapirane u njihovu memoriju. Operacijski sustav upravlja pristupom datotekama, a procesi tretiraju mapirani dio kao da je dio njihove glavne memorije. Promjene u memoriji automatski se prenose u povezane datoteke.",
+    "link": "https://learn.microsoft.com/en-us/windows/win32/memory/creating-a-file-mapping-object"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 386,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Kako funkcionira cjevovod u međuprocesnoj komunikaciji?",
+    "answer": "Cjevovod je jednosmjeran kanal između dva procesa. Jedan proces upisuje podatke, dok drugi čita. Najčešće se koristi između povezanih procesa, poput roditeljskog i podprocesa. Cjevovod postoji samo dok su povezani procesi aktivni.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 387,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Po čemu se imenovani cjevovod razlikuje od običnog cjevovoda?",
+    "answer": "Imenovani cjevovod (FIFO) ima ime u datotečnom sustavu, što omogućuje komunikaciju i između nepovezanih procesa. Procesi mogu neovisno otvarati, zatvarati, čitati i pisati u FIFO.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 388,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Kako funkcionira komunikacija porukama?",
+    "answer": "Komunikacija porukama omogućuje slanje i primanje poruka putem redova poruka. Poruke se obično obrađuju redoslijedom dolaska, ali postoji mogućnost da se pojedine poruke ciljano povuku prije nego dođu na red, što pruža veću fleksibilnost od FIFO.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 389,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Što su signali i kako se koriste u IPC-u?",
+    "answer": "Signali su oblik softverskih prekida koje procesi koriste za obavještavanje drugih procesa o određenim događajima. Signale može slati drugi proces ili jezgra sustava. Kad proces primi signal, može izvršiti određenu funkciju poznatu kao signalni rukovatelj (handler).",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 390,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Koji oblik međuprocesne komunikacije će biti obrađen sljedeći tjedan?",
+    "answer": "Sljedeći tjedan planira se obrada IPC-a putem utičnica (sockets), koje omogućuju komunikaciju između procesa na različitim računalima putem mreže.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 391,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 3,
+    "question": "Što su utičnice u kontekstu međuprocesne komunikacije?",
+    "answer": "Utičnice su mehanizam koji omogućuje međuprocesnu komunikaciju između više procesa na istom računalu ili između računala unutar iste mreže. Podaci se šalju u obliku paketa, a najčešće se koristi model poslužitelj-klijent. Utičnice omogućuju fleksibilan i standardiziran način komunikacije putem mreže.",
+    "link": "https://en.wikipedia.org/wiki/Network_socket"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 392,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 3,
+    "question": "Koje je tri stvari potrebno definirati prilikom stvaranja socket-a?",
+    "answer": "Prilikom stvaranja socket-a potrebno je definirati stil komunikacije, namespace i protokol. Stil komunikacije određuje način na koji se podaci prenose, namespace određuje adresni prostor i način na koji se socket identificira, a protokol definira pravila prijenosa podataka između krajnjih točaka komunikacije.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 393,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 3,
+    "question": "Koje su osnovne razlike između stream i datagram utičnica?",
+    "answer": "Stream utičnice predstavljaju oblik komunikacije koji je pouzdan i osigurava da svi paketi stignu na odredište redoslijedom kojim su poslani. Ako neki paket ne stigne, automatski se ponovno šalje, što omogućuje točnu i sigurnu isporuku podataka. Takav način rada nalikuje TCP protokolu. S druge strane, datagram utičnice ne garantiraju isporuku paketa niti njihov redoslijed, već se fokusiraju na brzinu prijenosa. U slučaju gubitka paketa, nema ponovnog slanja. Ovakav način rada podsjeća na UDP komunikaciju, gdje je brzina prioritet nad pouzdanošću.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 394,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 3,
+    "question": "Što predstavlja namespace kod socket-a?",
+    "answer": "Namespace kod socket-a predstavlja način na koji se adresira jedna krajnja točka komunikacije. Ako se koristi lokalni namespace, adresa se odnosi na datoteku u datotečnom sustavu, čime se socket identificira pomoću imena datoteke. Ako se koristi mrežni namespace, adresa socket-a sastoji se od IP adrese hosta i broja porta, čime se omogućuje komunikacija između udaljenih računala preko mreže.",
+    "link": "https://en.wikipedia.org/wiki/Unix_domain_socket"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 395,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 3,
+    "question": "Koju ulogu ima protokol kod socket-a?",
+    "answer": "Protokol kod socket-a određuje način na koji će se podaci prenositi između procesa. On definira pravila komunikacije i ponašanje tijekom razmjene informacija. Neki od najčešće korištenih protokola su TCP/IP, koji osigurava pouzdan prijenos podataka, i UDP, koji omogućuje brži ali manje pouzdan prijenos. Osim mrežnih protokola, za lokalnu komunikaciju koristi se i UNIX lokalni protokol, dok se u specifičnim okruženjima može naići na starije protokole poput AppleTalk-a.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 396,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 3,
+    "question": "Koji su osnovni sistemski pozivi pri radu sa socket-ima?",
+    "answer": "Pri radu sa socket-ima koristi se niz sistemskih poziva koji omogućuju stvaranje i upravljanje socket-ima. Proces započinje stvaranjem socket-a pomoću poziva socket, nakon čega se socket povezuje s adresom pomoću bind ako se radi o poslužitelju. Potom se socket stavlja u stanje slušanja s pozivom listen, a klijent koristi connect kako bi uspostavio vezu. Kada poslužitelj primi zahtjev, koristi accept za prihvaćanje veze. Za razmjenu podataka koriste se read i write, dok se na kraju veze socket zatvara pozivom close.",
+    "link": "https://en.wikipedia.org/wiki/Berkeley_sockets"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 397,
+  "fields": {
+    "lecture_id": 12,
+    "subject": 3,
+    "question": "Što je upravljanje memorijom?",
+    "answer": "Upravljanje memorijom je funkcionalnost operacijskog sustava kojom se omogućuje učitavanje više procesa u radnu memoriju i raspoređivanje te memorije među njima. Operacijski sustav vodi računa o tome koji dijelovi memorije su zauzeti, koji su slobodni, i kako optimalno dodijeliti memorijske resurse svakom procesu tako da se postigne učinkovito korištenje memorije i izbjegnu konflikti među procesima.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 398,
+  "fields": {
+    "lecture_id": 12,
+    "subject": 3,
+    "question": "Koji su problemi povezani s fiksnim particioniranjem memorije?",
+    "answer": "Kod fiksnog particioniranja memorije, ukupna memorija podijeljena je na unaprijed definirane blokove fiksne veličine. Glavni problem ovog pristupa je unutarnja fragmentacija, koja nastaje kada proces zauzme više memorije nego što mu je stvarno potrebno, ali se svejedno dodjeljuje cijeli blok. Zbog toga dolazi do neučinkovitog korištenja memorije, a dodatni problem je i ograničen broj procesa koji mogu istovremeno biti aktivni, jer broj particija definira maksimalan broj procesa.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 399,
+  "fields": {
+    "lecture_id": 12,
+    "subject": 3,
+    "question": "Koji je glavni problem dinamičkog particioniranja memorije?",
+    "answer": "Glavni problem kod dinamičkog particioniranja memorije je vanjska fragmentacija. To se događa kada tijekom vremena u memoriji nastanu brojni mali, nepovezani slobodni prostori koji zajedno možda čine dovoljno memorije za novi proces, ali zbog njihove razdvojenosti operacijski sustav ne može alocirati memoriju u jednom komadu. Zbog toga može doći do situacije u kojoj se novi proces ne može učitati, iako ukupno ima dovoljno slobodne memorije.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 400,
+  "fields": {
+    "lecture_id": 12,
+    "subject": 3,
+    "question": "Što je zbijanje memorije i kada se koristi?",
+    "answer": "Zbijanje memorije je postupak kojim operacijski sustav premješta podatke u memoriji s ciljem uklanjanja vanjske fragmentacije. Premještanjem aktivnih procesa u jedan dio memorije, oslobađa se kontinuirani blok memorije koji se može dodijeliti novim procesima. Ova operacija povećava učinkovitost korištenja memorije, ali također predstavlja dodatni trošak za sustav jer zahtijeva vrijeme i resurse za pomicanje podataka.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 401,
+  "fields": {
+    "lecture_id": 12,
+    "subject": 3,
+    "question": "Koji algoritmi se koriste za dodjelu slobodnih memorijskih blokova?",
+    "answer": "Postoji nekoliko algoritama koji se koriste za odabir slobodnih blokova memorije kada novi proces zatraži prostor. Prvi algoritam, First-fit, traži prvi dovoljno veliki blok i odmah ga dodjeljuje. Next-fit je sličan, ali nastavlja pretraživanje od mjesta gdje je prethodna alokacija završila. Best-fit traži najmanji blok koji je dovoljno velik za proces, kako bi se ostavilo što manje neiskorištenog prostora. Suprotno tome, Worst-fit odabire najveći dostupni blok, s namjerom da podijeljeni ostatak nakon alokacije bude dovoljno velik za buduće zahtjeve. Svaki od ovih algoritama ima svoje prednosti i nedostatke u pogledu brzine i količine fragmentacije koju uzrokuje.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 402,
+  "fields": {
+    "lecture_id": 12,
+    "subject": 3,
+    "question": "Što je buddy system i kako funkcionira?",
+    "answer": "„Buddy system“ je metoda upravljanja memorijom koja predstavlja kompromis između fiksnog i dinamičkog particioniranja. U ovom sustavu, memorija se dijeli na blokove veličine koji su potencije broja dva, a kada je potrebno, veći blokovi se dijele na manje. Ako su dva susjedna bloka slobodna i imaju istu veličinu, oni se mogu ponovno spojiti u veći blok. Ovaj sustav omogućuje fleksibilnu i učinkovitu dodjelu memorije uz smanjenu fragmentaciju i brže pronalaženje slobodnog prostora.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 403,
+  "fields": {
+    "lecture_id": 13,
+    "subject": 3,
+    "question": "Koji su osnovni sigurnosni zahtjevi i sigurnosne prijetnje u informacijskim sustavima?",
+    "answer": "Sigurnosni zahtjevi informacijskih sustava temelje se na četiri ključna principa: povjerljivosti, integritetu, dostupnosti i autentičnosti. Povjerljivost podrazumijeva da su podaci dostupni samo ovlaštenim osobama, a ne smiju ih presresti treće strane, što se naziva presretanjem. Integritet znači da podaci ostaju neizmijenjeni osim ako ih ne izmijeni netko s odgovarajućim ovlastima, a svako neautorizirano mijenjanje predstavlja sigurnosnu prijetnju poznatu kao modifikacija. Dostupnost osigurava da sustav i njegovi resursi budu dostupni korisnicima kad god su im potrebni, dok je prekid rada ili pristupa sustavu prijetnja koja ugrožava dostupnost. Autentičnost se odnosi na vjerodostojnost komunikacije ili identiteta korisnika, a sigurnosna prijetnja koja ugrožava autentičnost naziva se fabrikacija, jer uključuje lažno predstavljanje ili izmišljanje podataka.",
+    "link": "https://ocw.mit.edu/courses/6-858-computer-systems-security-fall-2014/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 404,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Što je zastoj?",
+    "answer": "Procesi međusobno čekaju resurse koje drže drugi procesi, stvarajući kružno čekanje bez izlaza.",
+    "link": "https://www.geeksforgeeks.org/introduction-of-deadlock-in-operating-system/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 405,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Koji su primjeri iz stvarnog svijeta za zastoj?",
+    "answer": "Uski tunel: dva automobila koja dolaze s različitih strana ne mogu proći istovremeno.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 406,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Koja su četiri nužna uvjeta za nastanak zastoja?",
+    "answer": "Međusobno isključivanje, zadrži i čekaj, nema iznuđivanja, kružno čekanje",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 407,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Je li dovoljno da 4 glavna uvijeta zadovoljena da se zastoj dogodi?",
+    "answer": "procesi međusobno čekaju resurse koje drže drugi procesi, stvarajući kružno čekanje bez izlaza.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 408,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako nastaje zastoj kod semafora?",
+    "answer": " Kada procesi koriste semafore u različitom redoslijedu: P1- wait(S); wait(Q) i P2- wait(Q); wait(S);",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 409,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako dolazi do zastoja kod memorije?",
+    "answer": "Kad procesi traže više memorije u fazama koje se međusobno blokiraju.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 410,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako komunikacija može uzrokovati zastoj?",
+    "answer": "Ako proces A čeka poruku od procesa B, a B čeka poruku od A.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 411,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Što je dijagram dodjeljivanja resursa?",
+    "answer": "Graf s čvorovima za procese i resurse, gdje strelice označavaju zahtjeve i dodjele.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 412,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako prepoznati zastoj u grafu?",
+    "answer": "Ako postoji kružni put, postoji potencijalni zastoj.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 413,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako se može spriječiti zastoj?",
+    "answer": "Onemogućavanjem barem jednog od uvjeta: 1. Zabraniti „zadrži i čekaj“, 2. Dozvoliti iznuđivanje, 3. Izbjegavati kružno čekanje poretkom resursa",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 414,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Zašto je sprječavanje zastoja nepraktično?",
+    "answer": "Često je neefikasno i može dovesti do lošeg iskorištavanja resursa",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 415,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Što je Bankarov algoritam?",
+    "answer": "Algoritam koji simulira dodjelu resursa i provjerava da li sustav ostaje u sigurnom stanju.",
+    "link": "https://www.geeksforgeeks.org/bankers-algorithm-in-operating-system-2/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 416,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kada se zahtjev za resursom odbija prema Bankarovu algoritmu?",
+    "answer": "Ako proces traži više od prijavljenog maksimuma ili ako sustav ulazi u nesigurno stanje",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 417,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako operacijski sustav otkriva zastoj?",
+    "answer": "Periodičkom provjerom grafa dodjele resursa pomoću algoritma za otkrivanje zastoja.",
+    "link": "https://www.geeksforgeeks.org/deadlock-detection-algorithm-in-operating-system/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 418,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako znati koji su procesi u zastoju?",
+    "answer": "Procesi koji na kraju algoritma ostanu neoznačeni.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 419,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako se može riješiti zastoj?",
+    "answer": "Zastoj se može riješiti: prekidom procesa, rollbackom procesa ili iznuđivanjem resursa",
+    "link": "https://www.geeksforgeeks.org/deadlock-handling-in-operating-system/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 420,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Koji je kriterij za odabir procesa za prekid?",
+    "answer": "Prioritet, vrsta procesa, količina resursa koje koristi i broj prethodnih rollbackova",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 421,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Što je kombinirani pristup upravljanju zastojima?",
+    "answer": "Kombinacija prevencije, izbjegavanja i otkrivanja, ovisno o vrsti resursa i efikasnosti.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 422,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je uloga upravljanja memorijom u operacijskom sustavu?",
+    "answer": "Upravljanje memorijom omogućuje učitavanje više procesa u memoriju, njihovu zaštitu, dijeljenje memorije i učinkovito korištenje resursa. Također omogućuje logičku i fizičku separaciju memorijskih adresa.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 423,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Koje su glavne faze povezivanja adresa u memoriji?",
+    "answer": "Povezivanje adresa može se vršiti: 1. Tijekom prevođenja(compile time), 2.prilikom učitavanja(load time), 3. za vrijeme izvršavanja(execution time), gdje je potrebna hardverska podrška (base i limit registri)",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 424,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je dinamičko punjenje?",
+    "answer": "Potprogrami i funkcije se učitavaju u memoriju samo kad se pozovu, čime se smanjuje iskorištenost memorije jer se učitavaju samo stvarno korištene funkcije.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 425,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Koja je razlika između statičkog i dinamičkog povezivanja?",
+    "answer": "Statičko povezivanje uključuje sistemske knjižnice pri kompilaciji, dok se dinamičko povezivanje obavlja tijekom izvođenja i omogućuje dijeljenje koda među procesima.",
+    "link": "https://www.geeksforgeeks.org/static-and-dynamic-linking-in-operating-systems/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 426,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Koji su osnovni zahtjevi upravljanja memorijom?",
+    "answer": "Premještanje (relocation), zaštita (protection), dijeljenje (sharing), logička i fizička organizacija memorije",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 427,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je Memory Management Unit?",
+    "answer": "MMU je sklop koji pretvara logičke (virtualne) adrese u fizičke, često pomoću base i limit registara. Time se omogućuje izolacija između procesa i fleksibilnije upravljanje memorijom.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 428,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je prebacivanje u kontekstu memorije?",
+    "answer": "Proces se može privremeno ukloniti iz glavne memorije i smjestiti u sekundarnu memoriju da bi se oslobodilo mjesto za druge procese. Kasnije se može vratiti za nastavak izvršavanja.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 429,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Koji su problemi fiksnog particioniranja memorije?",
+    "answer": "Glavni problem je unutarnja fragmentacija, jer svaki proces zauzima cijelu particiju, bez obzira na stvarnu veličinu.",
+    "link": "https://www.geeksforgeeks.org/difference-between-internal-and-external-fragmentation/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 430,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je vanjska fragmentacija i kako se rješava?",
+    "answer": "Vanjska fragmentacija nastaje kad postoji dovoljno ukupne slobodne memorije, ali ne u jednom komadu. Rješava se zbijanjem memorije (compaction).",
+    "link": "https://www.geeksforgeeks.org/difference-between-internal-and-external-fragmentation/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 431,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je buddy system?",
+    "answer": "To je sustav za dinamičku dodjelu memorije u blokovima veličine 2^k. Kad se memorija oslobodi, blokovi se mogu spajati ako su „parovi” (buddies).",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 432,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Kako funkcionira straničenje?",
+    "answer": "Straničenje dijeli memoriju na jednake blokove (stranice i okvire - frames). Proces koristi tablicu stranica za preslikavanje virtualnih adresa u fizičke.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 433,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Čemu služi Translation Lookaside Buffer?",
+    "answer": "TLB je cache koji pohranjuje nedavno korištene preslikavanja stranica, čime ubrzava pristup memoriji izbjegavajući stalne pristupe glavnoj memoriji.",
+    "link": "https://www.geeksforgeeks.org/translation-lookaside-buffer-tlb-in-paging/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 434,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je segmentacija u upravljanju memorijom?",
+    "answer": "Segmentacija omogućuje logičku podjelu programa na segmente (npr. kod, podaci), različitih veličina, s posebnim pravima pristupa i vidljivim programeru.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 435,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Koja je razlika između straničenja i segmentacije?",
+    "answer": "Straničenje koristi fiksne veličine stranica i nevidljivo je programeru. Segmentacija koristi varijabilne veličine segmenata i vidljiva je programeru. Obje se mogu kombinirati.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 436,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je virtualna memorija i kako funkcionira?",
+    "answer": "Virtualna memorija omogućuje da proces koristi više memorije nego što fizički postoji, učitavanjem samo potrebnih dijelova u glavnu memoriju prema potrebi.",
+    "link": "https://www.geeksforgeeks.org/virtual-memory-in-operating-system/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 437,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Što je računalna sigurnost i zašto je važna?",
+    "answer": "Računalna sigurnost odnosi se na zaštitu računalnih sustava i podataka od neovlaštenog pristupa, oštećenja ili krađe. U informatičkom dobu, gdje su informacije temelj modernog načina života, sigurnost je ključna za očuvanje povjerljivosti, integriteta i dostupnosti podataka.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 438,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Koji su osnovni sigurnosni zahtjevi računalnih sustava?",
+    "answer": "Osnovni sigurnosni zahtjevi uključuju: Povjerljivost: samo autorizirani korisnici imaju pristup informacijama, Integritet: samo auzorizirani korisnici mogu mijenjati informacije, Dostupnost: informacije moraju biti dostupne autoriziranim korisnicima, Autentičnost: sustav provjerava valjanost indentiteta subjeka",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 439,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Što je Denial of Service napad?",
+    "answer": "DoS napad je pokušaj onemogućavanja pristupa servisu ili sustavu zakonitim korisnicima, često preopterećenjem resursa. Distribuirani DoS (DDoS) napadi koriste više kompromitiranih uređaja za izvođenje napada.",
+    "link": "https://stytch.com/blog/10-common-cyber-attacks"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 440,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Koji su najčešći oblici zlonamjernog softvera?",
+    "answer": "Najčešći oblici uključuju: Spyware: Prikuplja informacije bez znanja korisnika, Keylogger: Bilježi pritiske tipki kako bi ukrao lozinke i druge osjetljive podatke, Dialer: Automatski bira brojeve, često skupe, bez znanja korisnika, Rootkit: Omogućuje neautorizirani pristup sustavu skrivajući se od detekcije",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 441,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Kako se možemo obraniti od sigurnosnih prijetnji?",
+    "answer": "Edukacija korisnika, redovite sigurnosne kopije(backup), implementacija sigurnosnih politika, korištenje jakih lozinki i njihovo redovito mijenjanje, ažuriranje sustava i softvera, korištenje kriptografije, primjena vatrozida (firewall) i VPN-a, korištenje antivirusnih programa i sustava za otkrivanje upada (IDS)",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 442,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Što je kriptografija i koje su osnovne metode šifriranja?",
+    "answer": "Kriptografija je znanost o zaštiti informacija pretvaranjem čitljivih podataka u neprepoznatljiv oblik. Simetično šifriranje: isti ključ se koristi za šifriranje i dešifriranje podataka, Asimetrično šifriranje: koriste se dva različita ključa - javni za šifriranje i privatni za dešifriranje",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 443,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Zašto su lozinke važan aspekt sigurnosti i kako ih pravilno koristiti?",
+    "answer": " Lozinke su prva linija obrane u zaštiti računalnih sustava. Dobra lozinka treba biti kompleksna, jedinstvena i redovito mijenjana. Također, važno je ne dijeliti lozinke i koristiti upravitelje lozinki za njihovo sigurno pohranjivanje.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 444,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Što je dvofaktorska autentifikacija i kako poboljšava sigurnost?",
+    "answer": "2FA dodaje dodatni sloj sigurnosti zahtijevajući dva oblika identifikacije prije pristupa sustavu: Nnešto što korisnik zna npr. lozinka ili PIN ili nešto što korisnik ima kao npr. mobilni uređaj, token ili biometrijski podatak",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 445,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Kako socijalni inženjering predstavlja prijetnju sigurnosti?",
+    "answer": "Socijalni inženjering manipulira ljudima kako bi otkrili povjerljive informacije. Primjeri uključuju phishing napade, lažne pozive ili poruke koje se predstavljaju kao legitimne kako bi prevarili korisnike.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 446,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Koje su preporuke za zaštitu od phishing napada?",
+    "answer": "Preporuke su: pažljivo provjeravanje e-mail adresa i linkova, ne otvaranje sumnjivih privitaka, korištenje sigurnosnih alata koji detektiraju phising pokušaje, edukacija korisnika o prepoznavanju lažnih poruka",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 447,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Što je sigurnosna politika i zašto je važna?",
+    "answer": "Sigurnosna politika je skup pravila i procedura koje organizacija uspostavlja kako bi zaštitila svoje informacijske resurse. Ona definira odgovornosti, dopuštenja i postupke u slučaju sigurnosnih incidenata.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 448,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Što su sistemski pozivi?",
+    "answer": "Sistemski pozivi su sučelje (API) između korisničkih programa i jezgre operacijskog sustava. Omogućuju korisničkim programima da traže usluge od jezgre, poput čitanja datoteka, upravljanja memorijom i procesa.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 449,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Koja je razlika između jezgrenog i korisničkog načina rada?",
+    "answer": "Korisnički način rada (privilegijska razina 3) ograničava pristup hardveru i resursima sustava, dok jezgreni način rada (privilegijska razina 0) ima puni pristup sustavu. Sistemski pozivi omogućuju sigurnu komunikaciju između ta dva načina.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 450,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako funkcionira izvršavanje sistemskog poziva?",
+    "answer": "Izvršava se ASM instrukcija syscall, koja prebacuje program iz korisničkog u jezgreni način rada. Identifikacijski broj željenog sistemskog poziva postavlja se u eax registar, a zatim se koristi tablica sistemskih poziva kako bi se pronašao odgovarajući handler na fiksnoj adresi.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 451,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Što je system call handler?",
+    "answer": "To je dio jezgre operacijskog sustava koji prima i obrađuje sistemski poziv kada dođe iz korisničkog načina rada.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 452,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako su sistemski pozivi implementirani u Linuxu?",
+    "answer": "Linux koristi syscall instrukciju za pozivanje funkcija iz jezgre. Svakom pozivu dodijeljen je jedinstveni broj koji se koristi za pronalaženje funkcije u tablici sistemskih poziva.",
+    "link": "https://filippo.io/linux-syscall-table/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 453,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Zašto je pristup sistemskim pozivima drugačiji na Windowsima?",
+    "answer": "Kod Windowsa izvorni kod jezgre nije javno dostupan pa se sistemski pozivi ne mogu direktno inspektirati. Umjesto toga, dostupna je dokumentacija za Win32 API koji omogućuje razvoj softvera za Windows bez direktnog uvida u sistemske pozive.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 454,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je proces?",
+    "answer": "Proces je instanca računalnog programa u izvođenju. Svaki proces koristi vlastite resurse poput CPU-a, memorije, datoteka i I/O uređaja. Čak i ako dva procesa izvršavaju isti program, oni su međusobno nezavisni.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 455,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Koje su osnovne odgovornosti operacijskog sustava vezane uz procese?",
+    "answer": "Operacijski sustav je odgovoran za kreiranje i brisanje korisničkih i sistemskih procesa, za njihovo raspoređivanje odnosno scheduling, te za osiguravanje mehanizama kojima se upravlja međusobnom sinkronizacijom, komunikacijom među procesima i zastojima koji mogu nastati.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 456,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Kako izgleda struktura procesa u memoriji?",
+    "answer": "Struktura procesa u memoriji podijeljena je u nekoliko dijelova. Stog se koristi za privremene podatke poput parametara funkcija, povratnih adresa i lokalnih varijabli. Hrpa je dio memorije koji se dinamički alocira tijekom izvršavanja procesa. Podatkovni dio sadrži globalne i statičke varijable, dok tekstualni dio sadrži izvršni kod programa.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 457,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je Process Control Block?",
+    "answer": "Process Control Block, skraćeno PCB, je podatkovna struktura koja čuva sve važne informacije o procesu. Te informacije uključuju jedinstveni identifikacijski broj procesa (Process ID), adresu sljedeće instrukcije koja će se izvršiti (Program Counter), informacije o korištenju ulazno-izlaznih uređaja, podatke za raspoređivanje procesa poput prioriteta i pokazivača na redove čekanja te statističke podatke o korištenju CPU-a i vremenskim ograničenjima.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 458,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Koja su osnovna stanja procesa?",
+    "answer": "Osnovna stanja procesa uključuju stanja u kojima se proces može nalaziti tijekom svog životnog ciklusa, a to su: novo (new), spremno (ready), u izvođenju (running), u čekanju (waiting) i završeno (terminated). Svaki proces prelazi iz jednog stanja u drugo ovisno o događajima tijekom svog izvođenja.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 459,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što se događa kada proces primi signal?",
+    "answer": "Kada proces primi signal, on može reagirati na nekoliko načina. Može ignorirati signal, iako neki signali ne mogu biti ignorirani. Također može izvršiti zadanu, unaprijed definiranu radnju, ili može izvršiti vlastitu, prilagođenu funkciju koja obrađuje taj signal. Ta se funkcija naziva signal handler. Jezgra tada obavlja zamjenu konteksta kako bi pozvala handler, a nakon njegovog izvršavanja, kontrola se vraća izvornom procesu.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 460,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Kako izgleda hijerarhija procesa u Linuxu?",
+    "answer": "U Linux operacijskom sustavu, prvi proces koji se pokreće je proces pod nazivom init i ima identifikacijski broj PID=1. Taj proces je uvijek u stanju izvršavanja i svi ostali procesi se smatraju njegovom djecom ili potomcima. Svaki proces u sustavu ima svog roditelja, a može imati i više \"braće i sestara\", odnosno druge procese koje je stvorio isti roditeljski proces. Djeca također mogu stvarati vlastitu djecu, čime nastaje hijerarhijska struktura procesa. Uz init postoje i alternativni sustavi za pokretanje procesa, poput systemd-a, Upstarta, OpenRC-a, Epocha i Mudara.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 461,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Zašto se koristi višedretvenost?",
+    "answer": "Višedretvenost se koristi kako bi se omogućilo izvođenje više neovisnih tokova instrukcija istovremeno, pri čemu te dretve dijele zajednički adresni prostor. Time se postiže paralelizam dijeljenjem jednog procesa na više dretvi, što povećava učinkovitost i iskorištenost procesora.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 462,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Koja je razlika između procesa i dretvi?",
+    "answer": "Procesi su izolirani jedni od drugih i koriste zaseban memorijski prostor, dok dretve dijele zajednički memorijski prostor i ovise jedna o drugoj. Stvaranje i komunikacija među procesima imaju veći vremenski trošak (overhead), dok su dretve lakše (lightweight) i brže u komunikaciji. Također, pogreške u jednom procesu ne utječu na druge procese, dok greška u jednoj dretvi može utjecati na sve ostale dretve unutar istog procesa. Kod dretvi je zbog dijeljenja resursa potrebna sinkronizacija, dok kod procesa to često nije slučaj.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 463,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Koja je razlika između programa s jednom dretvom i programa s više dretvi?",
+    "answer": "Program s jednom dretvom izvršava sve zadatke sekvencijalno, što može uzrokovati blokiranje cijelog programa ako dođe do zahtjevne operacije. S druge strane, program s više dretvi omogućava da se pojedini dijelovi aplikacije izvode paralelno, čime se poboljšava responzivnost i ukupna učinkovitost.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 464,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Koje su prednosti korištenja dretvi?",
+    "answer": "Korištenje dretvi omogućava bolju responzivnost programa jer se kompleksni zahtjevi mogu izvršavati bez blokiranja drugih dijelova aplikacije. Također se smanjuje vrijeme potrebno za prebacivanje konteksta, jer je manji overhead nego kod procesa. Komunikacija između dretvi je jednostavnija i učinkovitija jer dijele memorijski prostor. Osim toga, dretve poboljšavaju skalabilnost jer omogućuju iskorištavanje paralelizma u višeprocesorskim sustavima.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 465,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Koje vrste dretvi postoje?",
+    "answer": "Postoje dvije glavne vrste dretvi: korisničke (user threads) i jezgrene (kernel threads). Korisničke dretve implementirane su u korisničkom prostoru bez izravne podrške jezgre i obično su jednostavne za implementaciju. Jezgrene dretve podržava sama jezgra operacijskog sustava i omogućuju izvođenje više zadataka paralelno na razini jezgre, ali njihova implementacija je složenija.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 466,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Kako se korisničke dretve mapiraju na jezgrene dretve?",
+    "answer": "Korisničke dretve mogu se mapirati na jezgrene dretve koristeći jednu od tri strategije: „many to one“, gdje više korisničkih dretvi koristi jednu jezgrenu dretvu; „one to one“, gdje svaka korisnička dretva ima svoju jezgrenu dretvu; te „many to many“, gdje više korisničkih dretvi može koristiti više jezgrenih dretvi, ali ne nužno u omjeru jedan na jedan.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 467,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Što je utrkivanje  i kada nastaje?",
+    "answer": "Utrkivanje nastaje kada više dretvi istovremeno pokušava pristupiti i mijenjati zajedničke resurse, a redoslijed izvršavanja tih operacija nije definiran. To dovodi do neočekivanih ponašanja programa ili pogrešnih rezultata. Utrkivanje se obično događa u kritičnim sekcijama koda gdje se provode operacije tipa \"read-modify-write\" ili \"check-then-act\".",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 468,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Što je sinkronizacija i kako pomaže kod upravljanja dretvama?",
+    "answer": "Sinkronizacija je mehanizam koji rješava probleme poput utrkivanja među dretvama. Uključuje korištenje atomskih operacija, semafora i međusobnog isključivanja (mutex). ",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 469,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Kako radi mutex?",
+    "answer": "Mutex radi slično binarnom semaforu, ali se temelji na zaključavanju resursa kako bi se osiguralo da samo jedna dretva u određenom trenutku ima pristup kritičnoj sekciji.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 470,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Što je međuprocesna komunikacija?",
+    "answer": "Međuprocesna komunikacija (IPC) je mehanizam koji operacijski sustav pruža kako bi procesi mogli međusobno komunicirati i upravljati dijeljenim resursima. Omogućuje sinkronizaciju i razmjenu podataka među procesima koji se izvršavaju istovremeno.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 471,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Kako funkcionira komunikacija putem dijeljene memorije?",
+    "answer": "Komunikacija putem dijeljene memorije podrazumijeva pisanje i čitanje podataka u zajednički memorijski prostor. Procesi koji koriste dijeljenu memoriju odmah vide promjene, što čini ovu metodu najbržom. Međutim, zahtijeva pažljivo upravljanje pristupom pomoću semafora kako bi se izbjegli problemi istovremenog pristupa, slično kao u višedretvenim programima.",
+    "link": "https://www.geeksforgeeks.org/inter-process-communication-ipc-shared-memory/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 472,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Što je memorijsko mapiranje i kako se koristi u IPC-u?",
+    "answer": "Memorijsko mapiranje omogućuje procesima da komuniciraju putem datoteka koje su mapirane u njihovu memoriju. Operacijski sustav upravlja pristupom datotekama, a procesi tretiraju mapirani dio kao da je dio njihove glavne memorije. Promjene u memoriji automatski se prenose u povezane datoteke.",
+    "link": "https://learn.microsoft.com/en-us/windows/win32/memory/creating-a-file-mapping-object"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 473,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Kako funkcionira cjevovod u međuprocesnoj komunikaciji?",
+    "answer": "Cjevovod je jednosmjeran kanal između dva procesa. Jedan proces upisuje podatke, dok drugi čita. Najčešće se koristi između povezanih procesa, poput roditeljskog i podprocesa. Cjevovod postoji samo dok su povezani procesi aktivni.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 474,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Po čemu se imenovani cjevovod razlikuje od običnog cjevovoda?",
+    "answer": "Imenovani cjevovod (FIFO) ima ime u datotečnom sustavu, što omogućuje komunikaciju i između nepovezanih procesa. Procesi mogu neovisno otvarati, zatvarati, čitati i pisati u FIFO.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 475,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Kako funkcionira komunikacija porukama?",
+    "answer": "Komunikacija porukama omogućuje slanje i primanje poruka putem redova poruka. Poruke se obično obrađuju redoslijedom dolaska, ali postoji mogućnost da se pojedine poruke ciljano povuku prije nego dođu na red, što pruža veću fleksibilnost od FIFO.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 476,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Što su signali i kako se koriste u IPC-u?",
+    "answer": "Signali su oblik softverskih prekida koje procesi koriste za obavještavanje drugih procesa o određenim događajima. Signale može slati drugi proces ili jezgra sustava. Kad proces primi signal, može izvršiti određenu funkciju poznatu kao signalni rukovatelj (handler).",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 477,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Koji oblik međuprocesne komunikacije će biti obrađen sljedeći tjedan?",
+    "answer": "Sljedeći tjedan planira se obrada IPC-a putem utičnica (sockets), koje omogućuju komunikaciju između procesa na različitim računalima putem mreže.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 478,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 3,
+    "question": "Što su utičnice u kontekstu međuprocesne komunikacije?",
+    "answer": "Utičnice su mehanizam koji omogućuje međuprocesnu komunikaciju između više procesa na istom računalu ili između računala unutar iste mreže. Podaci se šalju u obliku paketa, a najčešće se koristi model poslužitelj-klijent. Utičnice omogućuju fleksibilan i standardiziran način komunikacije putem mreže.",
+    "link": "https://en.wikipedia.org/wiki/Network_socket"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 479,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 3,
+    "question": "Koje je tri stvari potrebno definirati prilikom stvaranja socket-a?",
+    "answer": "Prilikom stvaranja socket-a potrebno je definirati stil komunikacije, namespace i protokol. Stil komunikacije određuje način na koji se podaci prenose, namespace određuje adresni prostor i način na koji se socket identificira, a protokol definira pravila prijenosa podataka između krajnjih točaka komunikacije.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 480,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 3,
+    "question": "Koje su osnovne razlike između stream i datagram utičnica?",
+    "answer": "Stream utičnice predstavljaju oblik komunikacije koji je pouzdan i osigurava da svi paketi stignu na odredište redoslijedom kojim su poslani. Ako neki paket ne stigne, automatski se ponovno šalje, što omogućuje točnu i sigurnu isporuku podataka. Takav način rada nalikuje TCP protokolu. S druge strane, datagram utičnice ne garantiraju isporuku paketa niti njihov redoslijed, već se fokusiraju na brzinu prijenosa. U slučaju gubitka paketa, nema ponovnog slanja. Ovakav način rada podsjeća na UDP komunikaciju, gdje je brzina prioritet nad pouzdanošću.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 481,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 3,
+    "question": "Što predstavlja namespace kod socket-a?",
+    "answer": "Namespace kod socket-a predstavlja način na koji se adresira jedna krajnja točka komunikacije. Ako se koristi lokalni namespace, adresa se odnosi na datoteku u datotečnom sustavu, čime se socket identificira pomoću imena datoteke. Ako se koristi mrežni namespace, adresa socket-a sastoji se od IP adrese hosta i broja porta, čime se omogućuje komunikacija između udaljenih računala preko mreže.",
+    "link": "https://en.wikipedia.org/wiki/Unix_domain_socket"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 482,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 3,
+    "question": "Koju ulogu ima protokol kod socket-a?",
+    "answer": "Protokol kod socket-a određuje način na koji će se podaci prenositi između procesa. On definira pravila komunikacije i ponašanje tijekom razmjene informacija. Neki od najčešće korištenih protokola su TCP/IP, koji osigurava pouzdan prijenos podataka, i UDP, koji omogućuje brži ali manje pouzdan prijenos. Osim mrežnih protokola, za lokalnu komunikaciju koristi se i UNIX lokalni protokol, dok se u specifičnim okruženjima može naići na starije protokole poput AppleTalk-a.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 483,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 3,
+    "question": "Koji su osnovni sistemski pozivi pri radu sa socket-ima?",
+    "answer": "Pri radu sa socket-ima koristi se niz sistemskih poziva koji omogućuju stvaranje i upravljanje socket-ima. Proces započinje stvaranjem socket-a pomoću poziva socket, nakon čega se socket povezuje s adresom pomoću bind ako se radi o poslužitelju. Potom se socket stavlja u stanje slušanja s pozivom listen, a klijent koristi connect kako bi uspostavio vezu. Kada poslužitelj primi zahtjev, koristi accept za prihvaćanje veze. Za razmjenu podataka koriste se read i write, dok se na kraju veze socket zatvara pozivom close.",
+    "link": "https://en.wikipedia.org/wiki/Berkeley_sockets"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 484,
+  "fields": {
+    "lecture_id": 12,
+    "subject": 3,
+    "question": "Što je upravljanje memorijom?",
+    "answer": "Upravljanje memorijom je funkcionalnost operacijskog sustava kojom se omogućuje učitavanje više procesa u radnu memoriju i raspoređivanje te memorije među njima. Operacijski sustav vodi računa o tome koji dijelovi memorije su zauzeti, koji su slobodni, i kako optimalno dodijeliti memorijske resurse svakom procesu tako da se postigne učinkovito korištenje memorije i izbjegnu konflikti među procesima.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 485,
+  "fields": {
+    "lecture_id": 12,
+    "subject": 3,
+    "question": "Koji su problemi povezani s fiksnim particioniranjem memorije?",
+    "answer": "Kod fiksnog particioniranja memorije, ukupna memorija podijeljena je na unaprijed definirane blokove fiksne veličine. Glavni problem ovog pristupa je unutarnja fragmentacija, koja nastaje kada proces zauzme više memorije nego što mu je stvarno potrebno, ali se svejedno dodjeljuje cijeli blok. Zbog toga dolazi do neučinkovitog korištenja memorije, a dodatni problem je i ograničen broj procesa koji mogu istovremeno biti aktivni, jer broj particija definira maksimalan broj procesa.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 486,
+  "fields": {
+    "lecture_id": 12,
+    "subject": 3,
+    "question": "Koji je glavni problem dinamičkog particioniranja memorije?",
+    "answer": "Glavni problem kod dinamičkog particioniranja memorije je vanjska fragmentacija. To se događa kada tijekom vremena u memoriji nastanu brojni mali, nepovezani slobodni prostori koji zajedno možda čine dovoljno memorije za novi proces, ali zbog njihove razdvojenosti operacijski sustav ne može alocirati memoriju u jednom komadu. Zbog toga može doći do situacije u kojoj se novi proces ne može učitati, iako ukupno ima dovoljno slobodne memorije.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 487,
+  "fields": {
+    "lecture_id": 12,
+    "subject": 3,
+    "question": "Što je zbijanje memorije i kada se koristi?",
+    "answer": "Zbijanje memorije je postupak kojim operacijski sustav premješta podatke u memoriji s ciljem uklanjanja vanjske fragmentacije. Premještanjem aktivnih procesa u jedan dio memorije, oslobađa se kontinuirani blok memorije koji se može dodijeliti novim procesima. Ova operacija povećava učinkovitost korištenja memorije, ali također predstavlja dodatni trošak za sustav jer zahtijeva vrijeme i resurse za pomicanje podataka.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 488,
+  "fields": {
+    "lecture_id": 12,
+    "subject": 3,
+    "question": "Koji algoritmi se koriste za dodjelu slobodnih memorijskih blokova?",
+    "answer": "Postoji nekoliko algoritama koji se koriste za odabir slobodnih blokova memorije kada novi proces zatraži prostor. Prvi algoritam, First-fit, traži prvi dovoljno veliki blok i odmah ga dodjeljuje. Next-fit je sličan, ali nastavlja pretraživanje od mjesta gdje je prethodna alokacija završila. Best-fit traži najmanji blok koji je dovoljno velik za proces, kako bi se ostavilo što manje neiskorištenog prostora. Suprotno tome, Worst-fit odabire najveći dostupni blok, s namjerom da podijeljeni ostatak nakon alokacije bude dovoljno velik za buduće zahtjeve. Svaki od ovih algoritama ima svoje prednosti i nedostatke u pogledu brzine i količine fragmentacije koju uzrokuje.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 489,
+  "fields": {
+    "lecture_id": 12,
+    "subject": 3,
+    "question": "Što je buddy system i kako funkcionira?",
+    "answer": "„Buddy system“ je metoda upravljanja memorijom koja predstavlja kompromis između fiksnog i dinamičkog particioniranja. U ovom sustavu, memorija se dijeli na blokove veličine koji su potencije broja dva, a kada je potrebno, veći blokovi se dijele na manje. Ako su dva susjedna bloka slobodna i imaju istu veličinu, oni se mogu ponovno spojiti u veći blok. Ovaj sustav omogućuje fleksibilnu i učinkovitu dodjelu memorije uz smanjenu fragmentaciju i brže pronalaženje slobodnog prostora.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 490,
+  "fields": {
+    "lecture_id": 13,
+    "subject": 3,
+    "question": "Koji su osnovni sigurnosni zahtjevi i sigurnosne prijetnje u informacijskim sustavima?",
+    "answer": "Sigurnosni zahtjevi informacijskih sustava temelje se na četiri ključna principa: povjerljivosti, integritetu, dostupnosti i autentičnosti. Povjerljivost podrazumijeva da su podaci dostupni samo ovlaštenim osobama, a ne smiju ih presresti treće strane, što se naziva presretanjem. Integritet znači da podaci ostaju neizmijenjeni osim ako ih ne izmijeni netko s odgovarajućim ovlastima, a svako neautorizirano mijenjanje predstavlja sigurnosnu prijetnju poznatu kao modifikacija. Dostupnost osigurava da sustav i njegovi resursi budu dostupni korisnicima kad god su im potrebni, dok je prekid rada ili pristupa sustavu prijetnja koja ugrožava dostupnost. Autentičnost se odnosi na vjerodostojnost komunikacije ili identiteta korisnika, a sigurnosna prijetnja koja ugrožava autentičnost naziva se fabrikacija, jer uključuje lažno predstavljanje ili izmišljanje podataka.",
+    "link": "https://ocw.mit.edu/courses/6-858-computer-systems-security-fall-2014/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 491,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Što je zastoj?",
+    "answer": "Procesi međusobno čekaju resurse koje drže drugi procesi, stvarajući kružno čekanje bez izlaza.",
+    "link": "https://www.geeksforgeeks.org/introduction-of-deadlock-in-operating-system/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 492,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Koji su primjeri iz stvarnog svijeta za zastoj?",
+    "answer": "Uski tunel: dva automobila koja dolaze s različitih strana ne mogu proći istovremeno.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 493,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Koja su četiri nužna uvjeta za nastanak zastoja?",
+    "answer": "Međusobno isključivanje, zadrži i čekaj, nema iznuđivanja, kružno čekanje",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 494,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Je li dovoljno da 4 glavna uvijeta zadovoljena da se zastoj dogodi?",
+    "answer": "procesi međusobno čekaju resurse koje drže drugi procesi, stvarajući kružno čekanje bez izlaza.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 495,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako nastaje zastoj kod semafora?",
+    "answer": " Kada procesi koriste semafore u različitom redoslijedu: P1- wait(S); wait(Q) i P2- wait(Q); wait(S);",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 496,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako dolazi do zastoja kod memorije?",
+    "answer": "Kad procesi traže više memorije u fazama koje se međusobno blokiraju.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 497,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako komunikacija može uzrokovati zastoj?",
+    "answer": "Ako proces A čeka poruku od procesa B, a B čeka poruku od A.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 498,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Što je dijagram dodjeljivanja resursa?",
+    "answer": "Graf s čvorovima za procese i resurse, gdje strelice označavaju zahtjeve i dodjele.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 499,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako prepoznati zastoj u grafu?",
+    "answer": "Ako postoji kružni put, postoji potencijalni zastoj.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 500,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako se može spriječiti zastoj?",
+    "answer": "Onemogućavanjem barem jednog od uvjeta: 1. Zabraniti „zadrži i čekaj“, 2. Dozvoliti iznuđivanje, 3. Izbjegavati kružno čekanje poretkom resursa",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 501,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Zašto je sprječavanje zastoja nepraktično?",
+    "answer": "Često je neefikasno i može dovesti do lošeg iskorištavanja resursa",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 502,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Što je Bankarov algoritam?",
+    "answer": "Algoritam koji simulira dodjelu resursa i provjerava da li sustav ostaje u sigurnom stanju.",
+    "link": "https://www.geeksforgeeks.org/bankers-algorithm-in-operating-system-2/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 503,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kada se zahtjev za resursom odbija prema Bankarovu algoritmu?",
+    "answer": "Ako proces traži više od prijavljenog maksimuma ili ako sustav ulazi u nesigurno stanje",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 504,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako operacijski sustav otkriva zastoj?",
+    "answer": "Periodičkom provjerom grafa dodjele resursa pomoću algoritma za otkrivanje zastoja.",
+    "link": "https://www.geeksforgeeks.org/deadlock-detection-algorithm-in-operating-system/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 505,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako znati koji su procesi u zastoju?",
+    "answer": "Procesi koji na kraju algoritma ostanu neoznačeni.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 506,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako se može riješiti zastoj?",
+    "answer": "Zastoj se može riješiti: prekidom procesa, rollbackom procesa ili iznuđivanjem resursa",
+    "link": "https://www.geeksforgeeks.org/deadlock-handling-in-operating-system/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 507,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Koji je kriterij za odabir procesa za prekid?",
+    "answer": "Prioritet, vrsta procesa, količina resursa koje koristi i broj prethodnih rollbackova",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 508,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Što je kombinirani pristup upravljanju zastojima?",
+    "answer": "Kombinacija prevencije, izbjegavanja i otkrivanja, ovisno o vrsti resursa i efikasnosti.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 509,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je uloga upravljanja memorijom u operacijskom sustavu?",
+    "answer": "Upravljanje memorijom omogućuje učitavanje više procesa u memoriju, njihovu zaštitu, dijeljenje memorije i učinkovito korištenje resursa. Također omogućuje logičku i fizičku separaciju memorijskih adresa.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 510,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Koje su glavne faze povezivanja adresa u memoriji?",
+    "answer": "Povezivanje adresa može se vršiti: 1. Tijekom prevođenja(compile time), 2.prilikom učitavanja(load time), 3. za vrijeme izvršavanja(execution time), gdje je potrebna hardverska podrška (base i limit registri)",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 511,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je dinamičko punjenje?",
+    "answer": "Potprogrami i funkcije se učitavaju u memoriju samo kad se pozovu, čime se smanjuje iskorištenost memorije jer se učitavaju samo stvarno korištene funkcije.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 512,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Koja je razlika između statičkog i dinamičkog povezivanja?",
+    "answer": "Statičko povezivanje uključuje sistemske knjižnice pri kompilaciji, dok se dinamičko povezivanje obavlja tijekom izvođenja i omogućuje dijeljenje koda među procesima.",
+    "link": "https://www.geeksforgeeks.org/static-and-dynamic-linking-in-operating-systems/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 513,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Koji su osnovni zahtjevi upravljanja memorijom?",
+    "answer": "Premještanje (relocation), zaštita (protection), dijeljenje (sharing), logička i fizička organizacija memorije",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 514,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je Memory Management Unit?",
+    "answer": "MMU je sklop koji pretvara logičke (virtualne) adrese u fizičke, često pomoću base i limit registara. Time se omogućuje izolacija između procesa i fleksibilnije upravljanje memorijom.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 515,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je prebacivanje u kontekstu memorije?",
+    "answer": "Proces se može privremeno ukloniti iz glavne memorije i smjestiti u sekundarnu memoriju da bi se oslobodilo mjesto za druge procese. Kasnije se može vratiti za nastavak izvršavanja.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 516,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Koji su problemi fiksnog particioniranja memorije?",
+    "answer": "Glavni problem je unutarnja fragmentacija, jer svaki proces zauzima cijelu particiju, bez obzira na stvarnu veličinu.",
+    "link": "https://www.geeksforgeeks.org/difference-between-internal-and-external-fragmentation/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 517,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je vanjska fragmentacija i kako se rješava?",
+    "answer": "Vanjska fragmentacija nastaje kad postoji dovoljno ukupne slobodne memorije, ali ne u jednom komadu. Rješava se zbijanjem memorije (compaction).",
+    "link": "https://www.geeksforgeeks.org/difference-between-internal-and-external-fragmentation/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 518,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je buddy system?",
+    "answer": "To je sustav za dinamičku dodjelu memorije u blokovima veličine 2^k. Kad se memorija oslobodi, blokovi se mogu spajati ako su „parovi” (buddies).",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 519,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Kako funkcionira straničenje?",
+    "answer": "Straničenje dijeli memoriju na jednake blokove (stranice i okvire - frames). Proces koristi tablicu stranica za preslikavanje virtualnih adresa u fizičke.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 520,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Čemu služi Translation Lookaside Buffer?",
+    "answer": "TLB je cache koji pohranjuje nedavno korištene preslikavanja stranica, čime ubrzava pristup memoriji izbjegavajući stalne pristupe glavnoj memoriji.",
+    "link": "https://www.geeksforgeeks.org/translation-lookaside-buffer-tlb-in-paging/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 521,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je segmentacija u upravljanju memorijom?",
+    "answer": "Segmentacija omogućuje logičku podjelu programa na segmente (npr. kod, podaci), različitih veličina, s posebnim pravima pristupa i vidljivim programeru.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 522,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Koja je razlika između straničenja i segmentacije?",
+    "answer": "Straničenje koristi fiksne veličine stranica i nevidljivo je programeru. Segmentacija koristi varijabilne veličine segmenata i vidljiva je programeru. Obje se mogu kombinirati.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 523,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je virtualna memorija i kako funkcionira?",
+    "answer": "Virtualna memorija omogućuje da proces koristi više memorije nego što fizički postoji, učitavanjem samo potrebnih dijelova u glavnu memoriju prema potrebi.",
+    "link": "https://www.geeksforgeeks.org/virtual-memory-in-operating-system/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 524,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Što je računalna sigurnost i zašto je važna?",
+    "answer": "Računalna sigurnost odnosi se na zaštitu računalnih sustava i podataka od neovlaštenog pristupa, oštećenja ili krađe. U informatičkom dobu, gdje su informacije temelj modernog načina života, sigurnost je ključna za očuvanje povjerljivosti, integriteta i dostupnosti podataka.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 525,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Koji su osnovni sigurnosni zahtjevi računalnih sustava?",
+    "answer": "Osnovni sigurnosni zahtjevi uključuju: Povjerljivost: samo autorizirani korisnici imaju pristup informacijama, Integritet: samo auzorizirani korisnici mogu mijenjati informacije, Dostupnost: informacije moraju biti dostupne autoriziranim korisnicima, Autentičnost: sustav provjerava valjanost indentiteta subjeka",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 526,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Što je Denial of Service napad?",
+    "answer": "DoS napad je pokušaj onemogućavanja pristupa servisu ili sustavu zakonitim korisnicima, često preopterećenjem resursa. Distribuirani DoS (DDoS) napadi koriste više kompromitiranih uređaja za izvođenje napada.",
+    "link": "https://stytch.com/blog/10-common-cyber-attacks"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 527,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Koji su najčešći oblici zlonamjernog softvera?",
+    "answer": "Najčešći oblici uključuju: Spyware: Prikuplja informacije bez znanja korisnika, Keylogger: Bilježi pritiske tipki kako bi ukrao lozinke i druge osjetljive podatke, Dialer: Automatski bira brojeve, često skupe, bez znanja korisnika, Rootkit: Omogućuje neautorizirani pristup sustavu skrivajući se od detekcije",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 528,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Kako se možemo obraniti od sigurnosnih prijetnji?",
+    "answer": "Edukacija korisnika, redovite sigurnosne kopije(backup), implementacija sigurnosnih politika, korištenje jakih lozinki i njihovo redovito mijenjanje, ažuriranje sustava i softvera, korištenje kriptografije, primjena vatrozida (firewall) i VPN-a, korištenje antivirusnih programa i sustava za otkrivanje upada (IDS)",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 529,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Što je kriptografija i koje su osnovne metode šifriranja?",
+    "answer": "Kriptografija je znanost o zaštiti informacija pretvaranjem čitljivih podataka u neprepoznatljiv oblik. Simetično šifriranje: isti ključ se koristi za šifriranje i dešifriranje podataka, Asimetrično šifriranje: koriste se dva različita ključa - javni za šifriranje i privatni za dešifriranje",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 530,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Zašto su lozinke važan aspekt sigurnosti i kako ih pravilno koristiti?",
+    "answer": " Lozinke su prva linija obrane u zaštiti računalnih sustava. Dobra lozinka treba biti kompleksna, jedinstvena i redovito mijenjana. Također, važno je ne dijeliti lozinke i koristiti upravitelje lozinki za njihovo sigurno pohranjivanje.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 531,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Što je dvofaktorska autentifikacija i kako poboljšava sigurnost?",
+    "answer": "2FA dodaje dodatni sloj sigurnosti zahtijevajući dva oblika identifikacije prije pristupa sustavu: Nnešto što korisnik zna npr. lozinka ili PIN ili nešto što korisnik ima kao npr. mobilni uređaj, token ili biometrijski podatak",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 532,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Kako socijalni inženjering predstavlja prijetnju sigurnosti?",
+    "answer": "Socijalni inženjering manipulira ljudima kako bi otkrili povjerljive informacije. Primjeri uključuju phishing napade, lažne pozive ili poruke koje se predstavljaju kao legitimne kako bi prevarili korisnike.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 533,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Koje su preporuke za zaštitu od phishing napada?",
+    "answer": "Preporuke su: pažljivo provjeravanje e-mail adresa i linkova, ne otvaranje sumnjivih privitaka, korištenje sigurnosnih alata koji detektiraju phising pokušaje, edukacija korisnika o prepoznavanju lažnih poruka",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 534,
+  "fields": {
+    "lecture_id": 8,
+    "subject": 3,
+    "question": "Što je sigurnosna politika i zašto je važna?",
+    "answer": "Sigurnosna politika je skup pravila i procedura koje organizacija uspostavlja kako bi zaštitila svoje informacijske resurse. Ona definira odgovornosti, dopuštenja i postupke u slučaju sigurnosnih incidenata.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 535,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Što su sistemski pozivi?",
+    "answer": "Sistemski pozivi su sučelje (API) između korisničkih programa i jezgre operacijskog sustava. Omogućuju korisničkim programima da traže usluge od jezgre, poput čitanja datoteka, upravljanja memorijom i procesa.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 536,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Koja je razlika između jezgrenog i korisničkog načina rada?",
+    "answer": "Korisnički način rada (privilegijska razina 3) ograničava pristup hardveru i resursima sustava, dok jezgreni način rada (privilegijska razina 0) ima puni pristup sustavu. Sistemski pozivi omogućuju sigurnu komunikaciju između ta dva načina.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 537,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako funkcionira izvršavanje sistemskog poziva?",
+    "answer": "Izvršava se ASM instrukcija syscall, koja prebacuje program iz korisničkog u jezgreni način rada. Identifikacijski broj željenog sistemskog poziva postavlja se u eax registar, a zatim se koristi tablica sistemskih poziva kako bi se pronašao odgovarajući handler na fiksnoj adresi.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 538,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Što je system call handler?",
+    "answer": "To je dio jezgre operacijskog sustava koji prima i obrađuje sistemski poziv kada dođe iz korisničkog načina rada.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 539,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Kako su sistemski pozivi implementirani u Linuxu?",
+    "answer": "Linux koristi syscall instrukciju za pozivanje funkcija iz jezgre. Svakom pozivu dodijeljen je jedinstveni broj koji se koristi za pronalaženje funkcije u tablici sistemskih poziva.",
+    "link": "https://filippo.io/linux-syscall-table/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 540,
+  "fields": {
+    "lecture_id": 6,
+    "subject": 3,
+    "question": "Zašto je pristup sistemskim pozivima drugačiji na Windowsima?",
+    "answer": "Kod Windowsa izvorni kod jezgre nije javno dostupan pa se sistemski pozivi ne mogu direktno inspektirati. Umjesto toga, dostupna je dokumentacija za Win32 API koji omogućuje razvoj softvera za Windows bez direktnog uvida u sistemske pozive.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 541,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je proces?",
+    "answer": "Proces je instanca računalnog programa u izvođenju. Svaki proces koristi vlastite resurse poput CPU-a, memorije, datoteka i I/O uređaja. Čak i ako dva procesa izvršavaju isti program, oni su međusobno nezavisni.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 542,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Koje su osnovne odgovornosti operacijskog sustava vezane uz procese?",
+    "answer": "Operacijski sustav je odgovoran za kreiranje i brisanje korisničkih i sistemskih procesa, za njihovo raspoređivanje odnosno scheduling, te za osiguravanje mehanizama kojima se upravlja međusobnom sinkronizacijom, komunikacijom među procesima i zastojima koji mogu nastati.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 543,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Kako izgleda struktura procesa u memoriji?",
+    "answer": "Struktura procesa u memoriji podijeljena je u nekoliko dijelova. Stog se koristi za privremene podatke poput parametara funkcija, povratnih adresa i lokalnih varijabli. Hrpa je dio memorije koji se dinamički alocira tijekom izvršavanja procesa. Podatkovni dio sadrži globalne i statičke varijable, dok tekstualni dio sadrži izvršni kod programa.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 544,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što je Process Control Block?",
+    "answer": "Process Control Block, skraćeno PCB, je podatkovna struktura koja čuva sve važne informacije o procesu. Te informacije uključuju jedinstveni identifikacijski broj procesa (Process ID), adresu sljedeće instrukcije koja će se izvršiti (Program Counter), informacije o korištenju ulazno-izlaznih uređaja, podatke za raspoređivanje procesa poput prioriteta i pokazivača na redove čekanja te statističke podatke o korištenju CPU-a i vremenskim ograničenjima.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 545,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Koja su osnovna stanja procesa?",
+    "answer": "Osnovna stanja procesa uključuju stanja u kojima se proces može nalaziti tijekom svog životnog ciklusa, a to su: novo (new), spremno (ready), u izvođenju (running), u čekanju (waiting) i završeno (terminated). Svaki proces prelazi iz jednog stanja u drugo ovisno o događajima tijekom svog izvođenja.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 546,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Što se događa kada proces primi signal?",
+    "answer": "Kada proces primi signal, on može reagirati na nekoliko načina. Može ignorirati signal, iako neki signali ne mogu biti ignorirani. Također može izvršiti zadanu, unaprijed definiranu radnju, ili može izvršiti vlastitu, prilagođenu funkciju koja obrađuje taj signal. Ta se funkcija naziva signal handler. Jezgra tada obavlja zamjenu konteksta kako bi pozvala handler, a nakon njegovog izvršavanja, kontrola se vraća izvornom procesu.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 547,
+  "fields": {
+    "lecture_id": 7,
+    "subject": 3,
+    "question": "Kako izgleda hijerarhija procesa u Linuxu?",
+    "answer": "U Linux operacijskom sustavu, prvi proces koji se pokreće je proces pod nazivom init i ima identifikacijski broj PID=1. Taj proces je uvijek u stanju izvršavanja i svi ostali procesi se smatraju njegovom djecom ili potomcima. Svaki proces u sustavu ima svog roditelja, a može imati i više \"braće i sestara\", odnosno druge procese koje je stvorio isti roditeljski proces. Djeca također mogu stvarati vlastitu djecu, čime nastaje hijerarhijska struktura procesa. Uz init postoje i alternativni sustavi za pokretanje procesa, poput systemd-a, Upstarta, OpenRC-a, Epocha i Mudara.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 548,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Zašto se koristi višedretvenost?",
+    "answer": "Višedretvenost se koristi kako bi se omogućilo izvođenje više neovisnih tokova instrukcija istovremeno, pri čemu te dretve dijele zajednički adresni prostor. Time se postiže paralelizam dijeljenjem jednog procesa na više dretvi, što povećava učinkovitost i iskorištenost procesora.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 549,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Koja je razlika između procesa i dretvi?",
+    "answer": "Procesi su izolirani jedni od drugih i koriste zaseban memorijski prostor, dok dretve dijele zajednički memorijski prostor i ovise jedna o drugoj. Stvaranje i komunikacija među procesima imaju veći vremenski trošak (overhead), dok su dretve lakše (lightweight) i brže u komunikaciji. Također, pogreške u jednom procesu ne utječu na druge procese, dok greška u jednoj dretvi može utjecati na sve ostale dretve unutar istog procesa. Kod dretvi je zbog dijeljenja resursa potrebna sinkronizacija, dok kod procesa to često nije slučaj.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 550,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Koja je razlika između programa s jednom dretvom i programa s više dretvi?",
+    "answer": "Program s jednom dretvom izvršava sve zadatke sekvencijalno, što može uzrokovati blokiranje cijelog programa ako dođe do zahtjevne operacije. S druge strane, program s više dretvi omogućava da se pojedini dijelovi aplikacije izvode paralelno, čime se poboljšava responzivnost i ukupna učinkovitost.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 551,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Koje su prednosti korištenja dretvi?",
+    "answer": "Korištenje dretvi omogućava bolju responzivnost programa jer se kompleksni zahtjevi mogu izvršavati bez blokiranja drugih dijelova aplikacije. Također se smanjuje vrijeme potrebno za prebacivanje konteksta, jer je manji overhead nego kod procesa. Komunikacija između dretvi je jednostavnija i učinkovitija jer dijele memorijski prostor. Osim toga, dretve poboljšavaju skalabilnost jer omogućuju iskorištavanje paralelizma u višeprocesorskim sustavima.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 552,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Koje vrste dretvi postoje?",
+    "answer": "Postoje dvije glavne vrste dretvi: korisničke (user threads) i jezgrene (kernel threads). Korisničke dretve implementirane su u korisničkom prostoru bez izravne podrške jezgre i obično su jednostavne za implementaciju. Jezgrene dretve podržava sama jezgra operacijskog sustava i omogućuju izvođenje više zadataka paralelno na razini jezgre, ali njihova implementacija je složenija.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 553,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Kako se korisničke dretve mapiraju na jezgrene dretve?",
+    "answer": "Korisničke dretve mogu se mapirati na jezgrene dretve koristeći jednu od tri strategije: „many to one“, gdje više korisničkih dretvi koristi jednu jezgrenu dretvu; „one to one“, gdje svaka korisnička dretva ima svoju jezgrenu dretvu; te „many to many“, gdje više korisničkih dretvi može koristiti više jezgrenih dretvi, ali ne nužno u omjeru jedan na jedan.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 554,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Što je utrkivanje  i kada nastaje?",
+    "answer": "Utrkivanje nastaje kada više dretvi istovremeno pokušava pristupiti i mijenjati zajedničke resurse, a redoslijed izvršavanja tih operacija nije definiran. To dovodi do neočekivanih ponašanja programa ili pogrešnih rezultata. Utrkivanje se obično događa u kritičnim sekcijama koda gdje se provode operacije tipa \"read-modify-write\" ili \"check-then-act\".",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 555,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Što je sinkronizacija i kako pomaže kod upravljanja dretvama?",
+    "answer": "Sinkronizacija je mehanizam koji rješava probleme poput utrkivanja među dretvama. Uključuje korištenje atomskih operacija, semafora i međusobnog isključivanja (mutex). ",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 556,
+  "fields": {
+    "lecture_id": 9,
+    "subject": 3,
+    "question": "Kako radi mutex?",
+    "answer": "Mutex radi slično binarnom semaforu, ali se temelji na zaključavanju resursa kako bi se osiguralo da samo jedna dretva u određenom trenutku ima pristup kritičnoj sekciji.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 557,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Što je međuprocesna komunikacija?",
+    "answer": "Međuprocesna komunikacija (IPC) je mehanizam koji operacijski sustav pruža kako bi procesi mogli međusobno komunicirati i upravljati dijeljenim resursima. Omogućuje sinkronizaciju i razmjenu podataka među procesima koji se izvršavaju istovremeno.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 558,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Kako funkcionira komunikacija putem dijeljene memorije?",
+    "answer": "Komunikacija putem dijeljene memorije podrazumijeva pisanje i čitanje podataka u zajednički memorijski prostor. Procesi koji koriste dijeljenu memoriju odmah vide promjene, što čini ovu metodu najbržom. Međutim, zahtijeva pažljivo upravljanje pristupom pomoću semafora kako bi se izbjegli problemi istovremenog pristupa, slično kao u višedretvenim programima.",
+    "link": "https://www.geeksforgeeks.org/inter-process-communication-ipc-shared-memory/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 559,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Što je memorijsko mapiranje i kako se koristi u IPC-u?",
+    "answer": "Memorijsko mapiranje omogućuje procesima da komuniciraju putem datoteka koje su mapirane u njihovu memoriju. Operacijski sustav upravlja pristupom datotekama, a procesi tretiraju mapirani dio kao da je dio njihove glavne memorije. Promjene u memoriji automatski se prenose u povezane datoteke.",
+    "link": "https://learn.microsoft.com/en-us/windows/win32/memory/creating-a-file-mapping-object"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 560,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Kako funkcionira cjevovod u međuprocesnoj komunikaciji?",
+    "answer": "Cjevovod je jednosmjeran kanal između dva procesa. Jedan proces upisuje podatke, dok drugi čita. Najčešće se koristi između povezanih procesa, poput roditeljskog i podprocesa. Cjevovod postoji samo dok su povezani procesi aktivni.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 561,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Po čemu se imenovani cjevovod razlikuje od običnog cjevovoda?",
+    "answer": "Imenovani cjevovod (FIFO) ima ime u datotečnom sustavu, što omogućuje komunikaciju i između nepovezanih procesa. Procesi mogu neovisno otvarati, zatvarati, čitati i pisati u FIFO.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 562,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Kako funkcionira komunikacija porukama?",
+    "answer": "Komunikacija porukama omogućuje slanje i primanje poruka putem redova poruka. Poruke se obično obrađuju redoslijedom dolaska, ali postoji mogućnost da se pojedine poruke ciljano povuku prije nego dođu na red, što pruža veću fleksibilnost od FIFO.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 563,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Što su signali i kako se koriste u IPC-u?",
+    "answer": "Signali su oblik softverskih prekida koje procesi koriste za obavještavanje drugih procesa o određenim događajima. Signale može slati drugi proces ili jezgra sustava. Kad proces primi signal, može izvršiti određenu funkciju poznatu kao signalni rukovatelj (handler).",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 564,
+  "fields": {
+    "lecture_id": 10,
+    "subject": 3,
+    "question": "Koji oblik međuprocesne komunikacije će biti obrađen sljedeći tjedan?",
+    "answer": "Sljedeći tjedan planira se obrada IPC-a putem utičnica (sockets), koje omogućuju komunikaciju između procesa na različitim računalima putem mreže.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 565,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 3,
+    "question": "Što su utičnice u kontekstu međuprocesne komunikacije?",
+    "answer": "Utičnice su mehanizam koji omogućuje međuprocesnu komunikaciju između više procesa na istom računalu ili između računala unutar iste mreže. Podaci se šalju u obliku paketa, a najčešće se koristi model poslužitelj-klijent. Utičnice omogućuju fleksibilan i standardiziran način komunikacije putem mreže.",
+    "link": "https://en.wikipedia.org/wiki/Network_socket"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 566,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 3,
+    "question": "Koje je tri stvari potrebno definirati prilikom stvaranja socket-a?",
+    "answer": "Prilikom stvaranja socket-a potrebno je definirati stil komunikacije, namespace i protokol. Stil komunikacije određuje način na koji se podaci prenose, namespace određuje adresni prostor i način na koji se socket identificira, a protokol definira pravila prijenosa podataka između krajnjih točaka komunikacije.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 567,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 3,
+    "question": "Koje su osnovne razlike između stream i datagram utičnica?",
+    "answer": "Stream utičnice predstavljaju oblik komunikacije koji je pouzdan i osigurava da svi paketi stignu na odredište redoslijedom kojim su poslani. Ako neki paket ne stigne, automatski se ponovno šalje, što omogućuje točnu i sigurnu isporuku podataka. Takav način rada nalikuje TCP protokolu. S druge strane, datagram utičnice ne garantiraju isporuku paketa niti njihov redoslijed, već se fokusiraju na brzinu prijenosa. U slučaju gubitka paketa, nema ponovnog slanja. Ovakav način rada podsjeća na UDP komunikaciju, gdje je brzina prioritet nad pouzdanošću.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 568,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 3,
+    "question": "Što predstavlja namespace kod socket-a?",
+    "answer": "Namespace kod socket-a predstavlja način na koji se adresira jedna krajnja točka komunikacije. Ako se koristi lokalni namespace, adresa se odnosi na datoteku u datotečnom sustavu, čime se socket identificira pomoću imena datoteke. Ako se koristi mrežni namespace, adresa socket-a sastoji se od IP adrese hosta i broja porta, čime se omogućuje komunikacija između udaljenih računala preko mreže.",
+    "link": "https://en.wikipedia.org/wiki/Unix_domain_socket"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 569,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 3,
+    "question": "Koju ulogu ima protokol kod socket-a?",
+    "answer": "Protokol kod socket-a određuje način na koji će se podaci prenositi između procesa. On definira pravila komunikacije i ponašanje tijekom razmjene informacija. Neki od najčešće korištenih protokola su TCP/IP, koji osigurava pouzdan prijenos podataka, i UDP, koji omogućuje brži ali manje pouzdan prijenos. Osim mrežnih protokola, za lokalnu komunikaciju koristi se i UNIX lokalni protokol, dok se u specifičnim okruženjima može naići na starije protokole poput AppleTalk-a.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 570,
+  "fields": {
+    "lecture_id": 11,
+    "subject": 3,
+    "question": "Koji su osnovni sistemski pozivi pri radu sa socket-ima?",
+    "answer": "Pri radu sa socket-ima koristi se niz sistemskih poziva koji omogućuju stvaranje i upravljanje socket-ima. Proces započinje stvaranjem socket-a pomoću poziva socket, nakon čega se socket povezuje s adresom pomoću bind ako se radi o poslužitelju. Potom se socket stavlja u stanje slušanja s pozivom listen, a klijent koristi connect kako bi uspostavio vezu. Kada poslužitelj primi zahtjev, koristi accept za prihvaćanje veze. Za razmjenu podataka koriste se read i write, dok se na kraju veze socket zatvara pozivom close.",
+    "link": "https://en.wikipedia.org/wiki/Berkeley_sockets"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 571,
+  "fields": {
+    "lecture_id": 12,
+    "subject": 3,
+    "question": "Što je upravljanje memorijom?",
+    "answer": "Upravljanje memorijom je funkcionalnost operacijskog sustava kojom se omogućuje učitavanje više procesa u radnu memoriju i raspoređivanje te memorije među njima. Operacijski sustav vodi računa o tome koji dijelovi memorije su zauzeti, koji su slobodni, i kako optimalno dodijeliti memorijske resurse svakom procesu tako da se postigne učinkovito korištenje memorije i izbjegnu konflikti među procesima.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 572,
+  "fields": {
+    "lecture_id": 12,
+    "subject": 3,
+    "question": "Koji su problemi povezani s fiksnim particioniranjem memorije?",
+    "answer": "Kod fiksnog particioniranja memorije, ukupna memorija podijeljena je na unaprijed definirane blokove fiksne veličine. Glavni problem ovog pristupa je unutarnja fragmentacija, koja nastaje kada proces zauzme više memorije nego što mu je stvarno potrebno, ali se svejedno dodjeljuje cijeli blok. Zbog toga dolazi do neučinkovitog korištenja memorije, a dodatni problem je i ograničen broj procesa koji mogu istovremeno biti aktivni, jer broj particija definira maksimalan broj procesa.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 573,
+  "fields": {
+    "lecture_id": 12,
+    "subject": 3,
+    "question": "Koji je glavni problem dinamičkog particioniranja memorije?",
+    "answer": "Glavni problem kod dinamičkog particioniranja memorije je vanjska fragmentacija. To se događa kada tijekom vremena u memoriji nastanu brojni mali, nepovezani slobodni prostori koji zajedno možda čine dovoljno memorije za novi proces, ali zbog njihove razdvojenosti operacijski sustav ne može alocirati memoriju u jednom komadu. Zbog toga može doći do situacije u kojoj se novi proces ne može učitati, iako ukupno ima dovoljno slobodne memorije.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 574,
+  "fields": {
+    "lecture_id": 12,
+    "subject": 3,
+    "question": "Što je zbijanje memorije i kada se koristi?",
+    "answer": "Zbijanje memorije je postupak kojim operacijski sustav premješta podatke u memoriji s ciljem uklanjanja vanjske fragmentacije. Premještanjem aktivnih procesa u jedan dio memorije, oslobađa se kontinuirani blok memorije koji se može dodijeliti novim procesima. Ova operacija povećava učinkovitost korištenja memorije, ali također predstavlja dodatni trošak za sustav jer zahtijeva vrijeme i resurse za pomicanje podataka.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 575,
+  "fields": {
+    "lecture_id": 12,
+    "subject": 3,
+    "question": "Koji algoritmi se koriste za dodjelu slobodnih memorijskih blokova?",
+    "answer": "Postoji nekoliko algoritama koji se koriste za odabir slobodnih blokova memorije kada novi proces zatraži prostor. Prvi algoritam, First-fit, traži prvi dovoljno veliki blok i odmah ga dodjeljuje. Next-fit je sličan, ali nastavlja pretraživanje od mjesta gdje je prethodna alokacija završila. Best-fit traži najmanji blok koji je dovoljno velik za proces, kako bi se ostavilo što manje neiskorištenog prostora. Suprotno tome, Worst-fit odabire najveći dostupni blok, s namjerom da podijeljeni ostatak nakon alokacije bude dovoljno velik za buduće zahtjeve. Svaki od ovih algoritama ima svoje prednosti i nedostatke u pogledu brzine i količine fragmentacije koju uzrokuje.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 576,
+  "fields": {
+    "lecture_id": 12,
+    "subject": 3,
+    "question": "Što je buddy system i kako funkcionira?",
+    "answer": "„Buddy system“ je metoda upravljanja memorijom koja predstavlja kompromis između fiksnog i dinamičkog particioniranja. U ovom sustavu, memorija se dijeli na blokove veličine koji su potencije broja dva, a kada je potrebno, veći blokovi se dijele na manje. Ako su dva susjedna bloka slobodna i imaju istu veličinu, oni se mogu ponovno spojiti u veći blok. Ovaj sustav omogućuje fleksibilnu i učinkovitu dodjelu memorije uz smanjenu fragmentaciju i brže pronalaženje slobodnog prostora.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 577,
+  "fields": {
+    "lecture_id": 13,
+    "subject": 3,
+    "question": "Koji su osnovni sigurnosni zahtjevi i sigurnosne prijetnje u informacijskim sustavima?",
+    "answer": "Sigurnosni zahtjevi informacijskih sustava temelje se na četiri ključna principa: povjerljivosti, integritetu, dostupnosti i autentičnosti. Povjerljivost podrazumijeva da su podaci dostupni samo ovlaštenim osobama, a ne smiju ih presresti treće strane, što se naziva presretanjem. Integritet znači da podaci ostaju neizmijenjeni osim ako ih ne izmijeni netko s odgovarajućim ovlastima, a svako neautorizirano mijenjanje predstavlja sigurnosnu prijetnju poznatu kao modifikacija. Dostupnost osigurava da sustav i njegovi resursi budu dostupni korisnicima kad god su im potrebni, dok je prekid rada ili pristupa sustavu prijetnja koja ugrožava dostupnost. Autentičnost se odnosi na vjerodostojnost komunikacije ili identiteta korisnika, a sigurnosna prijetnja koja ugrožava autentičnost naziva se fabrikacija, jer uključuje lažno predstavljanje ili izmišljanje podataka.",
+    "link": "https://ocw.mit.edu/courses/6-858-computer-systems-security-fall-2014/"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 578,
+  "fields": {
+    "lecture_id": 13,
+    "subject": 3,
+    "question": "Što je phishing i kako se možemo zaštititi od njega?",
+    "answer": "Phishing je oblik kibernetičkog napada u kojem napadač pokušava prevariti korisnika da mu otkrije osjetljive podatke, poput korisničkih imena, lozinki ili podataka o kreditnim karticama, najčešće putem lažnih e-mail poruka ili web stranica koje oponašaju stvarne servise. Osoba koja primi takvu poruku često biva zavedena hitnošću poruke ili poznatim vizualnim identitetom, poput logotipa banke, kako bi bez razmišljanja unijela svoje podatke. Za zaštitu od phishinga preporučuje se korištenje dvofaktorske autentifikacije (2FA), izbjegavanje klikanja na sumnjive poveznice, pažljivo provjeravanje adresa pošiljatelja te edukacija o najnovijim vrstama napada.",
+    "link": null
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 579,
+  "fields": {
+    "lecture_id": 13,
+    "subject": 3,
+    "question": "Kako funkcionira probijanje lozinki i koje metode se koriste?",
+    "answer": "Probijanje lozinki, poznato i kao „password cracking“, je proces kojim napadač pokušava otkriti korisničku lozinku koristeći razne metode, najčešće uz pomoć specijaliziranih alata kao što je John the Ripper. Ovaj alat koristi tri osnovna moda rada. U prvom, takozvanom „single crack“ modu, alat koristi poznate informacije poput korisničkog imena za pogađanje lozinki. U drugom, „wordlist crack“ modu, koristi unaprijed pripremljene popise najčešće korištenih lozinki. U trećem, „incremental crack“ modu, isprobavaju se sve moguće kombinacije znakova, što je vrlo zahtjevno i dugotrajno, ali najučinkovitije kada druge metode ne uspiju. Za izvođenje ovakvih napada napadač mora imati pristup hash vrijednostima lozinki koje su pohranjene, primjerice, u datoteci /etc/shadow na Linux sustavu.",
+    "link": "https://github.com/openwall/john"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 580,
+  "fields": {
+    "lecture_id": 13,
+    "subject": 3,
+    "question": "Koje su moguće posljedice kibernetičkih napada za fizičke i pravne osobe?",
+    "answer": "Kibernetički napadi mogu imati ozbiljne posljedice kako za pojedince tako i za organizacije. Za fizičke osobe, posljedice uključuju krađu identiteta, financijske gubitke, emocionalni stres, osjećaj srama i nesigurnosti. Napad žrtvu često ostavlja s narušenim povjerenjem u tehnologiju i potrebu da promijeni lozinke, kontaktira banku i eventualno obustavi ili zamijeni svoje platne kartice. Za pravne osobe, posljedice uključuju prekid poslovanja, velike financijske gubitke, gubitak povjerenja korisnika i javnosti, curenje intelektualnog vlasništva te potencijalne pravne posljedice, osobito u slučaju nepoštivanja zakona o zaštiti osobnih podataka.",
+    "link": "https://www.iii.org/fact-statistic/facts-statistics-identity-theft-and-cybercrime"
+  }
+},
+{
+  "model": "chatbot.qaentry",
+  "pk": 581,
+  "fields": {
+    "lecture_id": 13,
+    "subject": 3,
+    "question": "Koja je razlika između sigurnosti i privatnosti?",
+    "answer": "Sigurnost i privatnost su povezani, ali različiti koncepti. Sigurnost se odnosi na zaštitu sustava i podataka od kibernetičkih prijetnji, hakera i neovlaštenog pristupa, čime se sprječavaju curenja podataka. Privatnost se odnosi na pravo pojedinca da odlučuje kako se njegovi podaci koriste, s kime se dijele i da ostane slobodan od neželjenog nadzora ili smetnji. Primjer koji to jasno ilustrira je zaključavanje vrata stana kako bi se spriječio ulazak neovlaštenih osoba (sigurnost), nasuprot zatvaranju vrata sobe kako bi osoba mogla provesti vrijeme u miru (privatnost).",
+    "link": "https://www.youtube.com/watch?v=pcSlowAhvUk"
+  }
+},
+{
   "model": "contenttypes.contenttype",
   "pk": 1,
   "fields": {
@@ -3941,6 +6856,14 @@
   "fields": {
     "app_label": "sessions",
     "model": "session"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "0b4emsr2h6sp96qnepzbdrjnyo9kgo9q",
+  "fields": {
+    "session_data": ".eJxVjEEOgkAMRe8yazMpnSrg0j1nmLTTIqhhEgZWxrsLCQvd_vf-e7vI6zLEtdgcR3VXh-70uwmnp0070AdP9-xTnpZ5FL8r_qDFd1ntdTvcv8DAZdjevTTYtgaCvZHAOaFSUEpAgHW7dTAQNZrgAszJrOpBqzoQa7AgGNznC_D4ODo:1uFbth:UJKBHY56ne3fkObfnO_o2XO0uqWHsmD6yxBnvDzwCoM",
+    "expire_date": "2025-05-29T16:57:29.329Z"
   }
 },
 {
