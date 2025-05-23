@@ -1,11 +1,29 @@
 import streamlit as st
 from fpdf import FPDF
 import requests
+import time
 
 # Inicijalizacija Streamlit aplikacije
 st.set_page_config(page_title="AI Tutor", page_icon="🤖")
 st.title("🎓 AI Tutor - Tvoj virtualni prijatelj za učenje!")
 st.markdown("Nema pitanja na koja AI ne zna odgovor! Postavi pitanje i učimo zajedno.")
+
+# ======== STANJA ========
+if "user_questions" not in st.session_state:
+    st.session_state.user_questions = []
+if "start_quiz" not in st.session_state:
+    st.session_state.start_quiz = False
+if "quiz_data" not in st.session_state:
+    st.session_state.quiz_data = []
+if "quiz_results" not in st.session_state:
+    st.session_state.quiz_results = []
+
+# Rječnik kolegija
+kolegiji = {
+    "Programsko inženjerstvo": 1,
+    "Ugradbeni računalni sustavi": 2,
+    "Operacijski sustavi": 3,
+}
 
 # ======== DUGMIĆI ========
 col1, col2, col3, col4 = st.columns(4)
@@ -65,13 +83,27 @@ if sidebar_option == "Povijest pitanja":
 elif sidebar_option == "Odabier kolegija":
     kolegij = st.sidebar.selectbox(
         "Odaberi kolegij:",
-        ["Programsko inženjerstvo", "Baze podataka", "Računalne mreže", "Umjetna inteligencija"]
+        ["Programsko inženjerstvo", " Operacijski sustavi", "Ugradbeni računalni sustavi"]
     )
 else:
-    #Sidebar opcija za kviz znanja
+    # Sidebar opcija za kviz znanja
     st.sidebar.markdown("Kviz znanja")
-    st.sidebar.write("Kviz znanja koji ispituje znanje o odabranom kolegiju.")
-    st.sidebar.button("Pokreni kviz")
+    st.sidebar.write("Odaberi kolegij za koji želiš pokrenuti kviz:")
+    odabrani_kolegij = st.sidebar.selectbox("Kolegij:", list(kolegiji.keys()))
+    subject_id = kolegiji.get(odabrani_kolegij) 
+
+    if st.sidebar.button("Pokreni kviz"):
+        response = requests.get(f"http://127.0.0.1:8000/api/generate_quiz/?subject_id={subject_id}&n=12")
+        if response.status_code == 200:
+            st.session_state.quiz_data = response.json()["kviz"]
+            st.session_state.quiz_results = []
+            st.session_state.start_quiz = True
+            st.rerun()
+        else:
+            try:
+                st.error(f"Greška prilikom generiranja kviza: {response.json().get('error')}")
+            except:
+                st.error(f"Greška prilikom generiranja kviza. Status: {response.status_code}")
 
 # Prikazivanje poruka u povijesti razgovora
 for message in st.session_state.chat_history:
@@ -119,6 +151,74 @@ if st.session_state.chat_history and st.session_state.chat_history[-1]["role"] =
     except requests.exceptions.RequestException as e:
         # Ako dođe do greške u povezivanju s backendom
         st.error(f"Error connecting to the backend: {str(e)}")
+
+# ======== KVIZ ========
+if st.session_state.start_quiz and st.session_state.quiz_data:
+    st.title("📝 Kviz znanja")
+
+    odgovori_korisnika = []
+
+    for i, q in enumerate(st.session_state.quiz_data):
+        st.markdown(f"### {i+1}. {q['pitanje']}")
+
+        odgovor = st.radio("Odaberi odgovor:", q["opcije"], key=f"q_{i}")
+        odgovori_korisnika.append((q, odgovor))
+
+    if st.button("Završi kviz"):
+        st.session_state.quiz_results = []
+        for q, odgovor in odgovori_korisnika:
+            tocno = odgovor == q["tocan"]
+            vrijeme = round(time.time() - st.session_state.start_quiz, 2)  # Izračunaj vrijeme trajanja kviza
+            bodovi = round((1.5 if tocno else 0) + max(0, 30 - vrijeme) / 30, 2)
+
+            st.session_state.quiz_results.append({
+                "pitanje": q["pitanje"],
+                "odgovor": odgovor,
+                "tocan": q["tocan"],
+                "predavanje": q["predavanje"],
+                "tocno": tocno,
+                "vrijeme": vrijeme,
+                "bodovi": bodovi
+            })
+
+        st.session_state.start_quiz = False
+        st.rerun()
+
+# ======== REZULTATI KVIZA ========
+if not st.session_state.start_quiz and st.session_state.quiz_results:
+    st.title("📊 Rezultati kviza")
+    ukupno_bodova = 0
+
+    # Provjeri ima li barem jedan točan odgovor
+    ima_tocnih = any(r["tocno"] for r in st.session_state.quiz_results)
+
+    for i, r in enumerate(st.session_state.quiz_results):
+        st.markdown(f"### {i+1}. {r['pitanje']}")
+        if r["tocno"]:
+            st.success(f"✅ Točno ({round(r['bodovi'], 2)} bodova)")
+        else:
+            st.error("❌ Netočno")
+            st.markdown(f"**Točan odgovor:** {r['tocan']}")
+            st.markdown(f"**Tvoj odgovor:** {r['odgovor']}")
+            st.markdown(f"**Predavanje:** {r['predavanje']}")
+        #st.markdown(f"⏱ Vrijeme: {round(r['vrijeme'], 2)}s")
+
+        # Zbrajamo bodove samo ako ima barem jedan točan odgovor
+        if ima_tocnih:
+            ukupno_bodova += r["bodovi"]
+
+    max_bodova = len(st.session_state.quiz_results) * 2.5
+    # Ako nema niti jednog točnog, bodovi su 0
+    if not ima_tocnih:
+        ukupno_bodova = 0
+
+    st.markdown(f"## 🏆 Ukupno bodova: **{round(ukupno_bodova, 2)}** / {max_bodova}")
+
+    #Button za brisanje kviza
+    if st.button("🧹 Makni kviz"):
+        st.session_state.quiz_results = []
+        st.success("Kviz je maknut. Možeš nastaviti s pitanjima.")
+
 
 # Generiranje PDF-a s poviješću razgovora
 if st.button("Spremi povijest razgovora kao PDF"):
