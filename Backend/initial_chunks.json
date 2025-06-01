@@ -1,0 +1,368 @@
+[
+  {
+    "original": "Koja je razlika između modela procesa i procesa životnog ciklusa?",
+    "chunk": "koja je razlika između modela procesa",
+    "answer": "Proces životnog ciklusa obuhvaća sve aktivnosti koje ljudi izvode kako bi razvili, održavali i povukli programski proizvod – uključuje sklapanje ugovora, tehničke i projektne procese. Model životnog ciklusa je formalni okvir koji definira redoslijed i dinamiku tih aktivnosti, kao i njihovu međusobnu povezanost, te pruža strukturu od početka do kraja razvoja softvera. Drugim riječima, proces opisuje \"što se radi\", a model \"kako i kada\".",
+    "link": "https://www.fer.hr/_download/repository/PP10.pdf?utm_source=chatgpt.com"
+  },
+  {
+    "original": "Koja je razlika između modela procesa i procesa životnog ciklusa?",
+    "chunk": "procesa životnog ciklusa?",
+    "answer": "Proces životnog ciklusa obuhvaća sve aktivnosti koje ljudi izvode kako bi razvili, održavali i povukli programski proizvod – uključuje sklapanje ugovora, tehničke i projektne procese. Model životnog ciklusa je formalni okvir koji definira redoslijed i dinamiku tih aktivnosti, kao i njihovu međusobnu povezanost, te pruža strukturu od početka do kraja razvoja softvera. Drugim riječima, proces opisuje \"što se radi\", a model \"kako i kada\".",
+    "link": "https://www.fer.hr/_download/repository/PP10.pdf?utm_source=chatgpt.com"
+  },
+  {
+    "original": "Koje su osnovne faze općeg modela životnog ciklusa softvera?",
+    "chunk": "koje su osnovne faze općeg modela životnog ciklusa softvera?",
+    "answer": "Faze su: 1. Inženjering zahtjeva – korisnički zahtjevi se formaliziraju u tehničke specifikacije. 2. Tehnički dizajn – tehnički zahtjevi se prevode u dizajnersku dokumentaciju. 3. Implementacija – koristi dizajn za kodiranje funkcionalnog proizvoda. 4. Testiranje – provjerava radi li implementacija ispravno. Svaka faza ima jasne ulaze i izlaze, a isporuke jedne faze su potrebne za sljedeću.",
+    "link": "https://www.guru99.com/hr/software-development-life-cycle-tutorial.html?utm_source=chatgpt.com"
+  },
+  {
+    "original": "Koje su osnovne karakteristike vodopadnog modela razvoja?",
+    "chunk": "koje su osnovne karakteristike vodopadnog modela razvoja?",
+    "answer": "Vodopadni model je linearan, gdje se svaka faza (od analize do testiranja) završava prije nego što počne sljedeća. Karakteristike: Faze su strogo odvojene i ne preklapaju se. Pogodan za projekte s dobro definiranim zahtjevima. Prednosti: Jednostavnost u planiranju i provedbi. Jasna struktura i dokumentacija. Nedostaci: Nema povratka unatrag ako se pojave problemi. Promjene zahtjeva teško se integriraju. Korisnik dobiva gotov proizvod tek na kraju, što smanjuje povjerenje.",
+    "link": "https://spvp.zesoi.fer.hr/seminari/2007/seminari/Ivo%20Veseli%20-%20Proces%20razvoja%20softvera.pdf?utm_source=chatgpt.com"
+  },
+  {
+    "original": "Koje su prednosti i nedostaci prototyping modela razvoja i kada se primjenjuje?",
+    "chunk": "koje su prednosti",
+    "answer": "Prototyping model uključuje izradu nedovršenog (ali vizualnog) rješenja kako bi se dobila povratna informacija od korisnika. Prednosti: Bolje razumijevanje korisničkih zahtjeva. Rano otkrivanje problema. Manje nepotrebnih funkcionalnosti, jednostavniji sustav. Nedostaci: Može biti vremenski zahtjevno. Često se preskaču standardi i kvaliteta dizajna. Otežano održavanje zbog tehničkog duga. Primjena: Kad nisu jasni zahtjevi na početku, posebno korisničko sučelje.",
+    "link": "https://repository.inf.uniri.hr/islandora/object/infri%3A468/datastream/PDF/download?utm_source=chatgpt.com"
+  },
+  {
+    "original": "Koje su prednosti i nedostaci prototyping modela razvoja i kada se primjenjuje?",
+    "chunk": "nedostaci prototyping modela razvoja",
+    "answer": "Prototyping model uključuje izradu nedovršenog (ali vizualnog) rješenja kako bi se dobila povratna informacija od korisnika. Prednosti: Bolje razumijevanje korisničkih zahtjeva. Rano otkrivanje problema. Manje nepotrebnih funkcionalnosti, jednostavniji sustav. Nedostaci: Može biti vremenski zahtjevno. Često se preskaču standardi i kvaliteta dizajna. Otežano održavanje zbog tehničkog duga. Primjena: Kad nisu jasni zahtjevi na početku, posebno korisničko sučelje.",
+    "link": "https://repository.inf.uniri.hr/islandora/object/infri%3A468/datastream/PDF/download?utm_source=chatgpt.com"
+  },
+  {
+    "original": "Koje su prednosti i nedostaci prototyping modela razvoja i kada se primjenjuje?",
+    "chunk": "kada se primjenjuje?",
+    "answer": "Prototyping model uključuje izradu nedovršenog (ali vizualnog) rješenja kako bi se dobila povratna informacija od korisnika. Prednosti: Bolje razumijevanje korisničkih zahtjeva. Rano otkrivanje problema. Manje nepotrebnih funkcionalnosti, jednostavniji sustav. Nedostaci: Može biti vremenski zahtjevno. Često se preskaču standardi i kvaliteta dizajna. Otežano održavanje zbog tehničkog duga. Primjena: Kad nisu jasni zahtjevi na početku, posebno korisničko sučelje.",
+    "link": "https://repository.inf.uniri.hr/islandora/object/infri%3A468/datastream/PDF/download?utm_source=chatgpt.com"
+  },
+  {
+    "original": "Koje su osnovne karakteristike inkrementalnog modela razvoja?",
+    "chunk": "koje su osnovne karakteristike inkrementalnog modela razvoja?",
+    "answer": "Softver se razvija u dijelovima (inkrementima), svaki od njih djeluje samostalno. Karakteristike: Iterativan razvoj s djelomičnim isporukama. Korisnik može rano koristiti dijelove sustava. Prednosti: Rani povrat informacija. Fleksibilniji prema promjenama. Veće povjerenje korisnika. Nedostaci: Kompleksno planiranje. Potrebni iskusni stručnjaci. Teškoća u integraciji svih dijelova kasnije.",
+    "link": "https://www.guru99.com/hr/what-is-incremental-model-in-sdlc-advantages-disadvantages.html?utm_source=chatgpt.com"
+  },
+  {
+    "original": "Koje su osnovne karakteristike spiralnog modela razvoja?",
+    "chunk": "koje su osnovne karakteristike spiralnog modela razvoja?",
+    "answer": "Spiralni model kombinira iteracije i analizu rizika kroz više ciklusa razvoja. Karakteristike: Svaka iteracija uključuje komunikaciju, planiranje, analizu rizika, dizajn, izradu i evaluaciju. Fokus na analizu i minimizaciju rizika. Prednosti: Visoka fleksibilnost. Aktivna uključenost korisnika. Rano uočavanje problema. Nedostaci: Složena struktura. Teškoća u upravljanju. Nije idealan za velike sustave s dugim razvojem.",
+    "link": "https://zir.nsk.hr/islandora/object/unipu%3A6218/datastream/PDF/download?utm_source=chatgpt.com"
+  },
+  {
+    "original": "Što je osnovna ideja modela zasnovanog na ponovnoj upotrebi i zašto nije široko zastupljen?",
+    "chunk": "što je osnovna ideja modela zasnovanog na ponovnoj upotrebi",
+    "answer": "Ideja je korištenje gotovih komponenti (\"lego pristup\") – analiza, prilagodba i integracija postojećih modula. Problem: Nedostatak iskustva i nedovoljna baza kvalitetnih komponenti u industriji.",
+    "link": "https://jusufspahic.files.wordpress.com/2015/11/dizajn-aplikativnog-softvera-skripta-za-kolokvijum.pdf?utm_source=chatgpt.com"
+  },
+  {
+    "original": "Što je osnovna ideja modela zasnovanog na ponovnoj upotrebi i zašto nije široko zastupljen?",
+    "chunk": "zašto nije široko zastupljen?",
+    "answer": "Ideja je korištenje gotovih komponenti (\"lego pristup\") – analiza, prilagodba i integracija postojećih modula. Problem: Nedostatak iskustva i nedovoljna baza kvalitetnih komponenti u industriji.",
+    "link": "https://jusufspahic.files.wordpress.com/2015/11/dizajn-aplikativnog-softvera-skripta-za-kolokvijum.pdf?utm_source=chatgpt.com"
+  },
+  {
+    "original": "Koje su osnovne karakteristike rapidnog modela razvoja?",
+    "chunk": "koje su osnovne karakteristike rapidnog modela razvoja?",
+    "answer": "Faze razvoja se preklapaju (npr. dizajn i implementacija). Inkrementalni razvoj s čestim verzijama (svakih 2–3 tjedna). Minimalna dokumentacija. Fokus na brzu isporuku i fleksibilnost. Aktivna uključenost korisnika. Mali timovi, neformalna komunikacija.",
+    "link": "https://repozitorij.veleri.hr/islandora/object/veleri%3A2512/datastream/PDF/view?utm_source=chatgpt.com"
+  },
+  {
+    "original": "Usporedi agilne metode razvoja: Scrum, Kanban i Scrumban.",
+    "chunk": "usporedi agilne metode razvoja: scrum",
+    "answer": "Scrum: Fiksni vremenski sprintovi (obično 2 tjedna). Jasno definirane uloge (scrum master, product owner). Planiranje, dnevni sastanci, retrospektive. Promjene nisu dozvoljene unutar sprinta. Kanban: Vizualna ploča s karticama (To Do, Doing, Done). Bez vremenskih ograničenja. Promjene se mogu unositi u hodu. Fokus na optimizaciju tijeka rada. Scrumban: Kombinira najbolje iz oba svijeta. Sprintovi poput Scruma + fleksibilnost Kanbana. Ograničen broj zadataka u tijeku (WIP limit). Koristi vizualizaciju radnog procesa.",
+    "link": "https://gorankrmpotic.eu/agile-agilno-upravljanje-scrum-kanban?utm_source=chatgpt.com"
+  },
+  {
+    "original": "Što je menadžment u programskom inženjerstvu prema IEEE i koji su stvarni problemi?",
+    "chunk": "što je menadžment u programskom inženjerstvu prema ieee",
+    "answer": "Menadžment u programskom inženjerstvu je primjena aktivnosti poput planiranja, nadzora i kontrole s ciljem sustavnog razvoja softvera. U praksi se susreću problemi poput postavljanja prioriteta, rada s nejasnim ulazima, koordinacije timova, kontrole apstraktnih proizvoda i komunikacije.",
+    "link": "https://sceweb.sce.uhcl.edu/helm/SWEBOK_IEEE/data/swebok_chapter_08.pdf"
+  },
+  {
+    "original": "Što je menadžment u programskom inženjerstvu prema IEEE i koji su stvarni problemi?",
+    "chunk": "koji su stvarni problemi?",
+    "answer": "Menadžment u programskom inženjerstvu je primjena aktivnosti poput planiranja, nadzora i kontrole s ciljem sustavnog razvoja softvera. U praksi se susreću problemi poput postavljanja prioriteta, rada s nejasnim ulazima, koordinacije timova, kontrole apstraktnih proizvoda i komunikacije.",
+    "link": "https://sceweb.sce.uhcl.edu/helm/SWEBOK_IEEE/data/swebok_chapter_08.pdf"
+  },
+  {
+    "original": "Koje su važne karakteristike koje definiraju projekt?",
+    "chunk": "koje su važne karakteristike koje definiraju projekt?",
+    "answer": "Projekt je vremenski ograničen s definiranim početkom i krajem, ograničenim resursima i nizom aktivnosti koje se izvode logičkim redoslijedom kako bi se stvorio jedinstveni rezultat.",
+    "link": "https://pressbooks.ulib.csuohio.edu/project-management-navigating-the-complexity/chapter/1-2-project-characteristics/"
+  },
+  {
+    "original": "Koja je razlika između linijske i projektne odgovornosti?",
+    "chunk": "koja je razlika između linijske",
+    "answer": "Linijska odgovornost se odnosi na strateške zadatke unutar organizacije (npr. upravljanje resursima), dok se projektna odgovornost odnosi na ispunjenje ciljeva određenog projekta (npr. isporuka u roku i budžetu).",
+    "link": "https://www.sprintzeal.com/blog/project-characteristics"
+  },
+  {
+    "original": "Koja je razlika između linijske i projektne odgovornosti?",
+    "chunk": "projektne odgovornosti?",
+    "answer": "Linijska odgovornost se odnosi na strateške zadatke unutar organizacije (npr. upravljanje resursima), dok se projektna odgovornost odnosi na ispunjenje ciljeva određenog projekta (npr. isporuka u roku i budžetu).",
+    "link": "https://www.sprintzeal.com/blog/project-characteristics"
+  },
+  {
+    "original": "Koje procese upravljanja uključuje životni ciklus projekta?",
+    "chunk": "koje procese upravljanja uključuje životni ciklus projekta?",
+    "answer": "Uključuje procese: inicijacije (studije izvedivosti), planiranja (razrada faza), izvođenja i kontrole, te završne procese poput revizije i zaključenja projekta.",
+    "link": "https://biz.libretexts.org/Courses/Western_Technical_College/Operations_Management_%28Hammond%29/05%3A_Project_Management/5.03%3A_Project_Characteristics_and_Constraints"
+  },
+  {
+    "original": "Koja su ključna znanja za upravljanje softverskim projektima?",
+    "chunk": "koja su ključna znanja za upravljanje softverskim projektima?",
+    "answer": "Potrebna znanja uključuju: modele procesa, upravljanje timovima, kvalitetom, rizicima, komunikacijom, troškovima, vremenom i konfiguracijama, kao i planiranje i nadzor.",
+    "link": "https://en.wikipedia.org/wiki/Software_Engineering_Body_of_Knowledge"
+  },
+  {
+    "original": "Što je projektni plan i kada se izrađuje?",
+    "chunk": "što je projektni plan",
+    "answer": "Projektni plan je temeljni dokument koji opisuje kako ?e se projekt voditi i nadzirati. Prva verzija se izrađuje na početku, već u fazi zahtjeva, i s vremenom se ažurira.",
+    "link": "https://www.sprintzeal.com/blog/project-characteristics"
+  },
+  {
+    "original": "Što je projektni plan i kada se izrađuje?",
+    "chunk": "kada se izrađuje?",
+    "answer": "Projektni plan je temeljni dokument koji opisuje kako ?e se projekt voditi i nadzirati. Prva verzija se izrađuje na početku, već u fazi zahtjeva, i s vremenom se ažurira.",
+    "link": "https://www.sprintzeal.com/blog/project-characteristics"
+  },
+  {
+    "original": "Koja su osnovna poglavlja projektnog plana i što sadrže?",
+    "chunk": "koja su osnovna poglavlja projektnog plana",
+    "answer": "1. Organizacija projekta: model procesa, projektna struktura, granice, odgovornosti.\r\n2. Proces upravljanja: rizici, kontrolni mehanizmi, izvještavanje, planiranje ljudskih resursa.\r\n3. Tehnički procesi: alati, metode, dokumentacija, osiguranje kvalitete.\r\n4. Vremenski tijek: radni paketi, rokovi, resursi, budžet.",
+    "link": "https://www.sprintzeal.com/blog/project-characteristics"
+  },
+  {
+    "original": "Čime se bavi disciplina programskog inženjerstva te koja su specifična svojstva programskog proizvoda koja ovu inženjersku disciplinu čine posebnom?",
+    "chunk": "čime se bavi disciplina programskog inženjerstva",
+    "answer": "Programsko inženjerstvo (eng. Software Engineering) je disciplina koja se bavi primjenom sustavnog, discipliniranog i kvantificiranog pristupa u razvoju, izvođenju i održavanju programskog proizvoda. Specifična svojstva programskog proizvoda, koja programsko inženjerstvo čine fundamentalno drugačijim od ostalih inženjerskih disciplina, jesu da je on apstraktan, složen, fleksibilan, te teško mjerljivih svojstava. Za razliku od proizvoda svih drugi inženjerskih disciplina, programski proizvod nema fizička svojstva, u bilo kojoj fazi izgradnje može biti izmijenjen i prilagođen, a krajnjem korisniku može biti nedokučiv. Također, ne postoje mjerne jedinice koje su normirane i čija interpretacija može dati odgovore na razne inženjerske probleme koje se susreće prilikom izgradnje i održavanja.",
+    "link": "https://www.youtube.com/watch?v=iIxZrYzJJ7I"
+  },
+  {
+    "original": "Čime se bavi disciplina programskog inženjerstva te koja su specifična svojstva programskog proizvoda koja ovu inženjersku disciplinu čine posebnom?",
+    "chunk": "koja su specifična svojstva programskog proizvoda koja ovu inženjersku disciplinu čine posebnom?",
+    "answer": "Programsko inženjerstvo (eng. Software Engineering) je disciplina koja se bavi primjenom sustavnog, discipliniranog i kvantificiranog pristupa u razvoju, izvođenju i održavanju programskog proizvoda. Specifična svojstva programskog proizvoda, koja programsko inženjerstvo čine fundamentalno drugačijim od ostalih inženjerskih disciplina, jesu da je on apstraktan, složen, fleksibilan, te teško mjerljivih svojstava. Za razliku od proizvoda svih drugi inženjerskih disciplina, programski proizvod nema fizička svojstva, u bilo kojoj fazi izgradnje može biti izmijenjen i prilagođen, a krajnjem korisniku može biti nedokučiv. Također, ne postoje mjerne jedinice koje su normirane i čija interpretacija može dati odgovore na razne inženjerske probleme koje se susreće prilikom izgradnje i održavanja.",
+    "link": "https://www.youtube.com/watch?v=iIxZrYzJJ7I"
+  },
+  {
+    "original": "Koja je razlika između programa, sustava čiji su oni dijelovi i programskog proizvoda?",
+    "chunk": "koja je razlika između programa",
+    "answer": "Pojmom program označavamo isključivo programski kod koji obavlja neki specifični zadatak. Kompozicija programa u složeniju, međusobno povezanu i organiziranu strukturu koja ostvaruje namijenjenu joj funkciju predstavlja sustav. Programski proizvod (eng. software) čini skup programa povezanih u računalne sustave, ali i pripadajuće dokumentacije koji se zajedno isporučuju korisniku.",
+    "link": null
+  },
+  {
+    "original": "Koja je razlika između programa, sustava čiji su oni dijelovi i programskog proizvoda?",
+    "chunk": "sustava čiji su oni dijelovi",
+    "answer": "Pojmom program označavamo isključivo programski kod koji obavlja neki specifični zadatak. Kompozicija programa u složeniju, međusobno povezanu i organiziranu strukturu koja ostvaruje namijenjenu joj funkciju predstavlja sustav. Programski proizvod (eng. software) čini skup programa povezanih u računalne sustave, ali i pripadajuće dokumentacije koji se zajedno isporučuju korisniku.",
+    "link": null
+  },
+  {
+    "original": "Koja je razlika između programa, sustava čiji su oni dijelovi i programskog proizvoda?",
+    "chunk": "programskog proizvoda?",
+    "answer": "Pojmom program označavamo isključivo programski kod koji obavlja neki specifični zadatak. Kompozicija programa u složeniju, međusobno povezanu i organiziranu strukturu koja ostvaruje namijenjenu joj funkciju predstavlja sustav. Programski proizvod (eng. software) čini skup programa povezanih u računalne sustave, ali i pripadajuće dokumentacije koji se zajedno isporučuju korisniku.",
+    "link": null
+  },
+  {
+    "original": "Koje su osnovne teme programskog inženjerstva?",
+    "chunk": "koje su osnovne teme programskog inženjerstva?",
+    "answer": "Osnovne teme programskog inženjerstva su: a) Izgradnja velikih i složenih programskih sustava b) Upravljanje složenim strukturama c) Evolucija programskog proizvoda d) Učinkovitost razvoja programskog proizvoda e) Upravljanje komunikacijom u razvoju velikih programskih sustava f) Isporuka kvalitetnog konačnog programskog proizvoda korisniku",
+    "link": null
+  },
+  {
+    "original": "Što je proces, kako definiramo procese životnog ciklusa programskog proizvoda te od čega se oni sastoje?",
+    "chunk": "definiramo procese životnog ciklusa programskog proizvoda",
+    "answer": "Proces je skup međusobno povezanih aktivnosti kojima se ostvaruje pretvorba ulaza u izlaz. Procesi životnog ciklusa programskog proizvoda definiraju se kao skup procesa, aktivnosti i poslova koje računalni inženjeri izvode kako bi razvili i održavali programski proizvod, a sastoje se od: procesa sklapanja ugovora, procesa poduzeća, projektnih procesa i tehničkih procesa. Ulazi u procesima programskog inženjerstva mogu biti npr. zahtjevi korisnika, zadaci projektnog managementa, testni slučajevi i sl., a pripadni izlazi mogu biti specifikacija zahtjeva, hodogrami aktivnosti, uloge i podjela zadataka, te testno izvješće.",
+    "link": null
+  },
+  {
+    "original": "Što je proces, kako definiramo procese životnog ciklusa programskog proizvoda te od čega se oni sastoje?",
+    "chunk": "od čega se oni sastoje?",
+    "answer": "Proces je skup međusobno povezanih aktivnosti kojima se ostvaruje pretvorba ulaza u izlaz. Procesi životnog ciklusa programskog proizvoda definiraju se kao skup procesa, aktivnosti i poslova koje računalni inženjeri izvode kako bi razvili i održavali programski proizvod, a sastoje se od: procesa sklapanja ugovora, procesa poduzeća, projektnih procesa i tehničkih procesa. Ulazi u procesima programskog inženjerstva mogu biti npr. zahtjevi korisnika, zadaci projektnog managementa, testni slučajevi i sl., a pripadni izlazi mogu biti specifikacija zahtjeva, hodogrami aktivnosti, uloge i podjela zadataka, te testno izvješće.",
+    "link": null
+  },
+  {
+    "original": "Što je projekt, kakvi oni mogu biti s obzirom na doseg, a kakvi mogu biti s obzirom na tehničke procese koje izvode?",
+    "chunk": "kakvi oni mogu biti s obzirom na doseg",
+    "answer": "Projekt je privremena tvorevina s unaprijed definiranim početkom i završetkom, dosegom i resursima. S obzirom na doseg oni mogu biti:  korektivni projekti (otklanjanje pogrešaka u postojećem sustavu),  adaptivni projekti (izmjene uslijed promjene operacijskog sustava, baza podataka, zakonskih odredbi i sl.),  unapređujući, aditivni projekti (dodavanje nove funkcionalnosti),  projekti ponovnog inženjerstva (npr. unutarnje izmjene u arhitekturi sustava kako bi se olakšalo dodavanje novih modula ili održavanje),  sasvim novi, integrativni projekti (oblikovanje novog okruženja iz postojećih programskih komponenata i cjelina). S obzirom na tehničke procese koje izvode, projekti mogu biti: razvojni projekti (eng. development project), projekti integracije i verifikacije (eng. integration & verification project), i projekti održavanja (eng. maintenance project).",
+    "link": null
+  },
+  {
+    "original": "Što je projekt, kakvi oni mogu biti s obzirom na doseg, a kakvi mogu biti s obzirom na tehničke procese koje izvode?",
+    "chunk": "a kakvi mogu biti s obzirom na tehničke procese koje izvode?",
+    "answer": "Projekt je privremena tvorevina s unaprijed definiranim početkom i završetkom, dosegom i resursima. S obzirom na doseg oni mogu biti:  korektivni projekti (otklanjanje pogrešaka u postojećem sustavu),  adaptivni projekti (izmjene uslijed promjene operacijskog sustava, baza podataka, zakonskih odredbi i sl.),  unapređujući, aditivni projekti (dodavanje nove funkcionalnosti),  projekti ponovnog inženjerstva (npr. unutarnje izmjene u arhitekturi sustava kako bi se olakšalo dodavanje novih modula ili održavanje),  sasvim novi, integrativni projekti (oblikovanje novog okruženja iz postojećih programskih komponenata i cjelina). S obzirom na tehničke procese koje izvode, projekti mogu biti: razvojni projekti (eng. development project), projekti integracije i verifikacije (eng. integration & verification project), i projekti održavanja (eng. maintenance project).",
+    "link": null
+  },
+  {
+    "original": "Koje su osnovne faze u modelima procesa razvoja programskog proizvoda i od čega se sastoje?",
+    "chunk": "koje su osnovne faze u modelima procesa razvoja programskog proizvoda",
+    "answer": "Osnovne faze u modelima procesa razvoja programskog proizvoda prema ISO normama su: inženjerstvo zahtjeva, dizajn, implementacija i testiranje. a) Inženjerstvo zahtjeva je prvi korak svakog modela razvoja, a osnovni cilj mu je opis problema kojeg se treba riješiti i definicija zahtjeva u skladu s zadanim problemom i okolinom kojoj je sustav namijenjen (hardver, drugi software i/ili korisnici). U ovoj fazi provodi se studija izvedivosti projekta, odrede se moguća rješenja te se diskutiraju njihovi prednosti i nedostaci. Osnovni dokument u kojem se sažimaju rezultati ove faze naziva se specifikacija zahtjeva. b) Dizajn podrazumijeva razvoj modela za cijeli sustav kroz (i) dekompoziciju problema na manje smislene programske cjeline (module ili komponente), (ii) prijenos specifikacije zahtjeva sustava na specifikaciju zahtjeva funkcija definiranih programskih cjelina i (iii) definiciju sučelja među programskim cjelinama. Rezultati ove faze sažimaju se u dokumentu tehnička specifikacija. c) Implementacija je faza u kojoj se radi programiranje. Kod velikih programa samom programiranju obično prethodi i ispisivanje pseudokoda. Osnovni cilj programiranja je da se napravi čitljiv, jednostavan za nadogradnju i održavanje, dobro dokumentiran i točan program. Rezultat ove faze je program kojeg se može izvoditi. d) Faza testiranja u novijim modelima razvoja sve je više isprepletena s fazom implementacije. Planiranje testnih aktivnosti započinje s fazom specifikacije zahtjeva. Testiranjem se provjerava u kojoj su mjeri implementirani zahtjevi te se traže neispravnosti kako u kodu, tako i u projektnoj dokumentaciji. Osnovna motivacija za kontinuirano provođenje testnih aktivnosti je da je svaku ranije otkrivenu neispravnost jeftinije ukloniti, tj. ispraviti.",
+    "link": null
+  },
+  {
+    "original": "Koje su osnovne faze u modelima procesa razvoja programskog proizvoda i od čega se sastoje?",
+    "chunk": "od čega se sastoje?",
+    "answer": "Osnovne faze u modelima procesa razvoja programskog proizvoda prema ISO normama su: inženjerstvo zahtjeva, dizajn, implementacija i testiranje. a) Inženjerstvo zahtjeva je prvi korak svakog modela razvoja, a osnovni cilj mu je opis problema kojeg se treba riješiti i definicija zahtjeva u skladu s zadanim problemom i okolinom kojoj je sustav namijenjen (hardver, drugi software i/ili korisnici). U ovoj fazi provodi se studija izvedivosti projekta, odrede se moguća rješenja te se diskutiraju njihovi prednosti i nedostaci. Osnovni dokument u kojem se sažimaju rezultati ove faze naziva se specifikacija zahtjeva. b) Dizajn podrazumijeva razvoj modela za cijeli sustav kroz (i) dekompoziciju problema na manje smislene programske cjeline (module ili komponente), (ii) prijenos specifikacije zahtjeva sustava na specifikaciju zahtjeva funkcija definiranih programskih cjelina i (iii) definiciju sučelja među programskim cjelinama. Rezultati ove faze sažimaju se u dokumentu tehnička specifikacija. c) Implementacija je faza u kojoj se radi programiranje. Kod velikih programa samom programiranju obično prethodi i ispisivanje pseudokoda. Osnovni cilj programiranja je da se napravi čitljiv, jednostavan za nadogradnju i održavanje, dobro dokumentiran i točan program. Rezultat ove faze je program kojeg se može izvoditi. d) Faza testiranja u novijim modelima razvoja sve je više isprepletena s fazom implementacije. Planiranje testnih aktivnosti započinje s fazom specifikacije zahtjeva. Testiranjem se provjerava u kojoj su mjeri implementirani zahtjevi te se traže neispravnosti kako u kodu, tako i u projektnoj dokumentaciji. Osnovna motivacija za kontinuirano provođenje testnih aktivnosti je da je svaku ranije otkrivenu neispravnost jeftinije ukloniti, tj. ispraviti.",
+    "link": null
+  },
+  {
+    "original": "Koja je osnovna svrha održavanja programskog proizvoda?",
+    "chunk": "koja je osnovna svrha održavanja programskog proizvoda?",
+    "answer": "Cilj faze održavanja je osigurati neometano izvođenje programskog proizvoda kod korisnika, a osnovna svrha je: otklanjanje svih neispravnosti otkrivenih nakon isporuke, prilagođavanje sustava promijenjenim zahtjevima ili uvođenje poboljšanja. Održavanje programskih sustava ujedno predstavlja najzahtjevniju aktivnost koja slijedi nakon isporuke, odnosno implementacije software-a",
+    "link": null
+  },
+  {
+    "original": "Koja je konceptualna razlika između procesa i modela koji se koriste u razvoju software-a?",
+    "chunk": "koja je konceptualna razlika između procesa",
+    "answer": "Proces je skup međusobno povezanih aktivnosti kojima se ostvaruje pretvorba ulaza u izlaz, dok model predstavlja konkretno definirane korake koje te aktivnosti podrazumijevaju i dinamiku njihova izvođenja. Procesi čije modele treba definirati u okviru životnog ciklusa programskog proizvoda su od razvoja, izvođenja i održavanja projekta, definiranja zahtjeva pa sve do povlačenja programskog proizvoda iz uporabe.",
+    "link": null
+  },
+  {
+    "original": "Koja je konceptualna razlika između procesa i modela koji se koriste u razvoju software-a?",
+    "chunk": "modela koji se koriste u razvoju software-a?",
+    "answer": "Proces je skup međusobno povezanih aktivnosti kojima se ostvaruje pretvorba ulaza u izlaz, dok model predstavlja konkretno definirane korake koje te aktivnosti podrazumijevaju i dinamiku njihova izvođenja. Procesi čije modele treba definirati u okviru životnog ciklusa programskog proizvoda su od razvoja, izvođenja i održavanja projekta, definiranja zahtjeva pa sve do povlačenja programskog proizvoda iz uporabe.",
+    "link": null
+  },
+  {
+    "original": "Kako SEIS doprinosi razvoju društvene odgovornosti u kontekstu razvoja softverskih rješenja?",
+    "chunk": "kako seis doprinosi razvoju društvene odgovornosti u kontekstu razvoja softverskih rješenja?",
+    "answer": "SEIS potiče društvenu odgovornost u razvoju softverskih rješenja istražujući njihov tehnološki i društveni utjecaj. Fokusira se na inkluzivnost, etiku i stvarne potrebe zajednice, razvijajući sustave koji povezuju ljude, olakšavaju suradnju i poboljšavaju digitalnu dostupnost.",
+    "link": null
+  },
+  {
+    "original": "Zašto se Ada Lovelace smatra prvom programerkom u povijesti i jesu li njezine ideje bile realizirane?",
+    "chunk": "zašto se ada lovelace smatra prvom programerkom u povijesti",
+    "answer": "Ada Lovelace razvila je prvi algoritam namijenjen izvođenju na stroju. Ne, strojevi koji su trebali raditi na principu njezinih algoritama nikada nisu bili u potpunosti realizirani nego su kasnije poslužili kao temelj za razvoj modernih računala i softvera.",
+    "link": "https://en.wikipedia.org/wiki/Ada_Lovelace"
+  },
+  {
+    "original": "Zašto se Ada Lovelace smatra prvom programerkom u povijesti i jesu li njezine ideje bile realizirane?",
+    "chunk": "jesu li njezine ideje bile realizirane?",
+    "answer": "Ada Lovelace razvila je prvi algoritam namijenjen izvođenju na stroju. Ne, strojevi koji su trebali raditi na principu njezinih algoritama nikada nisu bili u potpunosti realizirani nego su kasnije poslužili kao temelj za razvoj modernih računala i softvera.",
+    "link": "https://en.wikipedia.org/wiki/Ada_Lovelace"
+  },
+  {
+    "original": "Kako primjena novih tehnologija poput blockchaina, IoT-a i velikih podataka oblikuje budućnost softverskog inženjeringa i informacijskih sustava (SEIS)?",
+    "chunk": "kako primjena novih tehnologija poput blockchaina",
+    "answer": "Blockchain: Blockchain omogućava sigurno i transparentno pohranjivanje podataka, smanjuje potrebu za posrednicima, što povećava efikasnost i smanjuje troškove u raznim industrijama (npr. financijama, zdravstvu). IoT (Internet stvari): IoT uređaji omogućuju prikupljanje podataka u stvarnom vremenu i automatsko donošenje odluka u industrijama poput zdravstva, pametnih gradova i poljoprivrede, čime se poboljšava efikasnost i kvalitetu usluga. Veliki podaci (Big Data): Analizom velikih podataka, tvrtke i institucije mogu donositi bolje odluke, personalizirati usluge i optimizirati poslovne procese, što doprinosi povećanju konkurentnosti i inovacija.",
+    "link": "https://en.wikipedia.org/wiki/Blockchain, https://en.wikipedia.org/wiki/Internet_of_things"
+  },
+  {
+    "original": "Kako primjena novih tehnologija poput blockchaina, IoT-a i velikih podataka oblikuje budućnost softverskog inženjeringa i informacijskih sustava (SEIS)?",
+    "chunk": "velikih podataka oblikuje budućnost softverskog inženjeringa",
+    "answer": "Blockchain: Blockchain omogućava sigurno i transparentno pohranjivanje podataka, smanjuje potrebu za posrednicima, što povećava efikasnost i smanjuje troškove u raznim industrijama (npr. financijama, zdravstvu). IoT (Internet stvari): IoT uređaji omogućuju prikupljanje podataka u stvarnom vremenu i automatsko donošenje odluka u industrijama poput zdravstva, pametnih gradova i poljoprivrede, čime se poboljšava efikasnost i kvalitetu usluga. Veliki podaci (Big Data): Analizom velikih podataka, tvrtke i institucije mogu donositi bolje odluke, personalizirati usluge i optimizirati poslovne procese, što doprinosi povećanju konkurentnosti i inovacija.",
+    "link": "https://en.wikipedia.org/wiki/Blockchain, https://en.wikipedia.org/wiki/Internet_of_things"
+  },
+  {
+    "original": "Kako primjena novih tehnologija poput blockchaina, IoT-a i velikih podataka oblikuje budućnost softverskog inženjeringa i informacijskih sustava (SEIS)?",
+    "chunk": "informacijskih sustava (seis)?",
+    "answer": "Blockchain: Blockchain omogućava sigurno i transparentno pohranjivanje podataka, smanjuje potrebu za posrednicima, što povećava efikasnost i smanjuje troškove u raznim industrijama (npr. financijama, zdravstvu). IoT (Internet stvari): IoT uređaji omogućuju prikupljanje podataka u stvarnom vremenu i automatsko donošenje odluka u industrijama poput zdravstva, pametnih gradova i poljoprivrede, čime se poboljšava efikasnost i kvalitetu usluga. Veliki podaci (Big Data): Analizom velikih podataka, tvrtke i institucije mogu donositi bolje odluke, personalizirati usluge i optimizirati poslovne procese, što doprinosi povećanju konkurentnosti i inovacija.",
+    "link": "https://en.wikipedia.org/wiki/Blockchain, https://en.wikipedia.org/wiki/Internet_of_things"
+  },
+  {
+    "original": "Koje su dvije glavne kategorije radova koje NIER track prihvaća na ICSE konferenciji i što svaka od njih treba sadržavati?",
+    "chunk": "koje su dvije glavne kategorije radova koje nier track prihvaća na icse konferenciji",
+    "answer": "• Forward-looking ideas (Vizionarske ideje) – radovi koji predlažu nove smjerove ili tehnike u softverskom inženjerstvu, koji možda nemaju kompletne eksperimentalne dokaze, ali moraju biti jasno argumentirani, potkrijepljeni znanstvenom logikom i sadržavati plan za daljnje istraživanje. • Thought-provoking reflections (Provokativne refleksije) – radovi koji donose neočekivane rezultate ili perspektive koje izazivaju postojeće paradigme u softverskom inženjerstvu, potkrijepljeni preliminarnim podacima ili analizama.",
+    "link": null
+  },
+  {
+    "original": "Koje su dvije glavne kategorije radova koje NIER track prihvaća na ICSE konferenciji i što svaka od njih treba sadržavati?",
+    "chunk": "što svaka od njih treba sadržavati?",
+    "answer": "• Forward-looking ideas (Vizionarske ideje) – radovi koji predlažu nove smjerove ili tehnike u softverskom inženjerstvu, koji možda nemaju kompletne eksperimentalne dokaze, ali moraju biti jasno argumentirani, potkrijepljeni znanstvenom logikom i sadržavati plan za daljnje istraživanje. • Thought-provoking reflections (Provokativne refleksije) – radovi koji donose neočekivane rezultate ili perspektive koje izazivaju postojeće paradigme u softverskom inženjerstvu, potkrijepljeni preliminarnim podacima ili analizama.",
+    "link": null
+  },
+  {
+    "original": "Što je XDEAD, koje metode koristi za detekciju pogrešno uklonjenog aktivnog koda (zbog grešaka u eliminaciji mrtvog koda - DCE), i koje je dvije specifične greške otkrio?",
+    "chunk": "koje metode koristi za detekciju pogrešno uklonjenog aktivnog koda (zbog grešaka u eliminaciji mrtvog koda - dce)",
+    "answer": "• XDEAD je alat za otkrivanje pogrešaka u eliminaciji mrtvog koda (DCE). • Koristi diferencijalno testiranje, statičku binarnu analizu i dinamičko simboličko izvođenje za otkrivanje grešaka. • Konkretno, otkrio je dvije ozbiljne greške u LLVM kompilatoru koje su rezultirale uklanjanjem aktivnog, potrebnog koda tijekom optimizacije.",
+    "link": null
+  },
+  {
+    "original": "Što je XDEAD, koje metode koristi za detekciju pogrešno uklonjenog aktivnog koda (zbog grešaka u eliminaciji mrtvog koda - DCE), i koje je dvije specifične greške otkrio?",
+    "chunk": "koje je dvije specifične greške otkrio?",
+    "answer": "• XDEAD je alat za otkrivanje pogrešaka u eliminaciji mrtvog koda (DCE). • Koristi diferencijalno testiranje, statičku binarnu analizu i dinamičko simboličko izvođenje za otkrivanje grešaka. • Konkretno, otkrio je dvije ozbiljne greške u LLVM kompilatoru koje su rezultirale uklanjanjem aktivnog, potrebnog koda tijekom optimizacije.",
+    "link": null
+  },
+  {
+    "original": "Koji su glavni izazovi korištenja blockchain tehnologije za koordinaciju robotskih misija u svemiru, i koja četiri rješenja istraživači predlažu za prevladavanje tih izazova?",
+    "chunk": "koji su glavni izazovi korištenja blockchain tehnologije za koordinaciju robotskih misija u svemiru",
+    "answer": "• Glavni izazovi uključuju veliku potrošnju energije, sporost obrade transakcija i preveliku transparentnost podataka. • Predložena rješenja uključuju: 1. Prilagođene verzije blockchaina (privatne ili hibridne mreže koje štede energiju i povećavaju brzinu). 2. Pametne ugovore (automatizacija pregovora između robota). 3. Korištenje tokena (fungibilnih ili NFT-ova) za razmjenu informacija ili resursa. 4. Dodatna tehnička optimizacija i razvoj učinkovitijih sustava obrade podataka specifično prilagođenih za uvjete u svemiru.",
+    "link": null
+  },
+  {
+    "original": "Koji su glavni izazovi korištenja blockchain tehnologije za koordinaciju robotskih misija u svemiru, i koja četiri rješenja istraživači predlažu za prevladavanje tih izazova?",
+    "chunk": "koja četiri rješenja istraživači predlažu za prevladavanje tih izazova?",
+    "answer": "• Glavni izazovi uključuju veliku potrošnju energije, sporost obrade transakcija i preveliku transparentnost podataka. • Predložena rješenja uključuju: 1. Prilagođene verzije blockchaina (privatne ili hibridne mreže koje štede energiju i povećavaju brzinu). 2. Pametne ugovore (automatizacija pregovora između robota). 3. Korištenje tokena (fungibilnih ili NFT-ova) za razmjenu informacija ili resursa. 4. Dodatna tehnička optimizacija i razvoj učinkovitijih sustava obrade podataka specifično prilagođenih za uvjete u svemiru.",
+    "link": null
+  },
+  {
+    "original": "Što uključuje planiranje projekata te koji su važni zahtjevi koje pri tome treba zadovoljiti?",
+    "chunk": "što uključuje planiranje projekata",
+    "answer": "Planiranje projekata uključuje:  Određivanje zadataka i njihovih međusobnih ovisnosti o Svaki zadatak bi trebao imati jasno definiranu i provjerljivu isporuku i vremenski rok  Određivanje poretka obavljanja zadataka i potrebnih resursa o Zadaci bi se trebali poredati tako da se izvedu u što kraće vrijeme, bez praznog hoda  Predviđanje trajanja projekta o Dobrim planiranjem zadataka i količine vremena koja je za njih potrebna  Predviđanje troškova o Ovisi o uspješnosti procjene veličine i/ili složenosti projekta  Mehanizmi praćenja i kontrole kvalitete Trokut zahtjeva, često proturječnih u razvoju programskog proizvod, koje treba pokriti planiranjem su: trajanje, troškovi i kvaliteta. Nemoguće je postići brz, jeftin i kvalitetan projekt, ali na uštrb jednog zahtjeva, moguće je postići dobre rezultate u druga dva (npr. brz i jeftin projekt vrlo vjerojatno neće biti naročito kvalitetno izveden).",
+    "link": "https://blog.pragmaticengineer.com/how-to-lead-a-project-in-software-development/"
+  },
+  {
+    "original": "Što uključuje planiranje projekata te koji su važni zahtjevi koje pri tome treba zadovoljiti?",
+    "chunk": "koji su važni zahtjevi koje pri tome treba zadovoljiti?",
+    "answer": "Planiranje projekata uključuje:  Određivanje zadataka i njihovih međusobnih ovisnosti o Svaki zadatak bi trebao imati jasno definiranu i provjerljivu isporuku i vremenski rok  Određivanje poretka obavljanja zadataka i potrebnih resursa o Zadaci bi se trebali poredati tako da se izvedu u što kraće vrijeme, bez praznog hoda  Predviđanje trajanja projekta o Dobrim planiranjem zadataka i količine vremena koja je za njih potrebna  Predviđanje troškova o Ovisi o uspješnosti procjene veličine i/ili složenosti projekta  Mehanizmi praćenja i kontrole kvalitete Trokut zahtjeva, često proturječnih u razvoju programskog proizvod, koje treba pokriti planiranjem su: trajanje, troškovi i kvaliteta. Nemoguće je postići brz, jeftin i kvalitetan projekt, ali na uštrb jednog zahtjeva, moguće je postići dobre rezultate u druga dva (npr. brz i jeftin projekt vrlo vjerojatno neće biti naročito kvalitetno izveden).",
+    "link": "https://blog.pragmaticengineer.com/how-to-lead-a-project-in-software-development/"
+  },
+  {
+    "original": "Čemu služi, što sadrži i koja su pravila za strukturu podjele posla (eng. Work breakdown structure)?",
+    "chunk": "koja su pravila za strukturu podjele posla (eng",
+    "answer": "Struktura podjele posla (eng. Work breakdown structure, WBS) je tehnika za podjelu posla u manje zadatke što je neophodno prilikom planiranje složenijeg projekta. WBS uključuje definiciju isporuka (eng. deliverables) i ključnih datuma (eng. milestones) u formi WBS stabla koje sadrži:  Poslove složene po razinama  Najviše razine su obično veliki poslovi zajednički svim projektima (npr. specifikacija zahtjeva, dizajn, verifikacija)  Poslove više razine se granaju na više poslova niže razine  Poslove najniže razine zovu se zadaci (listovi stabla) Pravila za konstrukciju WBS stabla su:  WBS mora imati strukturu stabla, dakle, bez petlji i ciklusa (iterativni poslovi se definiraju procesom, a ne u WBS-u)  Opisi zadataka moraju biti razumljivi i nedvosmisleni  Svaki zadatak mora imati nedvosmislen kriterij za provjeru da je izvršen (najčešće je to isporuka - deliverable)  Sve isporuke moraju biti identificirane s WBS-om, tj. svaka isporuka potrebna u projektu mora biti proizvod nekog od zadataka  Uspješno izvršenje svih poslova neke razine mora rezultirati uspješnim izvršenjem posla na razini iznad",
+    "link": "https://www.youtube.com/watch?v=BVcd9uy9kuQ"
+  },
+  {
+    "original": "Čemu služi, što sadrži i koja su pravila za strukturu podjele posla (eng. Work breakdown structure)?",
+    "chunk": "work breakdown structure)?",
+    "answer": "Struktura podjele posla (eng. Work breakdown structure, WBS) je tehnika za podjelu posla u manje zadatke što je neophodno prilikom planiranje složenijeg projekta. WBS uključuje definiciju isporuka (eng. deliverables) i ključnih datuma (eng. milestones) u formi WBS stabla koje sadrži:  Poslove složene po razinama  Najviše razine su obično veliki poslovi zajednički svim projektima (npr. specifikacija zahtjeva, dizajn, verifikacija)  Poslove više razine se granaju na više poslova niže razine  Poslove najniže razine zovu se zadaci (listovi stabla) Pravila za konstrukciju WBS stabla su:  WBS mora imati strukturu stabla, dakle, bez petlji i ciklusa (iterativni poslovi se definiraju procesom, a ne u WBS-u)  Opisi zadataka moraju biti razumljivi i nedvosmisleni  Svaki zadatak mora imati nedvosmislen kriterij za provjeru da je izvršen (najčešće je to isporuka - deliverable)  Sve isporuke moraju biti identificirane s WBS-om, tj. svaka isporuka potrebna u projektu mora biti proizvod nekog od zadataka  Uspješno izvršenje svih poslova neke razine mora rezultirati uspješnim izvršenjem posla na razini iznad",
+    "link": "https://www.youtube.com/watch?v=BVcd9uy9kuQ"
+  },
+  {
+    "original": "Što je, od čega se sastoji i čemu služi program evaluation and review technique?",
+    "chunk": "čemu služi program evaluation and review technique?",
+    "answer": "Program Evaluation and Review Technique (PERT) je tehnika za izradu grafa koji prikazuje međusobne ovisnosti i trajanja svih zadataka u nekom poslu. Vrhovi (čvorovi) grafa predstavljaju zadatke, oznake vrhova prikazuju trajanja zadataka, a bridovi (veze) grafa povezuju zadatak sa svim zadacima koji o njemu ovise (strelica pokazuje u tom smjeru). Pomoću grafa se određuju vrijeme izvršavanja čitavog posla, kritični put, te dozvoljena kašnjenja zadataka",
+    "link": "https://www.youtube.com/watch?v=i160aaBX7mE"
+  },
+  {
+    "original": "Što je kritični put kod program evaluation and review technique-a?",
+    "chunk": "što je kritični put kod program evaluation and review technique-a?",
+    "answer": "- Kritični put je niz ovisnih zadataka čije izvršenje traje koliko i minimalno moguće trajanje čitavog posla - Kritični put (ovisnosti u njemu) je razlog zbog kojeg čak ni korištenjem više resursa nije moguće ubrzati završetak posla - Kritični put ne mora biti jedinstven, ali svi mogući kritični putovi jednako traju",
+    "link": null
+  },
+  {
+    "original": "Objasni metodologiju CAPIR metode za poboljšanje preporuka API-ja u procesu generiranja koda.",
+    "chunk": "objasni metodologiju capir metode za poboljšanje preporuka api-ja u procesu generiranja koda",
+    "answer": "Prvi korak -> raščlaniti zadatak gdje se LLM treba koristiti na manji niz podzadataka. Drugi korak -> pretraživanje API-ja gdje CAPIR pretražuje dokumentaciju kako bi pronašao relevantne API-je za svaki podzadatak. Treći korak -> rangiranje API-ja, CAPIR ocjenjuje i filtrira pronađene API-je kako bi preporučio samo one najrelevantnije za zadani podzadatak.",
+    "link": null
+  },
+  {
+    "original": "Kvalitetna dokumentacija ASAT pravila trebala bi sadržavati koja tri ključna elementa i na što bi oni trebali odgovarati?",
+    "chunk": "kvalitetna dokumentacija asat pravila trebala bi sadržavati koja tri ključna elementa",
+    "answer": "Što? - Objašnjenje što aktivira određeno pravilo, odnosno koji problem u kodu se detektira. Zašto? - Razlog zašto je određeno pravilo važno te kakve posljedice može imati ako se ne poštuje. Kako ispraviti? - Konkretne smjernice ili primjeri kako riješiti problem koji je alat detektirao.",
+    "link": null
+  },
+  {
+    "original": "Kvalitetna dokumentacija ASAT pravila trebala bi sadržavati koja tri ključna elementa i na što bi oni trebali odgovarati?",
+    "chunk": "na što bi oni trebali odgovarati?",
+    "answer": "Što? - Objašnjenje što aktivira određeno pravilo, odnosno koji problem u kodu se detektira. Zašto? - Razlog zašto je određeno pravilo važno te kakve posljedice može imati ako se ne poštuje. Kako ispraviti? - Konkretne smjernice ili primjeri kako riješiti problem koji je alat detektirao.",
+    "link": null
+  },
+  {
+    "original": "Što je Mask-Catcher i kako glasi njegova metodologija?",
+    "chunk": "što je mask-catcher",
+    "answer": "Mask-Catcher je automatizirani sustav koji koristi mehanizam filtriranja za detekciju maskiranih aplikacija. Prvi korak -> razvrstavanje aplikacija prema nesuglasju između opisa aplikacije i recenzija korisnika. Drugi korak -> stvaranje mreže preporuka među aplikacijama pomoću međusobnih preporuka. Treći korak -> analiza sličnosti za otkrivanje aplikacija koje koriste skrivene funkcionalnosti.",
+    "link": "https://www.ittc.ku.edu/~bluo/pubs/zhao24icpc.pdf"
+  },
+  {
+    "original": "Što je Mask-Catcher i kako glasi njegova metodologija?",
+    "chunk": "kako glasi njegova metodologija?",
+    "answer": "Mask-Catcher je automatizirani sustav koji koristi mehanizam filtriranja za detekciju maskiranih aplikacija. Prvi korak -> razvrstavanje aplikacija prema nesuglasju između opisa aplikacije i recenzija korisnika. Drugi korak -> stvaranje mreže preporuka među aplikacijama pomoću međusobnih preporuka. Treći korak -> analiza sličnosti za otkrivanje aplikacija koje koriste skrivene funkcionalnosti.",
+    "link": "https://www.ittc.ku.edu/~bluo/pubs/zhao24icpc.pdf"
+  }
+]
