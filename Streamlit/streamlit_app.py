@@ -164,3 +164,83 @@ if st.button("Spremi povijest razgovora kao PDF"):
 
     # Obavijesti korisnika da je PDF generiran
     st.success("PDF je uspješno generiran! Klikni na gumb za preuzimanje.")
+
+
+#Login i register
+
+@st.dialog("Register")
+def register():
+    #Register pop-up
+        st.subheader("Register")
+        username = st.text_input("Username", key="register_username")
+        password = st.text_input("Password", type="password", key="register_password")
+        # Slanje podataka u bazu
+        if st.button("Register", key="register_submit"):
+            response = requests.post(f"http://127.0.0.1:8000/register/", json={
+                "username": username,
+                "password": password
+            })
+            data = response.json()
+            if data["status"] == "success":
+                st.success(data.get("message", "Registered!"))
+            else:
+                st.error(data.get("message", "Registration failed"))
+
+@st.dialog("Login")
+def login():
+    st.subheader("Login")
+    username = st.text_input("Username", key="login_username")
+    password = st.text_input("Password", type="password", key="login_password")
+
+    if st.button("Login", key="login_submit"):
+        try:
+            # Pokušaj prijave
+            response = requests.post("http://127.0.0.1:8000/login/", json={
+                "username": username,
+                "password": password
+            })
+            
+            data = response.json()
+
+            # Provjeri status prijave
+            if data.get("status") == "success":
+                st.session_state["logged_in"] = True
+                st.session_state["username"] = username
+                st.success("Logged in!")
+                st.rerun()
+            else:
+                st.error(data.get("message", "Login failed."))
+
+        except requests.exceptions.RequestException:
+            st.error("Could not connect to the login server.")
+        except ValueError:
+            st.error("Invalid response from the server.")
+        except Exception as e:
+            st.error(f"Unexpected error: {e}")
+
+
+# Prikaz na ekranu dok je korisnik prijavljen
+def main_app():
+    st.subheader(f"Welcome {st.session_state['username']}")
+    # Gumb za logout
+    if st.button("Logout"):
+        st.session_state.clear()
+        st.rerun()
+
+
+def main():
+    # Pokazivanje prijave i registracije dok nismo prijavljeni ili pokazivanje pogleda prijavljenog korisnika
+    if not st.session_state.get("logged_in"):
+        col1, col2 = st.columns(2)
+        with col1:
+            if st.button("Login"):
+                login()
+        with col2:
+            if st.button("Register"):
+                register()
+    else:
+        main_app()
+
+# Pokretanje aplikacije
+if __name__ == "__main__":
+    main()
