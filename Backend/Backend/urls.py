@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from chatbot.views import generate_quiz
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("api/generate_quiz/", generate_quiz, name="generate_quiz"),
 ]
