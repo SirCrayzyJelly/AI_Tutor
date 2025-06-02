@@ -3,6 +3,7 @@ from pydantic import BaseModel
 import google.generativeai as genai
 import sys
 import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from Backend.vektorizacija import QABase
 
 qa_base = QABase()
