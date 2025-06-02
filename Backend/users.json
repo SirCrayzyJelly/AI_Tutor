@@ -54,5 +54,27 @@
             "a",
             "Koje su osnovne faze u modelima procesa razvoja programskog proizvoda i od \u010dega se sastoje?"
         ]
+    },
+    "null": {
+        "quiz_attempts": [
+            {
+                "course": "Programsko in\u017eenjerstvo",
+                "score": 0,
+                "max_score": 30.0,
+                "timestamp": "2025-06-02 22:10:03",
+                "attempt_number": 1
+            }
+        ]
+    },
+    "null": {
+        "quiz_attempts": [
+            {
+                "course": "Ugradbeni ra\u010dunalni sustavi",
+                "score": 7.38,
+                "max_score": 30.0,
+                "timestamp": "2025-06-02 22:10:06",
+                "attempt_number": 1
+            }
+        ]
     }
 }
