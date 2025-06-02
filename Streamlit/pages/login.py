@@ -4,14 +4,7 @@ import hashlib
 
 users_json_path = "../Backend/users.json"
 
-hide_sidebar_style = """
-<style>
-    section[data-testid="stSidebar"] {
-        display: none !important;
-    }
-</style>
-"""
-st.markdown(hide_sidebar_style, unsafe_allow_html=True)
+
 
 def load_users():
     try:
