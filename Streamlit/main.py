@@ -8,6 +8,10 @@ from Backend.vektorizacija import QABase
 qa_base = QABase()
 qa_base.load_data(force_rebuild=True)
 
+import sys
+import os
+
+
 # Omogući pristup mapi Backend
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "Backend")))
 
