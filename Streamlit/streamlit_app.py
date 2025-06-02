@@ -8,7 +8,7 @@ import json
 import random
 import time
 
-users_json_path = "../Backend/users.json"
+users_json_path = "E:/chat/AI_Tutor/Backend/users.json"
 prijavljen = 0
 
 # Funkcija za učitavanje pitanja iz JSON datoteke
@@ -114,6 +114,7 @@ def format_answer_parts(text: str) -> str:
         formatted_parts.append(current.strip() + "</div><hr style='opacity:0.2;'/>")
 
     return "\n".join(formatted_parts)
+
 
 # Inicijalizacija Streamlit aplikacije
 st.set_page_config(page_title="AI Tutor", page_icon="🤖")
@@ -260,6 +261,8 @@ for message in st.session_state.chat_history:
 # Unos korisničkog pitanja
 if user_input := st.chat_input("Postavi svoje pitanje..."):
 
+    
+
     # Dodaj korisničku poruku u povijest
     user_msg = {"role": "user", "content": user_input}
     st.session_state.chat_history.append(user_msg)
@@ -276,7 +279,8 @@ if user_input := st.chat_input("Postavi svoje pitanje..."):
     if st.session_state.get('logged_in', False):
         email = st.session_state['user_email']
         add_question_for_user(email, user_input)
-        st.rerun()
+        
+    
 
 # Obrada i prikaz AI odgovora
 if st.session_state.chat_history and st.session_state.chat_history[-1]["role"] == "user":
@@ -300,14 +304,14 @@ if st.session_state.chat_history and st.session_state.chat_history[-1]["role"] =
         st.error(f"Error connecting to the backend: {str(e)}")
 
 if st.session_state.get('logged_in', False):
-    st.session_state.chat_history = []
+    #st.session_state.chat_history = []
     st.sidebar.success(f"Prijavljeni ste kao: {st.session_state['user_name']} ({st.session_state['user_email']})")
     if st.sidebar.button("❌ Odjavi se", key="logout_button"):
         st.session_state['logged_in'] = False
         st.session_state['user_email'] = None
         st.session_state['user_name'] = None
         st.session_state.chat_history = []
-        st.rerun()
+        
 else:
     if st.sidebar.button("🔑 Prijavi se"):
         st.switch_page("pages/login.py")
