@@ -8,7 +8,7 @@ import json
 import random
 import time
 
-users_json_path = "E:/chat/AI_Tutor/Backend/users.json"
+users_json_path = "C:\Users\Korisnik\Desktop\AI tutor\AI_Tutor-1\Backend\users.json"
 prijavljen = 0
 
 # Funkcija za učitavanje pitanja iz JSON datoteke
